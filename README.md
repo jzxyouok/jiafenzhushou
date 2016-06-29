@@ -19,9 +19,7 @@
 有什么可以催逼的：个人研发APP：下载量过500万，技术实力一条龙（server+web+ios+android+前端），其他的不会就只会让APP火起来<br/>
 
 QQ：2667069763 <br/>
-  ![输入图片说明](https://gsnapshot.alicdn.com/imgextra/imgextra/i3/37826116/TB2y77RqVXXXXXCXXXXXXXXXXXX_!!37826116.png?time=1467195819000 "在这里输入图片标题")<br/>
-![输入图片说明](https://gsnapshot.alicdn.com/imgextra/imgextra/i2/37826116/TB24o3EqVXXXXbqXXXXXXXXXXXX_!!37826116.png?time=1467195819000 "在这里输入图片标题")<br/>
-![输入图片说明](https://gsnapshot.alicdn.com/imgextra/imgextra/i2/37826116/TB2tfUPqVXXXXXSXXXXXXXXXXXX_!!37826116.png?time=1467195819000 "在这里输入图片标题")<br/>
+![输入图片说明](http://git.oschina.net/uploads/images/2016/0630/024203_13dd529b_620187.png "在这里输入图片标题")
 
 求打赏<br/>
  
