@@ -1,0 +1,293 @@
+.cursor-pt
+{
+    cursor:pointer;
+}
+
+.btn-small-img-upload {
+    height: 40px;
+    line-height: 40px
+}
+
+.add-pic .upload-file p {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.add-pic-after, .add-pic-ing, .add-pic-pre, .err-tips, .small-img-upload {
+    vertical-align: top;
+    display: inline-block
+}
+
+.add-pic .add-pic-rule-list, .ui-lb-chk.disable {
+    color: #b2b2b2
+}
+
+.add-pic {
+    line-height: normal
+}
+
+.add-pic-ing, .add-pic-pre {
+    width: 260px;
+    height: 160px;
+    background: #fff;
+    border: 1px solid #C5C5C5;
+    position: relative;
+    margin: 0 10px 10px 0
+}
+
+.add-pic-pre {
+    background-repeat: no-repeat
+}
+
+.add-pic-pre:hover {
+    border-color: #2d8ed8
+}
+
+.add-pic-ing .process {
+    position: absolute;
+    width: 59.85%;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -29.92%;
+    background: #D5D5D5;
+    overflow: hidden
+}
+
+.add-pic-ing .process-in {
+    display: block;
+    height: 3px;
+    background: #2d8ed8
+}
+
+.add-pic-ing .uploading {
+    width: 82px;
+    background: url(upload.gif?max_age=31536000)
+}
+
+.add-pic .txt-status {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #b2b2b2
+}
+
+.add-pic-after {
+    position: relative;
+    width: 260px;
+    height: 160px;
+    overflow: hidden;
+    border: 1px solid #c5c5c5;
+    margin: 0 10px 10px 0
+}
+
+.add-pic-after .operation, .add-pic-after .operation .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.add-pic-after .operation {
+    left: -9999px
+}
+
+.add-pic-after .operation .bg {
+    background: #000;
+    opacity: .2;
+    filter: alpha(opacity=20)
+}
+
+.add-pic-after .operation .fun {
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    font-size: 0;
+    white-space: nowrap;
+    width: 100%
+}
+
+.add-pic-after:hover .operation {
+    left: 0
+}
+
+.add-pic-after .fun li, .add-pic-after .fun li a {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 33.33%
+}
+
+.step ul li, .ui-time-pick, .ui-txtarea {
+    vertical-align: top
+}
+
+.add-pic-after .fun li a {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #636363;
+    margin-left: -1px;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.add-pic-after .fun b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-indent: -999em
+}
+
+.add-pic-after .magnifier b {
+    width: 24px;
+    height: 23px;
+    margin: -11px 0 0 -12px;
+    background-repeat: no-repeat
+}
+
+.add-pic-after .change {
+    background: url(change.png?max_age=31536000) center center no-repeat
+}
+
+.add-pic-after .change b {
+    position: absolute;
+    left: -999em
+}
+
+.add-pic-after .delete b {
+    width: 24px;
+    height: 23px;
+    margin: -12px 0 0 -12px;
+    background-repeat: no-repeat
+}
+
+.add-pic-after .download b {
+    width: 21px;
+    height: 22px;
+    margin: -11px 0 0 -11px;
+    background-repeat: no-repeat
+}
+
+.add-pic-after .fun a:hover {
+    background-color: rgba(0, 0, 0, .5);
+    opacity: .8 \9
+}
+
+.add-pic-after img {
+    width: 100%;
+    height: 100%
+}
+
+.add-pic .err-tips {
+    padding: 5px 0 0 10px;
+    font-size: 14px
+}
+
+.add-pic .add-pic-example, .add-pic .add-pic-rule {
+    font-size: 14px
+}
+
+.add-pic .add-pic-example {
+    padding: 1px 0 9px;
+    position: relative
+}
+
+.add-pic .add-file-after {
+    width: 260px;
+    height: 160px
+}
+
+.add-pic .upload-file {
+    text-align: center;
+    margin: 30px 10px 0;
+    font-size: 16px
+}
+
+.add-pic .upload-file .ico-apk, .add-pic .upload-file .ico-file {
+    display: block;
+    height: 47px;
+    margin: 0 auto 10px;
+    background-repeat: no-repeat
+}
+
+.add-pic .upload-file .ico-file {
+    width: 40px
+}
+
+.add-pic .upload-file .ico-apk {
+    width: 45px
+}
+
+.add-pic .upload-file p {
+    height: 42px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.add-icon .add-pic-after {
+    background: url(icon-upload-bg.png?max_age=31536000) no-repeat
+}
+
+.add-icon .add-pic-after .upload-info {
+    display: inline-block;
+    text-align: center;
+    margin: 60px 0 0 40px;
+    color: #fff;
+    width: 110px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.add-icon .add-pic-after .upload-info .app-name {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 7em;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    margin-left: 5px
+}
+
+.add-icon .add-pic-after img {
+    width: auto;
+    height: auto
+}
+
+.add-pic-pre {
+    background-position: 0 0
+}
+
+.add-pic-after .magnifier b {
+    background-position: 0 -273px
+}
+
+.add-pic-after .delete b {
+    background-position: -29px -273px;
+}
+
+.add-pic-after .download b {
+    background-position: -297px -28px
+}
+
+.add-pic .upload-file .ico-file {
+    background-position: -100px -145px
+}
+
+.add-pic .upload-file .ico-apk {
+    background-position: -50px -145px
+}
+.add-pic-pre
+{
+    background-image: url(addplus.png?max_age=31536000)
+}
+.add-pic .upload-file .ico-apk, .add-pic .upload-file .ico-file, .add-pic-after .delete b, .add-pic-after .download b, .add-pic-after .magnifier b,  .alert-cont .alert-icon.suc, .date-pick .ico-calendar, .form-mod-tit-tips .txt-err .ico-msg, .formbox-close .formbox-arrow, .formbox-hd .formbox-arrow, .header-hover-tips .arrow, .ico-access-plat.ico-3366, .ico-access-plat.ico-3366-dis, .ico-access-plat.pengyou, .ico-access-plat.pengyou-dis, .ico-access-plat.qzone, .ico-access-plat.qzone-dis, .ico-access-plat.txwb, .ico-access-plat.txwb-dis, .ico-question, .layout-header .ico-file, .layout-header .ico-service, .layout-header .on .ico-file, .layout-header .on .ico-service, .layout-header .user-info .hd, .layout-header .user-info.on .hd, .layout-header .user-msg .ico-letter, .layout-header .user-msg .ico-letter .ico-num:before, .layout-header .user-msg.on .ico-letter, .main-header .back .arrow, .plat-info-menu .pop-tips-body .plat-icon .icon.android, .plat-info-menu .pop-tips-body .plat-icon .icon.ios, .plat-info-menu .pop-tips-body .plat-icon .icon.web, .plat-info-menu .pop-tips-body li .dot, .plat-type .logo-plat-android, .plat-type .logo-plat-apple, .plat-type .logo-plat-web, .pop-letter .pl-bd .letter-list .letter-item .ico-letter-s, .pop-letter .pl-bd .letter-list .letter-item.checked .ico-letter-s, .popup .btn-online-talk:after, .popup .close, .popup .close:hover, .qz_msgbox_layer .gtl_ico_clear, .qz_msgbox_layer .gtl_ico_fail, .qz_msgbox_layer .gtl_ico_hits, .qz_msgbox_layer .gtl_ico_succ, .radio-wrap:hover .ui-radio, .radio-wrap:hover .ui-radio.checked, .radio-wrap:hover .ui-radio.disable, .search-wrap .search, .search-wrap.focus .search, .side .cur .side-ico-android, .side .cur .side-ico-ios, .side .cur .side-ico-webapp, .side .item:hover .side-ico-android, .side .item:hover .side-ico-ios, .side .item:hover .side-ico-webapp, .side .side-ico-android, .side .side-ico-ios, .side .side-ico-webapp, .step .arrow, .step .step-cur .arrow, .step .step-cur .ico-cir-num, .step .step-done .arrow, .step .step-done .ico-cir-num, .step .step-tit .ico-cir-num, .sub-side .cur .item .ico-copyright, .sub-side .cur .item .ico-icon, .sub-side .cur .item .ico-info, .sub-side .cur .item .ico-package, .sub-side .cur .item .ico-terminal, .sub-side .ico-copyright, .sub-side .ico-icon, .sub-side .ico-info, .sub-side .ico-package, .sub-side .ico-terminal, .sub-side .item:hover .ico-copyright, .sub-side .item:hover .ico-icon, .sub-side .item:hover .ico-info, .sub-side .item:hover .ico-package, .sub-side .item:hover .ico-terminal, .trend.fall, .trend.rise, .txt-err .ico-msg, .txt-suc .ico-msg, .ui-ico-chk, .ui-lb-chk .ui-ico-chked, .ui-page .dis .ico-next, .ui-page .dis .ico-pre, .ui-page .ico-next, .ui-page .ico-pre, .ui-radio, .ui-radio.checked, .ui-radio.checked:hover, .ui-radio.disable:hover, .ui-radio:hover, .ui-tag .ui-tag-ico, .ui-tip .ui-tip-ico, .ui-tip-simple .ui-tip-ico-fail, .ui-tip-simple .ui-tip-ico-success, .ui-tip-simple .ui-tip-ico-warn {
+    background-size: 339px 319px;
+    background-image: url(global.png?max_age=31536000)
+}

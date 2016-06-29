@@ -1,0 +1,65 @@
+.area {
+    width: 1190px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 115px;
+    background: #fff;
+    z-index: 999;
+}
+
+#header .area {
+    height: 115px;
+}
+
+.logo {
+    float: left;
+    padding-top: 23px;
+}
+
+.nav {
+    float: right;
+    padding-top: 50px;
+    margin-right: -28px;
+}
+
+.nav li {
+    background: url(../images/line.jpg) no-repeat right center;
+    padding: 0 28px;
+    float: left;
+    font-size: 18px;
+}
+
+.global-footer {
+    width: 100%;
+    min-width: 1190px;
+    font-size: 12px;
+    background-color: #0e2744;
+    clear: both;
+    overflow: hidden;
+    padding-top: 23px;
+}
+
+.copyright-box {
+    border-top: 1px solid #0c2d54;
+    color: #7893ad;
+    margin: 20px auto 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 1190px;
+    text-align: center
+}
+
+.copyright-box a {
+    color: #7893ad
+}
+
+.copyright-box a:hover {
+    text-decoration: underline;
+    color: #7893ad
+}

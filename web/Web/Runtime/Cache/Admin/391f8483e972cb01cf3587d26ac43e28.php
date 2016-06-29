@@ -1,0 +1,373 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!--[if lt IE 8]>
+<html lang="zh-CN" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="zh-CN" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="zh-CN" class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="zh-CN" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/jvectormap/jquery-jvectormap-1.2.2.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/adminlte/dist/css/AdminLTE.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/css/public.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/toastr/toastr.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/adminlte/dist/css/skins/_all-skins.min.css" />
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/vendor/fontawesome/css/font-awesome-ie7.css" />
+    <![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/Public/Admin/vendor/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="/Public/Admin/vendor/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="/Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/vendor/morris/morris.css" />
+
+
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a href="/admin.php" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>管</b>理</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>管理</b>系统</span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="<?php echo U('Admin/Logout/index');?>">
+                            <img src="/Public/Admin/image/admin.jpg" class="user-image"
+                                 alt="User Image">
+                            <span class="hidden-xs">注销</span>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="/Public/Admin/image/admin.jpg" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p><?= $currentUser['real_name'] ?></p>
+                    <a href="#"><i class="fa fa-circle text-success"></i><?php echo session('admin.username');?> </a>
+                </div>
+            </div>
+
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">功能菜单导航</li>
+                <li id="moduleDashboard"><a href="/admin.php"><i class="fa fa-dashboard"></i> <span>主控面板</span></a></li>
+
+                <li class="header">文章管理</li>
+                <li>
+                    <a href="<?php echo U('Admin/News/index');?>">
+                        <i class="fa fa-database"></i>
+                        <span>文章管理</span>
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+
+                </li>
+
+                <li class="header">充值管理</li>
+                <li>
+                    <a href="<?php echo U('Admin/Deposit/index');?>">
+                        <i class="fa fa-rmb"></i>
+                        <span>充值管理</span>
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+
+                </li>
+
+
+                <li class="header">财务管理</li>
+                <li>
+                    <a href="<?php echo U('Admin/Order/index');?>">
+                        <i class="fa fa-exchange"></i>
+                        <span>订单管理</span>
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+
+                </li>
+
+
+                <li class="header">会员管理</li>
+                <li>
+                    <a href="<?php echo U('Admin/User/index');?>">
+                        <i class="fa fa-user"></i>
+                        <span>会员管理</span>
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+
+                </li>
+
+
+                <li class="header">系统管理设置</li>
+
+                <li id="moduleAdmin">
+                    <a href="<?php echo U('Admin/Admin/index');?>">
+                        <i class="fa fa-circle-o text-yellow"></i>
+                        <span>管理员管理</span>
+                        <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+
+                </li>
+
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height:1000px">
+        
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            加粉助手
+            <small>Version 1.0</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 加粉助手</a></li>
+            <li class="active">控制面板</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Info boxes -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-book"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">总文章数</span>
+                        <span class="info-box-number"><?php echo ($news_count); ?></span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-red"><i class="fa  fa-rmb"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">总收入</span>
+                        <span class="info-box-number"><?php echo ($total_money); ?></span>
+                    </div>
+
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+
+
+            <!-- fix for small devices only -->
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-green"><i class="fa  fa-users"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">总用户数</span>
+                        <span class="info-box-number"><?php echo ($user_count); ?></span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-yellow"><i class="fa fa-book fa-shopping-cart"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">总激活数</span>
+                        <span class="info-box-number"><?php echo ($order_count); ?></span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">总收入</h3>
+
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                    class="fa fa-minus"></i>
+                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    <i class="fa fa-wrench"></i></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i
+                                    class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <strong>一周总收入</strong>
+                                </p>
+
+                                <div class="chart">
+
+                                    <div class="chart" id="line-chart" style="height: 300px;"></div>
+                                </div>
+                                <!-- /.chart-responsive -->
+                            </div>
+
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- ./box-body -->
+                    <!-- /.box-footer -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+
+    </section>
+    <!-- /.content -->
+
+
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 1.0.0
+        </div>
+        <strong>Copyright &copy; 2016-2017 <a href="http://www.weibo.com/kaozuo">Rocks</a>.</strong> All rights
+        reserved.
+    </footer>
+
+
+</div>
+<!-- ./wrapper -->
+
+
+<script type="text/javascript" src="/Public/Admin/vendor/jQuery/jQuery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/fastclick/fastclick.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/adminlte/dist/js/app.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/adminlte/dist/js/demo.js"></script>
+<script type="text/javascript" src="/Public/Admin/js/common.js"></script>
+<script type="text/javascript" src="/Public/Admin/vendor/zeroclipboard/ZeroClipboard.min.js"></script>
+
+    <script type="text/javascript" src="/Public/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="/Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script type="text/javascript" src="/Public/vendor/chartjs/Chart.min.js"></script>
+    <script type="text/javascript" src="/Public/vendor/morris/morris.min.js"></script>
+    <script type="text/javascript" src="/Public/vendor/raphael/raphael-min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            graphLine = Morris.Line({
+                element: 'line-chart',
+                data: [
+                    <?php foreach($lines as $line) { echo "{date:'".$line['date']."',count:".$line['count']."},"; } ?>
+
+
+                ],
+                lineColors: ['#3c8dbc'],
+                xkey: 'date',
+                ykeys: ['count'],
+                labels: ['数量'],
+                pointSize: 3,
+                hideHover: 'auto',
+                resize: true
+            });
+
+
+        });
+    </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var CONTROLLER_NAME = "<?php echo CONTROLLER_NAME; ?>";
+        $("#controller" + CONTROLLER_NAME).parents(".treeview").addClass('active');
+        $("#controller" + CONTROLLER_NAME).addClass('active');
+        initCopy();
+    });
+
+    function initCopy() {
+        var client = new ZeroClipboard($(".copy-data"));
+        client.on("ready", function (readyEvent) {
+            // alert( "ZeroClipboard SWF is ready!" );
+            client.on("aftercopy", function (event) {
+                op_success("复制成功");
+            });
+
+        });
+
+    }
+</script>
+</body>
+</html>

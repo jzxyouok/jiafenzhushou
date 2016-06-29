@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@color/nav_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/setting_title_logo" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_code_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_background"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toLeftOf="@+id/activate_button"
+            android:background="@drawable/round_react_background">
+
+            <ImageView
+                android:id="@+id/activate_button_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/setting_activate_button" />
+
+            <EditText
+                android:id="@+id/activate_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/activate_button_icon"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="请输入激活码"
+                android:paddingLeft="6.0dip"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/activate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/import_button_selector"
+            android:text="激活"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/device_status_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_background"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6.0dip"
+                android:gravity="center"
+                android:text="已激活"
+                android:layout_marginBottom="20.0dip"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/device_number_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_background"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toLeftOf="@+id/copy_button">
+
+            <TextView
+                android:id="@+id/device_number_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="设备号:"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/device_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/device_number_icon"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:text="A000000554C6801"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/copy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="复制"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_selector"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <RelativeLayout
+            android:id="@+id/feed_back"
+            android:layout_width="match_parent"
+            android:layout_height="52.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/setting_tool_feedback" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="反馈意见"
+                    android:textSize="16.0sp"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/item_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_selector"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <RelativeLayout
+            android:id="@+id/update_button"
+            android:layout_width="match_parent"
+            android:layout_height="52.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/setting_tool_update" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="检查更新"
+                    android:textSize="16.0sp"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/item_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_selector"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <RelativeLayout
+            android:id="@+id/buy_button"
+            android:layout_width="match_parent"
+            android:layout_height="52.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/setting_tool_buy" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="购买软件"
+                    android:textSize="16.0sp"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/item_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_selector"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <RelativeLayout
+            android:id="@+id/qun_button"
+            android:layout_width="match_parent"
+            android:layout_height="52.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/setting_tool_qq" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="加入QQ群"
+                    android:textSize="16.0sp"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/item_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_list_item_selector"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip">
+
+        <RelativeLayout
+            android:id="@+id/weixin_button"
+            android:layout_width="match_parent"
+            android:layout_height="52.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/setting_tool_weixin" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:text="公众号:ikoudaikong"
+                    android:textSize="16.0sp"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/item_divider_color" />
+</LinearLayout>

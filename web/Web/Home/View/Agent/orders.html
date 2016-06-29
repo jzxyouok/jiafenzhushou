@@ -1,0 +1,81 @@
+<extend name="Public/base"/>
+<block name="css">
+    <link href="__PUBLIC__/Home/css/agent.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="body">
+
+    <div class="main">
+        <div class="main-content">
+            <div class="aside">
+                <ul class="agent-nav">
+                    <li class="menu-item">
+                        <a href="/agent">主控面板</a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/agent/orders">购买记录</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/agent/deposits">充值记录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <table class="datatable">
+                        <thead>
+                        <tr role="row">
+                            <th rowspan="1"
+                                colspan="1">
+                                唯一码
+                            </th>
+
+                            <th rowspan="1"
+                                colspan="1"
+                            >激活码
+                            </th>
+                            <th rowspan="1"
+                                colspan="1"
+                            >激活时间
+                            </th>
+
+
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <empty name="_list">
+                            <tr>
+                                <td colspan="3">没有记录</td>
+                            </tr>
+                            <else/>
+
+                            <volist name="_list" id="item">
+                                <tr>
+                                    <td rowspan="1"
+                                        colspan="1"
+                                    >{$item.code}
+                                    </td>
+                                    <td rowspan="1"
+                                        colspan="1"
+                                    >{$item.decode}
+                                    </td>
+                                    <td rowspan="1"
+                                        colspan="1"
+                                    >{:date('Y-m-d
+                                        H:i:s',$item['create_time'])}
+                                    </td>
+                                </tr>
+                            </volist>
+                        </empty>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div>     {$_page}</div>
+            </div>
+        </div>
+    </div>
+</block>
+

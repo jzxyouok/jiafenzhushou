@@ -1,0 +1,50 @@
+[ 2016-06-21T01:08:13+08:00 ] 127.0.0.1 /login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Web/Home/Controller/BaseController.class.php 第 107 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000806s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002564s ]
+NOTIC: [8] Undefined variable: seo /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Runtime/Cache/Home/d6c6ad10681f46ea09f8a92af0ae64ad.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jz_seo_rule` [ RunTime:0.0032s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Web/Common/Model/SeoRuleModel.class.php 第 67 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Web/Common/Model/SeoRuleModel.class.php 第 68 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Web/Common/Model/SeoRuleModel.class.php 第 69 行.
+SQL: SELECT * FROM `jz_seo_rule` WHERE ( (app='' or app='Home') and (controller='' or controller='User') and (action='' or action='login') and status=1 ) ORDER BY id asc  [ RunTime:0.0039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-06-21T01:08:16+08:00 ] 127.0.0.1 /login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Web/Home/Controller/BaseController.class.php 第 107 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: seo /Applications/XAMPP/xamppfiles/htdocs/jiafenzhushou/Runtime/Cache/Home/d6c6ad10681f46ea09f8a92af0ae64ad.php 第 5 行.
+SQL: SHOW COLUMNS FROM `jz_seo_rule` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+

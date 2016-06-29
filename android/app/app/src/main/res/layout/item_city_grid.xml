@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4.0dip">
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="match_parent"
+        android:layout_height="36.0dip"
+        android:background="@drawable/base_grid_item_selector"
+        android:gravity="center"
+        android:text="重庆"
+        android:textSize="16.0sp" />
+</RelativeLayout>

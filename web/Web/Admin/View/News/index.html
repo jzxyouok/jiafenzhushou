@@ -1,0 +1,179 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/Admin/vendor/datatables/dataTables.bootstrap.css"/>
+</block>
+
+<block name="body">
+    <section class="content-header">
+        <h1>
+            文章
+            <small><a href="{:U('Admin/News/index')}">文章管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/News/index')}">文章管理</a></li>
+            <li class="active">文章</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">文章列表</h3>
+
+                        <div class="box-tools">
+                            <form action="{:U()}" method="POST">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="title" class="form-control pull-right" placeholder="关键词">
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <i class=""></i>
+                        <a href="{:U('Admin/News/add')}">
+                            <i class="fa fa-plus-circle"></i> 添加文章
+                        </a>
+
+                    </div>
+                    <div class="box-body">
+                        <div class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="list" class="table table-bordered table-striped dataTable" role="grid"
+                                           aria-describedby="list_info">
+                                        <thead>
+                                        <tr role="row">
+                                            <th class="sorting_desc" tabindex="0" aria-controls="list" rowspan="1"
+                                                colspan="1"
+                                                aria-sort="descending">ID
+                                            </th>
+                                            <th tabindex="0" rowspan="1"
+                                                colspan="1"
+                                                style="width: 200px;">
+                                                标题
+                                            </th>
+
+
+                                            <th rowspan="1"
+                                                colspan="1"
+                                            >阅读数
+                                            </th>
+
+                                            <th rowspan="1"
+                                                colspan="1">状态
+                                            </th>
+
+
+                                            <th rowspan="1"
+                                                colspan="1"
+
+                                                style="width: 60px;">
+                                                操作
+                                            </th>
+                                            <th rowspan="1"
+                                                colspan="1">修改
+                                            </th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <volist name="_list" id="item" mod="2">
+                                            <tr role="row" class="  <eq name='mod' value='2'> odd<else/>even</eq>">
+                                                <td>{$item.news_id}</td>
+                                                <td>{$item.title}</td>
+                                                <td>{$item.views}</td>
+
+                                                <td><?php $status = array(
+                                                    '-1' => 'label-danger',
+                                                    '0' => 'label-warning',
+                                                    '1' => 'label-success',
+                                                    );
+                                                    $statusText = array(
+                                                    '-1' => '已删除',
+                                                    '0' => '未激活',
+                                                    '1' => '活跃中',
+                                                    );
+                                                    ?>
+                                                <span
+                                                        class="label label-sm  {$status[$item['status']]}">{$statusText[$item['status']]}</span>
+                                                </td>
+
+                                                <td>
+
+                                                    <eq name="item.status" value="1">
+                                                        <a href="{:U('Admin/News/changeStatus?method=forbid&news_id='.$item['news_id'])}"
+                                                           class="table-link text-yellow ajax-get">
+                                                        <span class="fa-stack">
+											            <i class="fa fa-square fa-stack-2x "></i>
+                                                            <i class="fa   fa-power-off fa-stack-1x fa-inverse "></i>
+									                    </span>
+                                                        </a>
+                                                        <else/>
+                                                        <a href="{:U('Admin/News/changeStatus?method=resume&news_id='.$item['news_id'])}"
+                                                           class="ajax-get text-green table-link">
+                                                        <span class="fa-stack">
+											            <i class="fa fa-square fa-stack-2x"></i>
+                                                            <i class="fa  fa-check-circle-o fa-stack-1x fa-inverse"></i>
+									                    </span>
+                                                        </a>
+                                                    </eq>
+
+                                                    <a href="{:U('Admin/News/changeStatus?method=delete&news_id='.$item['news_id'])}"
+                                                       class="table-link text-red confirm ajax-get">
+                                                    <span class="fa-stack">
+                                                        <i class="fa fa-square  fa-stack-2x"></i>
+											            <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									            </span>
+                                                    </a>
+                                                </td>
+                                                <td>  <a href="{:U('Admin/News/edit?&news_id='.$item['news_id'])}"
+                                                         class="table-link">
+                                                    <span class="fa-stack"> <i class="fa fa-square fa-stack-2x"></i>
+                                                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									                </span>
+                                                </a></td>
+
+                                                
+
+                                            </tr>
+                                        </volist>
+
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5">
+
+                                </div>
+                                <div class="col-sm-7">
+                                    {$_page}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+
+<block name="script">
+    <load href="__PUBLIC__/Admin/vendor/datatables/jquery.dataTables.min.js"/>
+    <load href="__PUBLIC__/Admin/vendor/datatables/dataTables.bootstrap.min.js"/>
+</block>
+
+
+
+
+
+
+

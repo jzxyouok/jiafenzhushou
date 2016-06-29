@@ -1,0 +1,212 @@
+<extend name="Public/base"/>
+<block name="css">
+    <link href="__PUBLIC__/Home/css/iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Home/css/agent.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Home/Vendor/sweet/sweetalert.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="body">
+
+    <div class="main">
+        <div class="main-content">
+            <div class="aside">
+                <ul class="agent-nav">
+                    <li class="menu-item active">
+                        <a href="/agent">主控面板</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/agent/orders">购买记录</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/agent/deposits">充值记录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="user-info">
+                    <div class="info-item">
+                        <div class="info-box">
+                            <span class="info-box-icon icon-group"><i class="iconfont info-font-icon ">
+                                &#xe65c;</i></span>
+                            <div class="info-box-content">
+                                <div class="info-box-title">你的代理等级</div>
+                                <div class="info-box-text">
+                                    <php>
+                                        $groups=array('注册用户','授权经销商','特权经销商');
+                                    </php>
+                                    {$groups[$user['user_group']]}
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-box">
+
+                            <span class="info-box-icon icon-money"><i class="iconfont info-font-icon ">
+                                &#xe65b;</i></span>
+
+                            <div class="info-box-content">
+                                <div class="info-box-title">当前单价</div>
+                                <div class="info-box-text">{$user.price}</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-box ">
+                            <span class="info-box-icon icon-mobiles"><i class="iconfont info-font-icon ">
+                                &#xe602;</i></span>
+                            <div class="info-box-content">
+                                <div class="info-box-title">剩余激活码数</div>
+                                <div class="info-box-text">{$user.codes}</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="info-item">
+                        <div class="info-box">
+                            <span class="info-box-icon icon-recharge"><i class="iconfont info-font-icon ">
+                                &#xe610;</i></span>
+                            <div class="info-box-recharge">
+                                <a href="agent/deposit">点击充值</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-content">
+
+                    <div class="left">
+                        <div class="form-title">获取激活码</div>
+                        <form action="/getcode" type="POST" class="post-form">
+                            <div class="form-text-area">
+                                <input type="text" name="code" id="code" placeholder="输入手机的设备号" class="form-text">
+                            </div>
+
+                            <div class="button-wrap">
+                                <div class="button-list">
+                                    <div class="error-message"></div>
+                                    <div>
+                                        <input type="button" class="button-item false submit-button"
+                                               onclick="getcode()" value="立即获取"/>
+                                    </div>
+
+                                    <div><a
+                                            target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2462295667&site=qq&menu=yes"
+                                            rel="在线咨询"
+                                            class="button-item false">在线咨询</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="right">
+                        <div class="vip-area">
+                            <div class="vip">
+                                <div class="vip-title">特约经销商<span class="price">400元</span></div>
+                                <div class="vip-content">
+                                    1：包含40个正版软件授权码可售<br/>
+                                    2：开通代理商授权系统账号一个<br/>
+                                    3：全程专业技术指导咨询服务<br/>
+                                    4：帮助代理商打造分销团队计划，实现业绩倍增<br/>
+                                    5：提供官方实时在线技术支持<br/>
+                                    6：代理商后期补货是10元一个授权码，10个起<br/>
+                                    7：及时分享各种在线项目合作<br/>
+                                </div>
+                            </div>
+
+                            <div class="vip">
+                                <div class="vip-title">授权分销商<span class="price">250元</span></div>
+                                <div class="vip-content">
+                                    1：包含17个正版软件授权码可售<br/>
+                                    2：开通授权分销商系统账号一个<br/>
+                                    3：全程专业技术指导咨询服务<br/>
+                                    4：提供官方实时在线技术支持<br/>
+                                    5：分销商后期补货是15元一个授权码,5个起
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="active-code-area" style="display: none">
+
+                            <div class="active-code-title">当前激活码</div>
+                            <div class="active-code"  ></div>
+
+                            <div>
+                                <input type="button" class="clip_button button-item false submit-button"
+                                       value="复制激活码">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="js">
+    <load href="__PUBLIC__/Home/js/jquery-2.2.4.min.js"/>
+    <load href="__PUBLIC__/Home/Vendor/zeroclipboard/ZeroClipboard.min.js"/>
+    <load href="__PUBLIC__/Home/Vendor/sweet/sweetalert.min.js"/>
+    <script type="text/javascript">
+        function getcode() {
+            var target, query, form;
+            var that = this;
+            form = $(".post-form");
+            $(".submit-button").html("获取中...");
+            query = form.find('input,select,textarea').serialize();
+            target = $(".post-form").attr('action');
+            $(".submit-button").addClass('disabled').attr('autocomplete', 'off').prop(
+                    'disabled', true);
+            $.post(target, query).success(
+                    function (data) {
+                        if (data.status == 1) {
+                            $(".vip-area").hide();
+                            $(".active-code-area").show()
+                            $(".active-code").html(data.info);
+                        } else {
+                            $(".vip-area").show();
+                            $(".active-code-area").hide()
+                            $(".error-message").show();
+                            $(".error-message").html(data.info);
+                        }
+                        $("#code").val('');
+                        $(".submit-button").html("获取激活码");
+                        $(".submit-button").removeClass('disabled').prop(
+                                'disabled', false);
+                    });
+
+            return false;
+        }
+
+        $(document).ready(function(){
+            var client = new ZeroClipboard( $('.clip_button') );
+
+            client.on( 'ready', function(event) {
+
+                client.on( 'copy', function(event) {
+                    event.clipboardData.setData('text/plain', $(".active-code").html());
+                } );
+
+                client.on( 'aftercopy', function(event) {
+                    swal("复制成功");
+                    console.log('Copied text to clipboard: ' + event.data['text/plain']);
+                } );
+            } );
+
+            client.on( 'error', function(event) {
+                ZeroClipboard.destroy();
+            } );
+
+        });
+
+    </script>
+
+</block>
+

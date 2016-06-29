@@ -1,0 +1,224 @@
+<extend name="Public/base"/>
+<block name="css">
+    <link href="__PUBLIC__/Home/css/iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Home/css/agent.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="body">
+
+    <div class="main">
+        <div class="main-content">
+            <div class="aside">
+                <ul class="agent-nav">
+                    <li class="menu-item active">
+                        <a href="/agent">主控面板</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/agent/orders">购买记录</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/agent/deposits">充值记录</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="user-info">
+                    <div class="info-item">
+                        <div class="info-box">
+                            <span class="info-box-icon icon-group"><i class="iconfont info-font-icon ">
+                                &#xe65c;</i></span>
+                            <div class="info-box-content">
+                                <div class="info-box-title">你的代理等级</div>
+                                <div class="info-box-text">
+                                    <php>
+                                        $groups=array('注册用户','授权经销商','特权经销商');
+                                    </php>
+                                    {$groups[$user['user_group']-1]}
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-box">
+
+                            <span class="info-box-icon icon-money"><i class="iconfont info-font-icon ">
+                                &#xe65b;</i></span>
+
+                            <div class="info-box-content">
+                                <div class="info-box-title">当前单价</div>
+                                <div class="info-box-text">{$user.price}</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-box ">
+                            <span class="info-box-icon icon-mobiles"><i class="iconfont info-font-icon ">
+                                &#xe602;</i></span>
+                            <div class="info-box-content">
+                                <div class="info-box-title">剩余激活码数</div>
+                                <div class="info-box-text">{$user.codes}</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="info-item">
+                        <div class="info-box">
+                            <span class="info-box-icon icon-recharge"><i class="iconfont info-font-icon ">
+                                &#xe610;</i></span>
+                            <div class="info-box-recharge">
+                                <a href="/deposit">点击充值</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-content">
+
+                    <div class="left">
+                        <form action="" type="post" id="deposit_form">
+                            <div class="deposit_area">
+                                <div class="deposit_num_title">充值个数</div>
+                                <div class="deposit_num">
+                                    <eq name="user['user_group']" value="0">
+
+                                        <ul>
+                                            <li>1</li>
+                                            <li>10</li>
+                                            <li>20</li>
+                                            <li>50</li>
+                                            <li>100</li>
+                                        </ul>
+                                    </eq>
+
+                                    <eq name="user['user_group']" value="1">
+                                        <ul>
+                                            <li>5</li>
+                                            <li>10</li>
+                                            <li>20</li>
+                                            <li>50</li>
+                                            <li>100</li>
+                                        </ul>
+                                    </eq>
+                                    <eq name="user['user_group']" value="3">
+                                        <ul>
+                                            <li>10</li>
+                                            <li>20</li>
+                                            <li>50</li>
+                                            <li>100</li>
+                                            <li>200</li>
+                                        </ul>
+                                    </eq>
+                                </div>
+                                <div class="other_num"><span>其他数量:</span>
+                                    <input type="number" name="number" id="number">
+                                <span>
+                                     <eq name="user['user_group']" value="0">
+                                         请输入大于1的个数
+                                     </eq>
+
+                                <eq name="user['user_group']" value="1">
+                                    请输入5的倍数
+                                </eq>
+                                <eq name="user['user_group']" value="3">
+                                    请输入10的倍数
+                                </eq>
+                                </span>
+                                </div>
+
+                                <div class="deposit_group_title">升级代理</div>
+                                <div class="deposit_group">
+                                    <eq name="user['user_group']" value="0">
+                                        <ul>
+                                            <li value="400">授权分销商</li>
+                                            <li value="250">特许经销商</li>
+                                        </ul>
+                                    </eq>
+                                    <eq name="user['user_group']" value="1">
+                                        <ul>
+                                            <li value="400">授权分销商</li>
+                                        </ul>
+                                    </eq>
+                                </div>
+
+                                <div class="deposit_money">总价格:0元</div>
+                                <div class="deposit_submit"><input type="submit" class="deposit_submit_button"
+                                                                   value="提交">
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                    <div class="right">
+                        <div class="vip-area">
+                            <div class="vip">
+                                <div class="vip-title">特约经销商<span class="price">400元</span></div>
+                                <div class="vip-content">
+                                    1：包含10个正版软件授权码可售<br/>
+                                    2：开通代理商授权系统账号一个<br/>
+                                    3：全程专业技术指导咨询服务<br/>
+                                    4：帮助代理商打造分销团队计划，实现业绩倍增<br/>
+                                    5：提供官方实时在线技术支持<br/>
+                                    6：代理商后期补货是15元一个授权码，10个起<br/>
+                                    7：及时分享各种在线项目合作<br/>
+                                </div>
+                            </div>
+
+                            <div class="vip">
+                                <div class="vip-title">授权分销商<span class="price">250元</span></div>
+                                <div class="vip-content">
+                                    1：包含5个正版软件授权码可售<br/>
+                                    2：开通授权分销商系统账号一个<br/>
+                                    3：全程专业技术指导咨询服务<br/>
+                                    4：提供官方实时在线技术支持<br/>
+                                    5：分销商后期补货是25元一个授权码,5个起<br/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="js">
+    <load href="__PUBLIC__/Home/js/jquery-2.2.4.min.js"/>
+    <script type="text/javascript">
+        price = {$user.price
+        }
+        ;
+        group = {$user.user_group
+        }
+        ;
+
+        $(".deposit_num li").click(function () {
+            $(".deposit_num li").removeClass("active");
+            $(".deposit_group li").removeClass("active");
+            num = $(this).html();
+            $("#number").val(num);
+            $(this).addClass("active");
+            total_money = price * num;
+            $("#deposit_form").attr("action", "/agent/deposit")
+            $(".deposit_money").html("总价格:" + total_money + "元");
+        });
+
+        $(".deposit_group li").click(function () {
+            $(".deposit_num li").removeClass("active");
+            $(".deposit_group li").removeClass("active");
+            $(this).addClass("active");
+            $("#number").val("");
+            $("#deposit_form").attr("action", "/agent/promote")
+            total_money = $(this).attr("value");
+            $(".deposit_money").html("总价格:" + total_money + "元");
+        });
+    </script>
+
+</block>
+

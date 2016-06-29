@@ -1,0 +1,9 @@
+[ 2016-06-14T11:24:48+08:00 ] 127.0.0.1 /agent/promote?number=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'hudouban'@'localhost' (using password: YES)
+

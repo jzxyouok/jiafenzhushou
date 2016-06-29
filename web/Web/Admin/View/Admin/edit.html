@@ -1,0 +1,88 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/vendor/parsley/parsley.css"/>
+</block>
+<block name="body">
+    <section class="content-header">
+        <h1>
+            管理员
+            <small><a href="{:U('Admin/Admin/index')}">管理员管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/Admin/index')}">管理员管理</a></li>
+            <li class="active">管理员</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-info">
+                    <form action="{:U('')}" class="form-horizontal" method="POST" enctype="multipart/form-data"
+                          novalidate="novalidate">
+                        <input type="hidden" name="admin_id" value="{$admin.admin_id}">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">添加管理员</h3>
+                            <div class="box-tools">
+                                <button type="submit" class="btn btn-sm  btn-primary pull-right">
+                                    <i class="fa fa-edit fa-lg"></i> 保存信息
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="box-body ">
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">名称:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="username" name="username" class="form-control"
+                                               placeholder="管理员名称" required="required" value="{$admin.username}"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">密码:</label>
+                                    <div class="col-sm-9" id="password_input">
+                                        <button type="button" id="edit_password" data-parsley-minlength="6" data-parsley-maxlength="16"
+                                                class="btn btn-sm  btn-primary pull-left">
+                                            <i class="fa fa-edit fa-lg"></i> 编辑密码
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+<block name="script">
+    <load href="__PUBLIC__/vendor/parsley/parsley.min.js"/>
+    <load href="__PUBLIC__/vendor/parsley/i18n/zh_cn.js"/>
+    <script type="text/javascript">
+        $(function () {
+            $("form").parsley({
+                successClass: "has-success",
+                errorClass: "has-error",
+                classHandler: function (el) {
+                    return el.$element.closest(".form-group");
+                },
+                errorsWrapper: "<span></span>",
+                errorTemplate: "<span></span>"
+            });
+        });
+        $("#edit_password").click(function () {
+            $("#password_input").html("<input type=password id=password name=password   class=form-control required=required data-parsley-trigger=blur change data-parsley-minlength=6 data-parsley-maxlength=16 data-parsley-id=14>");
+        });
+
+    </script>
+</block>
+

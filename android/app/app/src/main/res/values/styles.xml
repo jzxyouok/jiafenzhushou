@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="Theme.Custom.Theme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.Custom.Theme"></style>
+    <style name="CityTitle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff4e4e4e</item>
+        <item name="android:paddingLeft">10.0dip</item>
+    </style>
+    <style name="CityMore">
+
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff979797</item>
+        <item name="android:paddingRight">4.0dip</item>
+    </style>
+    <style name="nav_tab_item">
+
+        <item name="android:background">@drawable/nav_tab_item_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15.0dip</item>
+
+    </style>
+</resources>

@@ -1,0 +1,176 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/Admin/vendor/datatables/dataTables.bootstrap.css"/>
+</block>
+
+<block name="body">
+    <section class="content-header">
+        <h1>
+            订单
+            <small><a href="{:U('Admin/Order/index')}">订单管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/Order/index')}">订单管理</a></li>
+            <li class="active">订单</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">订单列表</h3>
+
+
+                    </div>
+                    <div class="box-body">
+                        <div class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="list" class="table table-bordered table-striped dataTable" role="grid"
+                                           aria-describedby="list_info">
+                                        <thead>
+                                        <tr role="row">
+                                            <th class="sorting_desc" tabindex="0" aria-controls="list" rowspan="1"
+                                                colspan="1"
+                                                aria-sort="descending">ID
+                                            </th>
+                                            <th tabindex="0" rowspan="1"
+                                                colspan="1">
+                                                手机码
+                                            </th>
+
+                                            <th rowspan="1"
+                                                colspan="1"
+                                            >激活码
+                                            </th>
+                                            <th rowspan="1"
+                                                colspan="1"
+                                            >金额
+                                            </th>
+
+                                            <th rowspan="1"
+                                                colspan="1"
+                                            >时间
+                                            </th>
+                                            <th rowspan="1"
+                                                colspan="1"
+
+                                            >支付状态
+                                            </th>
+                                            <th rowspan="1"
+                                                colspan="1"
+                                            >状态
+                                            </th>
+                                            <th rowspan="1"
+                                                colspan="1"
+
+                                                style="width: 101px;">
+                                                操作
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <volist name="_list" id="item" mod="2">
+                                            <tr role="row" class="  <eq name='mod' value='2'> odd<else/>even</eq>">
+                                                <td>{$item.order_id}</td>
+                                                <td>{$item.code}</td>
+                                                <td>{$item.decode}</td>
+                                                <td>{$item['money']}</td>
+                                                <td>{:date('Y-m-d
+                                                    H:i:s',$item['update_time'])}
+                                                </td>
+                                                <td><?php $paystatus = array(
+                                                    '-1' => 'label-danger',
+                                                    '0' => 'label-warning',
+                                                    '1' => 'label-success',
+                                                    );
+                                                    $paystatusText = array(
+                                                    '0' => '未付款',
+                                                    '1' => '已付款',
+                                                    );
+                                                    ?>
+                                                <span
+                                                        class="label label-sm  {$paystatus[$item['pay_status']]}">{$paystatusText[$item['pay_status']]}</span>
+                                                </td>
+
+                                                <td><?php $status = array(
+                                                    '-1' => 'label-danger',
+                                                    '0' => 'label-warning',
+                                                    '1' => 'label-success',
+                                                    );
+                                                    $statusText = array(
+                                                    '-1' => '已删除',
+                                                    '0' => '未激活',
+                                                    '1' => '活跃中',
+                                                    );
+                                                    ?>
+                                                <span
+                                                        class="label label-sm  {$status[$item['status']]}">{$statusText[$item['status']]}</span>
+                                                </td>
+                                                <td>
+
+                                                    <eq name="item.status" value="1">
+                                                        <a href="{:U('Admin/Order/changeStatus?method=forbid&order_id='.$item['order_id'])}"
+                                                           class="table-link text-yellow ajax-get">
+                                                        <span class="fa-stack">
+											            <i class="fa fa-square fa-stack-2x "></i>
+                                                            <i class="fa   fa-power-off fa-stack-1x fa-inverse "></i>
+									                    </span>
+                                                        </a>
+                                                        <else/>
+                                                        <a href="{:U('Admin/Order/changeStatus?method=resume&order_id='.$item['order_id'])}"
+                                                           class="ajax-get text-green table-link">
+                                                        <span class="fa-stack">
+											            <i class="fa fa-square fa-stack-2x"></i>
+                                                            <i class="fa  fa-check-circle-o fa-stack-1x fa-inverse"></i>
+									                    </span>
+                                                        </a>
+                                                    </eq>
+
+                                                    <a href="{:U('Admin/Order/changeStatus?method=delete&order_id='.$item['order_id'])}"
+                                                       class="table-link text-red confirm ajax-get">
+                                                    <span class="fa-stack">
+                                                        <i class="fa fa-square  fa-stack-2x"></i>
+											            <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									            </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </volist>
+
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5">
+
+                                </div>
+                                <div class="col-sm-7">
+                                    {$_page}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+
+<block name="script">
+    <load href="__PUBLIC__/Admin/vendor/datatables/jquery.dataTables.min.js"/>
+    <load href="__PUBLIC__/Admin/vendor/datatables/dataTables.bootstrap.min.js"/>
+</block>
+
+
+
+
+
+
+

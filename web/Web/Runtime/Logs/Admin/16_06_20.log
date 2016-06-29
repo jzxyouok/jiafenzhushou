@@ -1,0 +1,38 @@
+[ 2016-06-20T11:42:11+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+
+[ 2016-06-20T11:42:11+08:00 ] 127.0.0.1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2016-06-20T11:42:24+08:00 ] 127.0.0.1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `jz_admin` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `jz_admin` WHERE `username` = 'quntiao@qq.com' AND `password` = '1a62a9f6ea9ad6eabb9f7b36995e6b45' AND `status` = 1 LIMIT 1   [ RunTime:0.0034s ]
+

@@ -1,0 +1,174 @@
+[ 2016-06-12T00:03:24+08:00 ] 127.0.0.1 /contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+ERR: 无法加载模块:Contact
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/chartjs/Chart.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006533s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/raphael/raphael-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T11:24:51+08:00 ] 127.0.0.1 /Public/vendor/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T12:46:38+08:00 ] 127.0.0.1 /contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+ERR: 无法加载模块:Contact
+
+[ 2016-06-12T15:39:04+08:00 ] 127.0.0.1 /contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载模块:Contact
+
+[ 2016-06-12T15:50:54+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T15:50:58+08:00 ] 127.0.0.1 /recharge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Recharge
+
+[ 2016-06-12T15:51:08+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/chartjs/Chart.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T16:01:38+08:00 ] 127.0.0.1 /Public/vendor/raphael/raphael-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T17:49:13+08:00 ] 127.0.0.1 /Public/Admin/vendor/bootstrap/css/less/pagination.less
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T17:49:26+08:00 ] 127.0.0.1 /Public/Admin/vendor/bootstrap/css/dist/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T18:07:40+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002707s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T18:08:49+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T18:08:55+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T18:10:27+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T18:14:27+08:00 ] 127.0.0.1 /Public/vendor/zeroclipboard/ZeroClipboard.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Public
+

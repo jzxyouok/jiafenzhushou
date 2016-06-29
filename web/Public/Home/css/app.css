@@ -1,0 +1,110 @@
+.main {
+    padding: 50px 0;
+    background-color: #0099ff;
+    background: -webkit-linear-gradient(top, #0099ff, #008bec);
+    background: -moz-linear-gradient(top, #0099ff, #008bec);
+    background: -o-linear-gradient(top, #0099ff, #008bec);
+    background: linear-gradient(to bottom, #0099ff, #008bec);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#0099ff, endcolorstr=#008bec, gradientType=0);
+}
+.main .main-content {
+    *zoom: 1;
+    width: 845px;
+    margin: 0 auto;
+}
+.main .main-content:before,
+.main .main-content:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.main .main-content:after {
+    clear: both;
+}
+.main .main-content .left {
+    float: left;
+    width: 277px;
+    height: 568px;
+    margin-right: 226px;
+}
+.main .main-content .left img.mobile {
+    width: 274px;
+    height: 561px;
+}
+.main .main-content .right {
+    position: relative;
+    float: right;
+    width: 342px;
+    height: 568px;
+}
+.main .main-content .right .subtitle {
+    margin: 94px 0 40px 0;
+}
+.main .main-content .right .subtitle img.slogan {
+    width: 342px;
+    height: 55px;
+}
+.main .main-content .right .download-wrap {
+    *zoom: 1;
+}
+.main .main-content .right .download-wrap:before,
+.main .main-content .right .download-wrap:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.main .main-content .right .download-wrap:after {
+    clear: both;
+}
+.main .main-content .right .download-wrap .barcode {
+    float: left;
+    width: 132px;
+    height: 132px;
+}
+.main .main-content .right .download-wrap .barcode img {
+    width: 132px;
+    height: 132px;
+}
+.main .main-content .right .download-wrap .download-list {
+    float: right;
+    width: 175px;
+    height: 132px;
+}
+.main .main-content .right .download-wrap .download-list .download-item {
+    display: block;
+    height: 28px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 28px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 21px;
+}
+.main .main-content .right .download-wrap .download-list .download-item:hover,
+.main .main-content .right .download-wrap .download-list .download-item:active {
+    background-color: #0186e1;
+}
+.main .main-content .right .agent-wrap {
+    position: absolute;
+    bottom: 0;
+    margin: 16px 0 26px 0;
+}
+.main .main-content .right .agent-wrap img.ape {
+    width: 342px;
+    height: 135px;
+}
+.main .main-content .right .agent-wrap .agent-site-link {
+    position: relative;
+    display: inline-block;
+    top: -35px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}

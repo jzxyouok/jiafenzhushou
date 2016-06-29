@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@color/nav_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/title_logo" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120.0dip"
+        android:background="@color/nav_background"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4.0dip"
+                    android:text="号码库数量"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/store_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4.0dip"
+                    android:text="2000"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4.0dip"
+                    android:text="导入数量"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/import_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4.0dip"
+                    android:text="2000"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_background"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toLeftOf="@+id/import_button"
+            android:background="@drawable/round_react_background">
+
+            <ImageView
+                android:id="@+id/import_data_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/import_data_icon" />
+
+            <EditText
+                android:id="@+id/import_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/import_data_icon"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="输入导入数量 不超过1000"
+                android:numeric="integer"
+                android:paddingLeft="6.0dip"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/import_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/import_button_selector"
+            android:text="导入"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/clear_contact_button"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/home_clear_contact_selector">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/home_clear_contact_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8.0dip"
+                            android:text="清空通讯录"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/clear_history_button"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/home_clear_history_selector">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/home_clear_history_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8.0dip"
+                            android:text="清空历史记录"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/import_contact_button"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/home_update_contact_selector">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/home_add_contact_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8.0dip"
+                            android:text="导入通讯录"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/import_store_button"
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/home_add_store_selector">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32.0dip"
+                            android:layout_height="32.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/home_update_contact_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8.0dip"
+                            android:text="增加号码库"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

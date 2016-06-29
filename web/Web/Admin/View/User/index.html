@@ -1,0 +1,179 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/Admin/vendor/datatables/dataTables.bootstrap.css"/>
+</block>
+
+<block name="body">
+    <section class="content-header">
+        <h1>
+            用户
+            <small><a href="{:U('Admin/User/index')}">用户管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/User/index')}">用户管理</a></li>
+            <li class="active">用户</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">用户列表</h3>
+
+                        <div class="box-tools">
+                            <form action="/manage.php?m=Admin&c=User&a=index" method="POST">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input name="mobile" type="text" class="form-control pull-right" value="{:I('mobile')}" placeholder="关键词">
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!--<i class=""></i>-->
+                        <!--<a href="{:U('Admin/User/add')}">-->
+                            <!--<i class="fa fa-plus-circle"></i> 添加用户-->
+                        <!--</a>-->
+
+                    </div>
+                    <div class="box-body">
+                        <div class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="list" class="table table-bordered table-striped dataTable" role="grid"
+                                           aria-describedby="list_info">
+                                        <thead>
+                                        <tr role="row">
+                                            <th class="sorting_desc" tabindex="0" aria-controls="list" rowspan="1"
+                                                colspan="1"
+                                                style="width: 163px;" aria-sort="descending">ID
+                                            </th>
+                                            <th tabindex="0" rowspan="1"
+                                                colspan="1"
+                                                style="width: 203px;">
+                                                名称
+                                            </th>
+                                            <th tabindex="0" rowspan="1"
+                                                colspan="1" >
+                                                Email
+                                            </th>
+
+                                            <th tabindex="0" rowspan="1"
+                                                colspan="1"
+                                                style="width: 203px;">
+                                                分组
+                                            </th>
+
+
+                                            <th rowspan="1"
+                                                colspan="1"
+
+                                                style="width: 140px;">状态
+                                            </th>
+                                            <th rowspan="1"
+                                                colspan="1"
+
+                                                style="width: 101px;">
+                                                操作
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <php>
+                                            $group=array('普通用户','授权分销商','特约经销商')
+
+                                        </php>
+                                        <volist name="_list" id="item" mod="2">
+                                            <tr role="row" class="  <eq name='mod' value='2'> odd<else/>even</eq>">
+                                                <td>{$item.user_id}</td>
+                                                <td>{$item.nickname}</td>
+                                                <td>{$item.email}</td>
+                                                <td>{$group[$item['user_group']]}</td>
+                                                <td><?php $status = array(
+                                                    '-1' => 'label-danger',
+                                                    '0' => 'label-warning',
+                                                    '1' => 'label-success',
+                                                    );
+                                                    $statusText = array(
+                                                    '-1' => '已删除',
+                                                    '0' => '未激活',
+                                                    '1' => '活跃中',
+                                                    );
+                                                    ?>
+                                                <span
+                                                        class="label label-sm  {$status[$item['status']]}">{$statusText[$item['status']]}</span>
+                                                </td>
+                                                <td>
+
+                                                    <eq name="item.status" value="1">
+                                                        <a href="{:U('Admin/User/changeStatus?method=forbid&user_id='.$item['user_id'])}"
+                                                           class="table-link text-yellow ajax-get">
+                                                        <span class="fa-stack">
+											            <i class="fa fa-square fa-stack-2x "></i>
+                                                            <i class="fa   fa-power-off fa-stack-1x fa-inverse "></i>
+									                    </span>
+                                                        </a>
+                                                        <else/>
+                                                        <a href="{:U('Admin/User/changeStatus?method=resume&user_id='.$item['user_id'])}"
+                                                           class="ajax-get text-green table-link">
+                                                        <span class="fa-stack">
+											            <i class="fa fa-square fa-stack-2x"></i>
+                                                            <i class="fa  fa-check-circle-o fa-stack-1x fa-inverse"></i>
+									                    </span>
+                                                        </a>
+                                                    </eq>
+                                                    <a href="{:U('Admin/User/edit?&user_id='.$item['user_id'])}"
+                                                       class="table-link">
+                                                    <span class="fa-stack"> <i class="fa fa-square fa-stack-2x"></i>
+                                                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									                </span>
+                                                    </a>
+                                                    <a href="{:U('Admin/User/changeStatus?method=delete&user_id='.$item['user_id'])}"
+                                                       class="table-link text-red confirm ajax-get">
+                                                    <span class="fa-stack">
+                                                        <i class="fa fa-square  fa-stack-2x"></i>
+											            <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									            </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </volist>
+
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5">
+
+                                </div>
+                                <div class="col-sm-7">
+                                   <div>{$_page}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+
+<block name="script">
+    <load href="__PUBLIC__/Admin/vendor/datatables/jquery.dataTables.min.js"/>
+    <load href="__PUBLIC__/Admin/vendor/datatables/dataTables.bootstrap.min.js"/>
+</block>
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_item_home"
+    android:layout_width="match_parent"
+    android:layout_height="68.0dip"
+    android:background="@drawable/tab_item_background"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tab_setting_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="设置"
+            android:textColor="@color/nav_tab_item_color" />
+
+    </LinearLayout>
+</RelativeLayout>

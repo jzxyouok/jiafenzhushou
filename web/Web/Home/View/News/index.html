@@ -1,0 +1,109 @@
+<extend name="Public/base"/>
+<block name="css">
+    <link href="__PUBLIC__/Home/css/news.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="body">
+
+    <div class="main">
+        <div class="main-content">
+            <div class="left">
+                <div class="news-list">
+                    <ul class="news-ul">
+
+                        <volist name="_list" id="item">
+                            <li>
+                                <div class="inner_li">
+                                    <div class="img_box">
+                                        <a href="/news/{$item.news_id}">
+                                            <img src="{$item.thumb}">
+                                        </a>
+                                    </div>
+                                    <div class="intro">
+                                        <h3>
+                                            <a href="/news/{$item.news_id}">{$item.title}</a>
+                                        </h3>
+                                        <div class="abstract">{$item.description}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </volist>
+                    </ul>
+
+                </div>
+
+                <div class="loading_more">获得更多</div>
+            </div>
+            <div class="right">
+                <div class="down_load_right">
+                    <div class="inner_box">
+                        <a class="ios"
+                           href="http://fir.im/lbpf"
+                           target="_blank">iOS版下载</a>
+                        <a class="android" href="#" target="_blank"
+                           d>Android下载</a>
+                    </div>
+
+                </div>
+                <div class="qrcode">
+
+                    <img src="/Public/Home/images/qrcode.png">
+                </div>
+                <div class="contact_title">
+                    在线咨询
+                </div>
+                <div class="contact_qq">
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2462295667&site=qq&menu=yes">QQ在线咨询</a>
+                </div>
+                <div class="qqgroup_title">
+                    QQ群
+                </div>
+                <div class="contact_qqgroup">
+
+                    <a target="_blank"
+                       href="http://shang.qq.com/wpa/qunwpa?idkey=389a2c225a3ee37afe868d1dcd73137fd19e2d1251561f941757cd9bb1f62667">1群</a>
+                    <a target="_blank"
+                       href="http://shang.qq.com/wpa/qunwpa?idkey=bd33231eabaada873c6105e0a3a88fb66712f577b65b558438b3c47ff298c2c5">2群</a>
+                    <a target="_blank"
+                       href="http://shang.qq.com/wpa/qunwpa?idkey=ba0b0eb4a955e985865d2e72cd42bd2fe6fa6afdb076f6baf57b253eba05d262">3群</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="js">
+    <load href="__PUBLIC__/Home/js/jquery-2.2.4.min.js"/>
+    <script type="text/javascript">
+        page = 0;
+        $(".loading_more").click(function () {
+            page = page + 1;
+            $(".loading_more").html("加载中...")
+            $.get('index.php?m=Home&c=News&a=loadmore', {page: page}).success(
+                    function (items) {
+                        $.each(items, function (i, val) {
+                            var item = '<li>' +
+                                    ' <div class="inner_li">' +
+                                    ' <div class="img_box">' +
+                                    ' <a href="/news/' + val.news_id + '">' +
+                                    ' <img src="' + val.thumb + '">' +
+                                    ' </a>' +
+                                    '</div>' +
+                                    '<div class="intro">' +
+                                    ' <h3>' +
+                                    '  <a href="/news/' + val.news_id + '">' + val.title + '</a>' +
+                                    ' </h3>' +
+                                    ' <div class="abstract">' + val.description + '</div>' +
+                                    ' </div>' +
+                                    '</div>' +
+                                    '</li>';
+
+                            $(".news-ul").append(item);
+                        });
+                        $(".loading_more").html("获取更多")
+                    });
+
+        });
+
+    </script>
+
+</block>

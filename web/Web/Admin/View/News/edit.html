@@ -1,0 +1,175 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/Admin/vendor/parsley/parsley.css"/>
+    <load href="__PUBLIC__/Admin/uploader/webuploader.css"/>
+    <load href="__PUBLIC__/Admin/uploader/upload.css"/>
+</block>
+<block name="body">
+    <section class="content-header">
+        <h1>
+            文章
+            <small><a href="{:U('Admin/News/index')}">文章管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/News/index')}">文章管理</a></li>
+            <li class="active">文章</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-info">
+                    <form action="{:U('')}" class="form-horizontal" method="POST" enctype="multipart/form-data"
+                          novalidate="novalidate">
+                        <input type="hidden" name="news_id" value="{$news.news_id}">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">添加文章</h3>
+                            <div class="box-tools">
+                                <button type="submit" class="btn btn-sm  btn-primary pull-right">
+                                    <i class="fa fa-edit fa-lg"></i> 保存信息
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="box-body ">
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">名称:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="cat_name" name="title" class="form-control"
+                                               placeholder="文章标题" required="required" value="{$news.title}"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">文章简介:</label>
+                                    <div class="col-sm-9">
+                                        <textarea id="description" name="description" maxlength="120"
+                                                  class="form-control"
+                                                  required="required" rows="8"
+                                                  data-parsley-trigger="blur change">{$news.description}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">商品封面图:</label>
+                                    <div class="col-sm-9">
+                                        <div class="add-pic">
+                                            <div id="thumb" class="add-pic-imgbox">
+                                                <notempty name='news.thumb'>
+                                                    <div class='add-pic-after add-file-after'><img
+                                                            style='width:100%;height:100%' src='/{$news["thumb"]}'>
+                                                        <div class='operation'>
+                                                            <div class='bg'></div>
+                                                            <ul class='fun'>
+                                                                <li><a title='查看原图' class='magnifier' target='_blank'
+                                                                       href='/{$news.thumb}'><b>查看原图</b></a>
+                                                                </li>
+                                                                <li><a title='替换'
+                                                                       class='change cursor-pt webuploader-container'>
+                                                                    <div class='webuploader-pick'><b>替换</b></div>
+                                                                    <div
+                                                                            style='position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; bottom: auto; right: auto;'>
+                                                                        <input type='file' name='file'
+                                                                               class='webuploader-element-invisible'
+                                                                               accept='image/*'><label
+                                                                            style='opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);'></label>
+                                                                    </div>
+                                                                </a></li>
+                                                                <li><a title='删除' class='delete cursor-pt'
+                                                                       id='deleteThumb'><b>删除</b></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <input type='hidden' value='{$news.thumb}'
+                                                               name='thumb'></div>
+                                                    <a id="thumb-pre" class="add-pic-pre cursor-pt"
+                                                       style="display:none">
+                                                    </a>
+                                                    <else/>
+                                                    <a id="thumb-pre" class="add-pic-pre cursor-pt">
+                                                    </a>
+                                                </notempty>
+
+                                                <div class="add-pic-ing" style="display:none">
+                                                <span class="process">
+                                                  <b class="process-in uploading">
+                                                  </b>
+                                                </span>
+                                                <span class="txt-status">
+                                                  上传中
+                                                </span>
+                                                </div>
+                                            </div>
+                                            <div class="add-pic-rule">
+                                                <ul class="add-pic-rule-list">
+                                                    <li>
+                                                        260*160，大小200K以内，JPG、PNG格式，建议使用直角图标
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="box-header with-border">
+                                <h3 class="box-title">文章内容</h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="form-group col-xs-12">
+                                        <div class="col-sm-12">
+                                            <script id="content" name="content" type="text/plain"
+                                                    style="width:100%;min-height:300px">{:htmlspecialchars_decode($news['content'])}
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+<block name="script">
+    <load href="__PUBLIC__/Admin/vendor/parsley/parsley.min.js"/>
+    <load href="__PUBLIC__/Admin/vendor/parsley/i18n/zh_cn.js"/>
+    <load href="__PUBLIC__/Admin/vendor/webuploader/webuploader.withoutimage.min.js"/>
+    <load href="__PUBLIC__/Admin/uploader/upload.js"/>
+    <load href="__PUBLIC__/Admin/vendor/ueditor/ueditor.config.js"/>
+    <load href="__PUBLIC__/Admin/vendor/ueditor/ueditor.all.js"/>
+    <load href="__PUBLIC__/Admin/vendor/ueditor/lang/zh-cn/zh-cn.js"/>
+    <load href="__PUBLIC__/Admin/js/news.js"/>
+    <script type="text/javascript">
+        $(function () {
+            $("form").parsley({
+                successClass: "has-success",
+                errorClass: "has-error",
+                classHandler: function (el) {
+                    return el.$element.closest(".form-group");
+                },
+                errorsWrapper: "<span></span>",
+                errorTemplate: "<span></span>"
+            });
+        });
+
+    </script>
+</block>
+

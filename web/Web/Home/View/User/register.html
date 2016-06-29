@@ -1,0 +1,103 @@
+<extend name="Public/base"/>
+<block name="css">
+    <link href="__PUBLIC__/Home/css/login.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="body">
+
+    <div class="main">
+        <div class="main-content">
+            <div class="left">
+
+                <div class="vip">
+                    <div class="vip-title">特约经销商<span class="price">400元</span></div>
+                    <div class="vip-content">
+                        1：包含40个正版软件授权码可售<br/>
+                        2：开通代理商授权系统账号一个<br/>
+                        3：全程专业技术指导咨询服务<br/>
+                        4：帮助代理商打造分销团队计划，实现业绩倍增<br/>
+                        5：提供官方实时在线技术支持<br/>
+                        6：代理商后期补货是10元一个授权码，10个起<br/>
+                        7：及时分享各种在线项目合作<br/>
+                    </div>
+                </div>
+
+                <div class="vip">
+                    <div class="vip-title">授权分销商<span class="price">250元</span></div>
+                    <div class="vip-content">
+                        1：包含17个正版软件授权码可售<br/>
+                        2：开通授权分销商系统账号一个<br/>
+                        3：全程专业技术指导咨询服务<br/>
+                        4：提供官方实时在线技术支持<br/>
+                        5：分销商后期补货是15元一个授权码,5个起
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="form-title">代理系统注册</div>
+                <form action="/register" type="POST" class="post-form">
+                    <div class="form-text-area">
+                        <input type="text" name="nickname" placeholder="用户名" class="form-text">
+                        <input type="text" name="email" placeholder="请输入email" class="form-text">
+                        <input type="password" name="password" placeholder="请输入密码" class="form-text">
+                    </div>
+
+                    <div class="button-wrap">
+                        <div class="button-list">
+                            <div class="error-message"></div>
+                            <div>
+                                <input type="button" class="button-item false submit-button" onclick="register()"
+                                       value="立即注册"/>
+                            </div>
+                            <div>
+                                <a href="/login"
+                                   rel="立即登录"
+                                   class="button-item false">立即登录</a>
+                            </div>
+                            <div><a
+                                    target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2462295667&site=qq&menu=yes"
+                                    rel="在线咨询"
+                                    class="button-item false">在线咨询</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="js">
+    <load href="__PUBLIC__/Home/js/jquery-2.2.4.min.js"/>
+    <script type="text/javascript">
+        function register() {
+            var target, query, form;
+            var that = this;
+            form = $(".post-form");
+            $(".submit-button").html("注册中...");
+            query = form.find('input,select,textarea').serialize();
+            target = $(".post-form").attr('action');
+            $(".submit-button").addClass('disabled').attr('autocomplete', 'off').prop(
+                    'disabled', true);
+            $.post(target, query).success(
+                    function (data) {
+                        if (data.status == 1) {
+                            if (data.url) {
+                                location.href = data.url;
+                            }
+                        } else {
+                            $(".submit-button").html("注册");
+                            $(that).removeClass('disabled').prop(
+                                    'disabled', false);
+                            $(".error-message").show();
+                            $(".error-message").html(data.info);
+                        }
+                    });
+
+            return false;
+        }
+
+    </script>
+
+</block>

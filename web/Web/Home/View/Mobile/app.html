@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=screen-width,user-scalable=no,initial-scale=1, maximum-scale=1">
+    <title>加粉助手App下载</title>
+    <meta name="keywords" content="加粉助手,微信加粉" />
+    <meta name="description" content="加粉助手APP下载，微信加粉首选。" />
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            /* overflow: hidden;*/
+            height: 100%;
+            background-color: #298cf1;
+        }
+
+        .download-btn {
+            width: 2.3rem;
+            height: 0.42rem;
+            display: block;
+            position: absolute;
+            top: 60%;
+            left: 15%;
+        }
+
+        .header {
+            height: 30%;
+            width: 100%;
+            background-color: #288cf0;
+            position: relative;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-color: #298cf1;
+        }
+
+        img {
+            height:100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <img src="/Public/Home/images/mobilebg.jpg">
+    <div class='download-btn'
+         data-android-native-url = "{:C('ANDROID_URL')}"
+         data-ios-native-url ="{:C('IOS_URL')}"
+         data-ios-install-url ="{:C('IOS_URL')}"
+         data-android-install-url="{:C('ANDROID_URL')}" >
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                };
+
+        // Abort if browser does not support addEventListener
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+
+
+<script>
+    //@see https://github.com/kissygalleryteam/redirectToNative/blob/master/1.2/index.js
+    function RedirectToNative(options){
+        var self = this;
+        self.el = options.el;
+        self.openTime = options.openTime || 800
+        self.init()
+    }
+    RedirectToNative._UA = function(){
+        var ua = navigator.userAgent;
+
+        if(ua.match(/micromessenger/i)){
+            return 'wx'
+        }
+
+        // ios
+        if (!!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+            return 'ios';
+        } else if (!!ua.match(/Android/i)) {
+            return 'android';
+        } else {
+            return '';
+        }
+    }
+    RedirectToNative.UA = RedirectToNative._UA();
+    RedirectToNative.prototype = {
+        init:function(){
+            var self = this;
+            self.platform = self._UA();
+            if(!self.platform){return;}
+
+            var el = self.el;
+
+            this._check([
+                'data-ios-install-url','data-ios-native-url',
+                'data-android-install-url','data-android-native-url'
+            ])
+
+            if(self.platform=='wx') return
+
+            if(self.platform === 'ios'){
+                self.installUrl = el.getAttribute('data-ios-install-url')
+                self.nativeUrl = el.getAttribute('data-ios-native-url')
+            }else {
+                self.installUrl = el.getAttribute('data-android-install-url')
+                self.nativeUrl = el.getAttribute('data-android-native-url')
+                //self.package = el.getAttribute('data-package')
+            }
+            el.addEventListener('click',function(){
+                self._gotoNative()
+            })
+        },
+        _check:function(attrList){
+            var self = this;
+            var el = self.el;
+            for(var i =0;i<attrList.length;i++){
+                var attr = attrList[i]
+                if(!el.getAttribute(attr)){
+                    console.warn(attr+' is not set')
+                }
+            }
+        },
+
+        _UA:RedirectToNative._UA,
+        _gotoDownload: function(startTime) {
+            var self = this;
+            var endTime = Date.now();
+            if (endTime - startTime < self.openTime + 500) {
+                window.location = self.installUrl;
+            }
+        },
+        _gotoNative:function(){
+            var self = this;
+            var startTime = Date.now(),
+                    doc = document,
+                    body = doc.body,
+                    iframe = doc.createElement('iframe');
+            iframe.id = 'J_redirectNativeFrame';
+            iframe.style.display = 'none';
+            iframe.src = self.nativeUrl;
+
+            //运行在head中
+            if(!body) {
+                setTimeout(function(){
+                    doc.body.appendChild(iframe);
+                }, 0);
+            } else {
+                body.appendChild(iframe);
+            }
+
+            setTimeout(function() {
+                doc.body.removeChild(iframe);
+                self._gotoDownload(startTime);
+                /**
+                 * 测试时间设置小于800ms时，在android下的UC浏览器会打开native app时并下载apk，
+                 * 测试android+UC下打开native的时间最好大于800ms;
+                 */
+            }, self.openTime);
+        }
+    }
+</script>
+<script>
+    function getQueryObject(url) {
+        url = url == null ? window.location.href : url;
+        var search = url.substring(url.lastIndexOf("?") + 1);
+        var obj = {};
+        var reg = /([^?&=]+)=([^?&=]*)/g;
+        search.replace(reg, function (rs, $1, $2) {
+            var name = decodeURIComponent($1);
+            var val = decodeURIComponent($2);
+            val = String(val);
+            obj[name] = val;
+            return rs;
+        });
+        return obj;
+    }
+    var targetUrl=getQueryObject(location.href);
+
+    if(targetUrl['url']){
+        $('.download-btn').attr('data-android-native-url',targetUrl['url']);
+        $('.download-btn').attr('data-ios-native-url',targetUrl['url']);
+    }
+
+    var ua = navigator.userAgent.toLowerCase();
+    if (/micromessenger/.test(ua)) {
+        location.href = "{:C('ANDROID_URL')}"
+    } else {
+        var el = $('.download-btn')
+
+        !function gotoNativeInit(){
+            if(el.length>0){
+                var r2n = new RedirectToNative({
+                    el:el[0]
+                })
+            }
+        }()
+    }
+
+
+</script>
+</body>
+<div style="display: none">
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?89e2c02dd1320bb22b3d57e97dbb66d1";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</div>
+</html>

@@ -1,0 +1,330 @@
+[ 2016-06-11T01:49:45+08:00 ] 127.0.0.1 /news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+ERR: 无法加载模块:News
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/raphael/raphael-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:20:21+08:00 ] 127.0.0.1 /Public/vendor/chartjs/Chart.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:21:49+08:00 ] 127.0.0.1 /Public/vendor/datatables/dataTables.bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:21:49+08:00 ] 127.0.0.1 /Public/vendor/datatables/dataTables.bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:21:49+08:00 ] 127.0.0.1 /Public/vendor/datatables/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:21:50+08:00 ] 127.0.0.1 /Public/vendor/parsley/parsley.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:21:50+08:00 ] 127.0.0.1 /Public/vendor/parsley/parsley.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:21:50+08:00 ] 127.0.0.1 /Public/vendor/parsley/i18n/zh_cn.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:22:45+08:00 ] 127.0.0.1 /manage.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Manage
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/chartjs/Chart.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:08+08:00 ] 127.0.0.1 /Public/vendor/raphael/raphael-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/chartjs/Chart.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001415s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:09+08:00 ] 127.0.0.1 /Public/vendor/raphael/raphael-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:13+08:00 ] 127.0.0.1 /Public/vendor/datatables/dataTables.bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:13+08:00 ] 127.0.0.1 /Public/vendor/datatables/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:13+08:00 ] 127.0.0.1 /Public/vendor/datatables/dataTables.bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:15+08:00 ] 127.0.0.1 /Public/vendor/parsley/parsley.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:15+08:00 ] 127.0.0.1 /Public/vendor/parsley/parsley.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:27:15+08:00 ] 127.0.0.1 /Public/vendor/parsley/i18n/zh_cn.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:34:34+08:00 ] 127.0.0.1 /Public/vendor/datatables/dataTables.bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:34:34+08:00 ] 127.0.0.1 /Public/vendor/datatables/dataTables.bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:34:34+08:00 ] 127.0.0.1 /Public/vendor/datatables/jquery.dataTables.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:34:38+08:00 ] 127.0.0.1 /Public/vendor/parsley/parsley.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:34:38+08:00 ] 127.0.0.1 /Public/vendor/parsley/parsley.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:34:38+08:00 ] 127.0.0.1 /Public/vendor/parsley/i18n/zh_cn.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:18+08:00 ] 127.0.0.1 /admn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+ERR: 无法加载模块:Admn
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/morris/morris.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/chartjs/Chart.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/raphael/raphael-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/jvectormap/jquery-jvectormap-1.2.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T16:41:52+08:00 ] 127.0.0.1 /Public/vendor/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-11T22:22:06+08:00 ] 127.0.0.1 /index.php?m=Web&c=News&a=loadmore&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+ERR: 无法加载模块:Web
+
+[ 2016-06-11T22:22:12+08:00 ] 127.0.0.1 /index.php?m=Web&c=News&a=loadmore&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+ERR: 无法加载模块:Web
+

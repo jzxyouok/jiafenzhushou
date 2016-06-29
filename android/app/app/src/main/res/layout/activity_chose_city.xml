@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/nav_background">
+
+        <RelativeLayout
+            android:id="@+id/back_button"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/navi_btn_back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="选择城市"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/ok_button"
+            android:layout_width="80.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="42.0dip"
+        android:background="@color/nav_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/province_button"
+            style="@style/nav_tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="42.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="省会" />
+
+        <TextView
+            android:id="@+id/city_button"
+            style="@style/nav_tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="42.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="城市" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="10.0dip"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="10.0dip" />
+
+        <include
+            android:id="@+id/loadingBar"
+            layout="@layout/sub_layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

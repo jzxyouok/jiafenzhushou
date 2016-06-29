@@ -1,0 +1,11 @@
+<php>
+    $oneplus_seo_meta = get_seo_meta($vars,$seo);
+</php>
+<if condition="$oneplus_seo_meta['title']">
+    <title>{$oneplus_seo_meta['title']}</title>
+    <else/>
+    <title>加粉助手</title>
+</if>
+<if condition="$oneplus_seo_meta['description']">
+    <meta name="description" content="{$oneplus_seo_meta['description']}"/>
+</if>

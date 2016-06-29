@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@color/nav_background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/store_title_logo" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_background"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toLeftOf="@+id/chose_city_button"
+            android:background="@drawable/round_react_background">
+
+            <ImageView
+                android:id="@+id/chose_city_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/chose_city_icon" />
+
+            <TextView
+                android:id="@+id/city_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/chose_city_icon"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="请选择号码的目标城市"
+                android:paddingLeft="6.0dip"
+                android:singleLine="true"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/chose_city_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/import_button_selector"
+            android:text="选择"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_background"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_toLeftOf="@+id/gen_button"
+            android:background="@drawable/round_react_background">
+
+            <ImageView
+                android:id="@+id/gen_data_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/store_gen_icon" />
+
+            <EditText
+                android:id="@+id/gen_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/gen_data_icon"
+                android:background="@drawable/transparent"
+                android:gravity="center_vertical"
+                android:hint="生成数量一次不超过10000"
+                android:numeric="integer"
+                android:paddingLeft="6.0dip"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/gen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/import_button_selector"
+            android:text="生成"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12.0dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56.0dip">
+
+            <View
+                android:layout_width="2.0dip"
+                android:layout_height="16.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6.0dip"
+                android:background="@color/conent_title_left_bg" />
+
+            <TextView
+
+                style="@style/CityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="热门城市" />
+
+            <TextView
+                android:id="@+id/more_album_video_btn"
+                style="@style/CityMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="不在热门?进来看看" />
+            />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="14.0dip"
+            android:background="#ffcfcfcf" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/hot_city_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="10.0dip"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="10.0dip" />
+            <include
+                android:id="@+id/loadingBar"
+                layout="@layout/sub_layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

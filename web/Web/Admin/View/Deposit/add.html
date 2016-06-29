@@ -1,0 +1,82 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/vendor/parsley/parsley.css"/>
+</block>
+<block name="body">
+    <section class="content-header">
+        <h1>
+            充值
+            <small><a href="{:U('Admin/Deposit/index')}">充值管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/Deposit/index')}">充值管理</a></li>
+            <li class="active">管理员</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-info">
+                    <form action="{:U('')}" class="form-horizontal" method="POST" enctype="multipart/form-data"
+                          novalidate="novalidate">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">添加充值</h3>
+                            <div class="box-tools">
+                                <button type="submit" class="btn btn-sm  btn-primary pull-right">
+                                    <i class="fa fa-edit fa-lg"></i> 保存信息
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="box-body ">
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">EMAIL:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="email" name="email" class="form-control"
+                                               placeholder="email" required="required"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">充值金额:</label>
+                                    <div class="col-sm-9">
+                                        <input type="number" id="money" name="money" class="form-control"
+                                               placeholder="密码" required="required" data-parsley-type="password"
+                                               data-parsley-trigger="blur change"/></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+<block name="script">
+    <load href="__PUBLIC__/vendor/parsley/parsley.min.js"/>
+    <load href="__PUBLIC__/vendor/parsley/i18n/zh_cn.js"/>
+    <script type="text/javascript">
+        $(function () {
+            $("form").parsley({
+                successClass: "has-success",
+                errorClass: "has-error",
+                classHandler: function (el) {
+                    return el.$element.closest(".form-group");
+                },
+                errorsWrapper: "<span></span>",
+                errorTemplate: "<span></span>"
+            });
+        });
+
+    </script>
+</block>
+

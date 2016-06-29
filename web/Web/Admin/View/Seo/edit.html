@@ -1,0 +1,126 @@
+<extend name="Public/base"/>
+<block name="style">
+    <load href="__PUBLIC__/Admin/vendor/parsley/parsley.css"/>
+</block>
+<block name="body">
+    <section class="content-header">
+        <h1>
+            SEO
+            <small><a href="{:U('Admin/Seo/index')}">SeoRule管理</a></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="/"><i class="fa fa-dashboard"></i>首页</a></li>
+            <li><a href="{:U('Admin/Seo/index')}">SeoRule管理</a></li>
+            <li class="active">SeoRule</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-info">
+                    <form action="{:U('')}" class="form-horizontal" method="POST" enctype="multipart/form-data"
+                          novalidate="novalidate">
+                        <input type="hidden" name="id" value="{$seo.id}">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">添加SeoRule</h3>
+                            <div class="box-tools">
+                                <button type="submit" class="btn btn-sm  btn-primary pull-right">
+                                    <i class="fa fa-edit fa-lg"></i> 保存信息
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="box-body ">
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">名称:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="title" name="title" class="form-control" value="{$seo.title}"
+                                               placeholder="名称" required="required"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">APP:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="app" name="app" class="form-control" value="{$seo.app}"
+                                               placeholder="APP" required="required"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">Controller:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="controller" name="controller" class="form-control"
+                                               placeholder="Controller" required="required" value="{$seo.controller}"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">Action:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="action" name="action" class="form-control"
+                                               placeholder="Action" required="required" value="{$seo.action}"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">SEO_TITLE:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="seo_title" name="seo_title" class="form-control"
+                                               placeholder="Controller" required="required" value="{$seo.seo_title}"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label class="col-sm-3 control-label">SEO_DES:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="seo_description" name="seo_description"
+                                               class="form-control"
+                                               placeholder="Action" required="required" value="{$seo.seo_description}"
+                                               data-parsley-trigger="blur change"/>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</block>
+<block name="script">
+    <load href="__PUBLIC__/Admin/vendor/parsley/parsley.min.js"/>
+    <load href="__PUBLIC__/Admin/vendor/parsley/i18n/zh_cn.js"/>
+    <script type="text/javascript">
+        $(function () {
+            $("form").parsley({
+                successClass: "has-success",
+                errorClass: "has-error",
+                classHandler: function (el) {
+                    return el.$element.closest(".form-group");
+                },
+                errorsWrapper: "<span></span>",
+                errorTemplate: "<span></span>"
+            });
+        });
+
+    </script>
+</block>
+
