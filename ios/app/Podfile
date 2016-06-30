@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+pod 'TTTAttributedLabel'
+pod 'TPKeyboardAvoiding'
+pod 'BlocksKit'
+pod 'ReactiveCocoa'
+pod 'Masonry'
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'NYXImagesKit', '2.3'
+pod 'PPiAwesomeButton'
+pod 'Toast', '~> 3.0'
+pod 'FLEX', '~> 2.0', :configurations => ['Debug']

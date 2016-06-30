@@ -1,0 +1,2237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC2C8FD01D1576B300BB84B1 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2C8FCF1D1576B300BB84B1 /* ContactsUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC6831451CBCEE6400162502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6831441CBCEE6400162502 /* AppDelegate.m */; };
+		FC6831501CBCEE6400162502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC68314F1CBCEE6400162502 /* Assets.xcassets */; };
+		FC86ECE31CF6E91F00BD42C0 /* RRFPSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86ECE21CF6E91F00BD42C0 /* RRFPSBar.m */; };
+		FC86ECEA1CF6E95900BD42C0 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86ECE51CF6E95900BD42C0 /* RDVTabBar.m */; };
+		FC86ECEB1CF6E95900BD42C0 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86ECE71CF6E95900BD42C0 /* RDVTabBarController.m */; };
+		FC86ECEC1CF6E95900BD42C0 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86ECE91CF6E95900BD42C0 /* RDVTabBarItem.m */; };
+		FC86EE531CF6E97400BD42C0 /* 七台河.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECEF1CF6E97300BD42C0 /* 七台河.txt */; };
+		FC86EE541CF6E97400BD42C0 /* 三亚.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF01CF6E97300BD42C0 /* 三亚.txt */; };
+		FC86EE551CF6E97400BD42C0 /* 三明.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF11CF6E97300BD42C0 /* 三明.txt */; };
+		FC86EE561CF6E97400BD42C0 /* 三门峡.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF21CF6E97300BD42C0 /* 三门峡.txt */; };
+		FC86EE571CF6E97400BD42C0 /* 上海.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF31CF6E97300BD42C0 /* 上海.txt */; };
+		FC86EE581CF6E97400BD42C0 /* 上饶.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF41CF6E97300BD42C0 /* 上饶.txt */; };
+		FC86EE591CF6E97400BD42C0 /* 东莞.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF51CF6E97300BD42C0 /* 东莞.txt */; };
+		FC86EE5A1CF6E97400BD42C0 /* 东营.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF61CF6E97300BD42C0 /* 东营.txt */; };
+		FC86EE5B1CF6E97400BD42C0 /* 中卫.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF71CF6E97300BD42C0 /* 中卫.txt */; };
+		FC86EE5C1CF6E97400BD42C0 /* 中山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF81CF6E97300BD42C0 /* 中山.txt */; };
+		FC86EE5D1CF6E97400BD42C0 /* 临夏.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECF91CF6E97300BD42C0 /* 临夏.txt */; };
+		FC86EE5E1CF6E97400BD42C0 /* 临汾.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECFA1CF6E97300BD42C0 /* 临汾.txt */; };
+		FC86EE5F1CF6E97400BD42C0 /* 临沂.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECFB1CF6E97300BD42C0 /* 临沂.txt */; };
+		FC86EE601CF6E97400BD42C0 /* 临沧.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECFC1CF6E97300BD42C0 /* 临沧.txt */; };
+		FC86EE611CF6E97400BD42C0 /* 临河.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECFD1CF6E97300BD42C0 /* 临河.txt */; };
+		FC86EE621CF6E97400BD42C0 /* 丹东.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECFE1CF6E97300BD42C0 /* 丹东.txt */; };
+		FC86EE631CF6E97400BD42C0 /* 丽水.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ECFF1CF6E97300BD42C0 /* 丽水.txt */; };
+		FC86EE641CF6E97400BD42C0 /* 丽江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED001CF6E97300BD42C0 /* 丽江.txt */; };
+		FC86EE651CF6E97400BD42C0 /* 乌兰查布.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED011CF6E97300BD42C0 /* 乌兰查布.txt */; };
+		FC86EE661CF6E97400BD42C0 /* 乌兰浩特.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED021CF6E97300BD42C0 /* 乌兰浩特.txt */; };
+		FC86EE671CF6E97400BD42C0 /* 乌海.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED031CF6E97300BD42C0 /* 乌海.txt */; };
+		FC86EE681CF6E97400BD42C0 /* 乌鲁木齐.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED041CF6E97300BD42C0 /* 乌鲁木齐.txt */; };
+		FC86EE691CF6E97400BD42C0 /* 乐山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED051CF6E97300BD42C0 /* 乐山.txt */; };
+		FC86EE6A1CF6E97400BD42C0 /* 九江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED061CF6E97300BD42C0 /* 九江.txt */; };
+		FC86EE6B1CF6E97400BD42C0 /* 云浮.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED071CF6E97300BD42C0 /* 云浮.txt */; };
+		FC86EE6C1CF6E97400BD42C0 /* 仙桃.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED081CF6E97300BD42C0 /* 仙桃.txt */; };
+		FC86EE6D1CF6E97400BD42C0 /* 伊春.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED091CF6E97300BD42C0 /* 伊春.txt */; };
+		FC86EE6E1CF6E97400BD42C0 /* 伊犁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED0A1CF6E97300BD42C0 /* 伊犁.txt */; };
+		FC86EE6F1CF6E97400BD42C0 /* 佛山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED0B1CF6E97300BD42C0 /* 佛山.txt */; };
+		FC86EE701CF6E97400BD42C0 /* 佳木斯.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED0C1CF6E97300BD42C0 /* 佳木斯.txt */; };
+		FC86EE711CF6E97400BD42C0 /* 保定.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED0D1CF6E97300BD42C0 /* 保定.txt */; };
+		FC86EE721CF6E97400BD42C0 /* 保山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED0E1CF6E97300BD42C0 /* 保山.txt */; };
+		FC86EE731CF6E97400BD42C0 /* 信阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED0F1CF6E97300BD42C0 /* 信阳.txt */; };
+		FC86EE741CF6E97400BD42C0 /* 克州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED101CF6E97300BD42C0 /* 克州.txt */; };
+		FC86EE751CF6E97400BD42C0 /* 克拉玛依.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED111CF6E97300BD42C0 /* 克拉玛依.txt */; };
+		FC86EE761CF6E97400BD42C0 /* 六安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED121CF6E97300BD42C0 /* 六安.txt */; };
+		FC86EE771CF6E97400BD42C0 /* 六盘水.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED131CF6E97300BD42C0 /* 六盘水.txt */; };
+		FC86EE781CF6E97400BD42C0 /* 兰州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED141CF6E97300BD42C0 /* 兰州.txt */; };
+		FC86EE791CF6E97400BD42C0 /* 共和.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED151CF6E97300BD42C0 /* 共和.txt */; };
+		FC86EE7A1CF6E97400BD42C0 /* 兴义.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED161CF6E97300BD42C0 /* 兴义.txt */; };
+		FC86EE7B1CF6E97400BD42C0 /* 兴安盟.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED171CF6E97300BD42C0 /* 兴安盟.txt */; };
+		FC86EE7C1CF6E97400BD42C0 /* 内江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED181CF6E97300BD42C0 /* 内江.txt */; };
+		FC86EE7D1CF6E97400BD42C0 /* 凉山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED191CF6E97300BD42C0 /* 凉山.txt */; };
+		FC86EE7E1CF6E97400BD42C0 /* 凯里.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED1A1CF6E97300BD42C0 /* 凯里.txt */; };
+		FC86EE7F1CF6E97400BD42C0 /* 包头.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED1B1CF6E97300BD42C0 /* 包头.txt */; };
+		FC86EE801CF6E97400BD42C0 /* 北京.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED1C1CF6E97300BD42C0 /* 北京.txt */; };
+		FC86EE811CF6E97400BD42C0 /* 北海.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED1D1CF6E97300BD42C0 /* 北海.txt */; };
+		FC86EE821CF6E97400BD42C0 /* 十堰.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED1E1CF6E97300BD42C0 /* 十堰.txt */; };
+		FC86EE831CF6E97400BD42C0 /* 南京.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED1F1CF6E97300BD42C0 /* 南京.txt */; };
+		FC86EE841CF6E97400BD42C0 /* 南充.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED201CF6E97300BD42C0 /* 南充.txt */; };
+		FC86EE851CF6E97400BD42C0 /* 南宁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED211CF6E97300BD42C0 /* 南宁.txt */; };
+		FC86EE861CF6E97400BD42C0 /* 南平.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED221CF6E97300BD42C0 /* 南平.txt */; };
+		FC86EE871CF6E97400BD42C0 /* 南昌.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED231CF6E97300BD42C0 /* 南昌.txt */; };
+		FC86EE881CF6E97400BD42C0 /* 南通.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED241CF6E97300BD42C0 /* 南通.txt */; };
+		FC86EE891CF6E97400BD42C0 /* 南阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED251CF6E97300BD42C0 /* 南阳.txt */; };
+		FC86EE8A1CF6E97400BD42C0 /* 博乐.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED261CF6E97300BD42C0 /* 博乐.txt */; };
+		FC86EE8B1CF6E97400BD42C0 /* 厦门.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED271CF6E97300BD42C0 /* 厦门.txt */; };
+		FC86EE8C1CF6E97400BD42C0 /* 双鸭山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED281CF6E97300BD42C0 /* 双鸭山.txt */; };
+		FC86EE8D1CF6E97400BD42C0 /* 台州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED291CF6E97300BD42C0 /* 台州.txt */; };
+		FC86EE8E1CF6E97400BD42C0 /* 合肥.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED2A1CF6E97300BD42C0 /* 合肥.txt */; };
+		FC86EE8F1CF6E97400BD42C0 /* 吉安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED2B1CF6E97300BD42C0 /* 吉安.txt */; };
+		FC86EE901CF6E97400BD42C0 /* 吉林.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED2C1CF6E97300BD42C0 /* 吉林.txt */; };
+		FC86EE911CF6E97400BD42C0 /* 吉首.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED2D1CF6E97300BD42C0 /* 吉首.txt */; };
+		FC86EE921CF6E97400BD42C0 /* 吐鲁番.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED2E1CF6E97300BD42C0 /* 吐鲁番.txt */; };
+		FC86EE931CF6E97400BD42C0 /* 吕梁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED2F1CF6E97300BD42C0 /* 吕梁.txt */; };
+		FC86EE941CF6E97400BD42C0 /* 吴忠.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED301CF6E97300BD42C0 /* 吴忠.txt */; };
+		FC86EE951CF6E97400BD42C0 /* 周口.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED311CF6E97300BD42C0 /* 周口.txt */; };
+		FC86EE961CF6E97400BD42C0 /* 呼伦贝尔.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED321CF6E97300BD42C0 /* 呼伦贝尔.txt */; };
+		FC86EE971CF6E97400BD42C0 /* 呼和浩特.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED331CF6E97300BD42C0 /* 呼和浩特.txt */; };
+		FC86EE981CF6E97400BD42C0 /* 和田.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED341CF6E97300BD42C0 /* 和田.txt */; };
+		FC86EE991CF6E97400BD42C0 /* 咸宁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED351CF6E97300BD42C0 /* 咸宁.txt */; };
+		FC86EE9A1CF6E97400BD42C0 /* 咸阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED361CF6E97300BD42C0 /* 咸阳.txt */; };
+		FC86EE9B1CF6E97400BD42C0 /* 哈密.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED371CF6E97300BD42C0 /* 哈密.txt */; };
+		FC86EE9C1CF6E97400BD42C0 /* 哈尔滨.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED381CF6E97300BD42C0 /* 哈尔滨.txt */; };
+		FC86EE9D1CF6E97400BD42C0 /* 唐山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED391CF6E97300BD42C0 /* 唐山.txt */; };
+		FC86EE9E1CF6E97400BD42C0 /* 商丘.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED3A1CF6E97300BD42C0 /* 商丘.txt */; };
+		FC86EE9F1CF6E97400BD42C0 /* 商洛.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED3B1CF6E97300BD42C0 /* 商洛.txt */; };
+		FC86EEA01CF6E97400BD42C0 /* 喀什.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED3C1CF6E97300BD42C0 /* 喀什.txt */; };
+		FC86EEA11CF6E97400BD42C0 /* 嘉兴.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED3D1CF6E97300BD42C0 /* 嘉兴.txt */; };
+		FC86EEA21CF6E97400BD42C0 /* 嘉峪关.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED3E1CF6E97300BD42C0 /* 嘉峪关.txt */; };
+		FC86EEA31CF6E97400BD42C0 /* 四平.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED3F1CF6E97300BD42C0 /* 四平.txt */; };
+		FC86EEA41CF6E97400BD42C0 /* 固原.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED401CF6E97300BD42C0 /* 固原.txt */; };
+		FC86EEA51CF6E97400BD42C0 /* 塔城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED411CF6E97300BD42C0 /* 塔城.txt */; };
+		FC86EEA61CF6E97400BD42C0 /* 大兴安岭.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED421CF6E97300BD42C0 /* 大兴安岭.txt */; };
+		FC86EEA71CF6E97400BD42C0 /* 大同.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED431CF6E97300BD42C0 /* 大同.txt */; };
+		FC86EEA81CF6E97400BD42C0 /* 大庆.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED441CF6E97300BD42C0 /* 大庆.txt */; };
+		FC86EEA91CF6E97400BD42C0 /* 大理.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED451CF6E97300BD42C0 /* 大理.txt */; };
+		FC86EEAA1CF6E97400BD42C0 /* 大连.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED461CF6E97300BD42C0 /* 大连.txt */; };
+		FC86EEAB1CF6E97400BD42C0 /* 天水.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED471CF6E97300BD42C0 /* 天水.txt */; };
+		FC86EEAC1CF6E97400BD42C0 /* 天津.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED481CF6E97300BD42C0 /* 天津.txt */; };
+		FC86EEAD1CF6E97400BD42C0 /* 太原.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED491CF6E97300BD42C0 /* 太原.txt */; };
+		FC86EEAE1CF6E97400BD42C0 /* 奎屯.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED4A1CF6E97300BD42C0 /* 奎屯.txt */; };
+		FC86EEAF1CF6E97400BD42C0 /* 威海.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED4B1CF6E97300BD42C0 /* 威海.txt */; };
+		FC86EEB01CF6E97400BD42C0 /* 娄底.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED4C1CF6E97300BD42C0 /* 娄底.txt */; };
+		FC86EEB11CF6E97400BD42C0 /* 孝感.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED4D1CF6E97300BD42C0 /* 孝感.txt */; };
+		FC86EEB21CF6E97400BD42C0 /* 宁德.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED4E1CF6E97300BD42C0 /* 宁德.txt */; };
+		FC86EEB31CF6E97400BD42C0 /* 宁波.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED4F1CF6E97300BD42C0 /* 宁波.txt */; };
+		FC86EEB41CF6E97400BD42C0 /* 安庆.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED501CF6E97300BD42C0 /* 安庆.txt */; };
+		FC86EEB51CF6E97400BD42C0 /* 安康.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED511CF6E97300BD42C0 /* 安康.txt */; };
+		FC86EEB61CF6E97400BD42C0 /* 安阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED521CF6E97300BD42C0 /* 安阳.txt */; };
+		FC86EEB71CF6E97400BD42C0 /* 安顺.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED531CF6E97300BD42C0 /* 安顺.txt */; };
+		FC86EEB81CF6E97400BD42C0 /* 定西.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED541CF6E97300BD42C0 /* 定西.txt */; };
+		FC86EEB91CF6E97400BD42C0 /* 宜宾.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED551CF6E97300BD42C0 /* 宜宾.txt */; };
+		FC86EEBA1CF6E97400BD42C0 /* 宜昌 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED561CF6E97300BD42C0 /* 宜昌 2.txt */; };
+		FC86EEBB1CF6E97400BD42C0 /* 宜昌.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED571CF6E97300BD42C0 /* 宜昌.txt */; };
+		FC86EEBC1CF6E97400BD42C0 /* 宝鸡.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED581CF6E97300BD42C0 /* 宝鸡.txt */; };
+		FC86EEBD1CF6E97400BD42C0 /* 宣城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED591CF6E97300BD42C0 /* 宣城.txt */; };
+		FC86EEBE1CF6E97400BD42C0 /* 宿州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED5A1CF6E97300BD42C0 /* 宿州.txt */; };
+		FC86EEBF1CF6E97400BD42C0 /* 宿迁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED5B1CF6E97300BD42C0 /* 宿迁.txt */; };
+		FC86EEC01CF6E97400BD42C0 /* 山南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED5C1CF6E97300BD42C0 /* 山南.txt */; };
+		FC86EEC11CF6E97400BD42C0 /* 岳阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED5D1CF6E97300BD42C0 /* 岳阳.txt */; };
+		FC86EEC21CF6E97400BD42C0 /* 崇左.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED5E1CF6E97300BD42C0 /* 崇左.txt */; };
+		FC86EEC31CF6E97400BD42C0 /* 巢湖.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED5F1CF6E97300BD42C0 /* 巢湖.txt */; };
+		FC86EEC41CF6E97400BD42C0 /* 巴中.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED601CF6E97300BD42C0 /* 巴中.txt */; };
+		FC86EEC51CF6E97400BD42C0 /* 巴彦浩特.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED611CF6E97300BD42C0 /* 巴彦浩特.txt */; };
+		FC86EEC61CF6E97400BD42C0 /* 巴彦淖尔.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED621CF6E97300BD42C0 /* 巴彦淖尔.txt */; };
+		FC86EEC71CF6E97400BD42C0 /* 常州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED631CF6E97300BD42C0 /* 常州.txt */; };
+		FC86EEC81CF6E97400BD42C0 /* 常德.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED641CF6E97300BD42C0 /* 常德.txt */; };
+		FC86EEC91CF6E97400BD42C0 /* 平凉.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED651CF6E97300BD42C0 /* 平凉.txt */; };
+		FC86EECA1CF6E97400BD42C0 /* 平顶山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED661CF6E97300BD42C0 /* 平顶山.txt */; };
+		FC86EECB1CF6E97400BD42C0 /* 广元.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED671CF6E97300BD42C0 /* 广元.txt */; };
+		FC86EECC1CF6E97400BD42C0 /* 广安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED681CF6E97300BD42C0 /* 广安.txt */; };
+		FC86EECD1CF6E97400BD42C0 /* 广州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED691CF6E97300BD42C0 /* 广州.txt */; };
+		FC86EECE1CF6E97400BD42C0 /* 庆阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED6A1CF6E97300BD42C0 /* 庆阳.txt */; };
+		FC86EECF1CF6E97400BD42C0 /* 库尔勒.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED6B1CF6E97300BD42C0 /* 库尔勒.txt */; };
+		FC86EED01CF6E97400BD42C0 /* 廊坊.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED6C1CF6E97300BD42C0 /* 廊坊.txt */; };
+		FC86EED11CF6E97400BD42C0 /* 延吉.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED6D1CF6E97300BD42C0 /* 延吉.txt */; };
+		FC86EED21CF6E97400BD42C0 /* 延安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED6E1CF6E97300BD42C0 /* 延安.txt */; };
+		FC86EED31CF6E97400BD42C0 /* 开封.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED6F1CF6E97300BD42C0 /* 开封.txt */; };
+		FC86EED41CF6E97400BD42C0 /* 张家口.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED701CF6E97300BD42C0 /* 张家口.txt */; };
+		FC86EED51CF6E97400BD42C0 /* 张家界.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED711CF6E97300BD42C0 /* 张家界.txt */; };
+		FC86EED61CF6E97400BD42C0 /* 张掖.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED721CF6E97300BD42C0 /* 张掖.txt */; };
+		FC86EED71CF6E97400BD42C0 /* 徐州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED731CF6E97300BD42C0 /* 徐州.txt */; };
+		FC86EED81CF6E97400BD42C0 /* 德令哈.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED741CF6E97300BD42C0 /* 德令哈.txt */; };
+		FC86EED91CF6E97400BD42C0 /* 德宏.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED751CF6E97300BD42C0 /* 德宏.txt */; };
+		FC86EEDA1CF6E97400BD42C0 /* 德州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED761CF6E97300BD42C0 /* 德州.txt */; };
+		FC86EEDB1CF6E97400BD42C0 /* 德阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED771CF6E97300BD42C0 /* 德阳.txt */; };
+		FC86EEDC1CF6E97400BD42C0 /* 忻州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED781CF6E97300BD42C0 /* 忻州.txt */; };
+		FC86EEDD1CF6E97400BD42C0 /* 怀化.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED791CF6E97300BD42C0 /* 怀化.txt */; };
+		FC86EEDE1CF6E97400BD42C0 /* 怒江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED7A1CF6E97300BD42C0 /* 怒江.txt */; };
+		FC86EEDF1CF6E97400BD42C0 /* 思茅.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED7B1CF6E97300BD42C0 /* 思茅.txt */; };
+		FC86EEE01CF6E97400BD42C0 /* 恩施.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED7C1CF6E97300BD42C0 /* 恩施.txt */; };
+		FC86EEE11CF6E97400BD42C0 /* 惠州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED7D1CF6E97300BD42C0 /* 惠州.txt */; };
+		FC86EEE21CF6E97400BD42C0 /* 成都.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED7E1CF6E97300BD42C0 /* 成都.txt */; };
+		FC86EEE31CF6E97400BD42C0 /* 扬州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED7F1CF6E97300BD42C0 /* 扬州.txt */; };
+		FC86EEE41CF6E97400BD42C0 /* 承德.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED801CF6E97300BD42C0 /* 承德.txt */; };
+		FC86EEE51CF6E97400BD42C0 /* 抚州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED811CF6E97300BD42C0 /* 抚州.txt */; };
+		FC86EEE61CF6E97400BD42C0 /* 抚顺.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED821CF6E97300BD42C0 /* 抚顺.txt */; };
+		FC86EEE71CF6E97400BD42C0 /* 拉萨.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED831CF6E97300BD42C0 /* 拉萨.txt */; };
+		FC86EEE81CF6E97400BD42C0 /* 揭阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED841CF6E97300BD42C0 /* 揭阳.txt */; };
+		FC86EEE91CF6E97400BD42C0 /* 攀枝花.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED851CF6E97300BD42C0 /* 攀枝花.txt */; };
+		FC86EEEA1CF6E97400BD42C0 /* 文山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED861CF6E97300BD42C0 /* 文山.txt */; };
+		FC86EEEB1CF6E97400BD42C0 /* 新乡.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED871CF6E97300BD42C0 /* 新乡.txt */; };
+		FC86EEEC1CF6E97400BD42C0 /* 新余.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED881CF6E97300BD42C0 /* 新余.txt */; };
+		FC86EEED1CF6E97400BD42C0 /* 无锡.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED891CF6E97300BD42C0 /* 无锡.txt */; };
+		FC86EEEE1CF6E97400BD42C0 /* 日喀则.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED8A1CF6E97300BD42C0 /* 日喀则.txt */; };
+		FC86EEEF1CF6E97400BD42C0 /* 日照.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED8B1CF6E97300BD42C0 /* 日照.txt */; };
+		FC86EEF01CF6E97400BD42C0 /* 昆明.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED8C1CF6E97300BD42C0 /* 昆明.txt */; };
+		FC86EEF11CF6E97400BD42C0 /* 昌吉.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED8D1CF6E97300BD42C0 /* 昌吉.txt */; };
+		FC86EEF21CF6E97400BD42C0 /* 昌都.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED8E1CF6E97300BD42C0 /* 昌都.txt */; };
+		FC86EEF31CF6E97400BD42C0 /* 昭通.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED8F1CF6E97300BD42C0 /* 昭通.txt */; };
+		FC86EEF41CF6E97400BD42C0 /* 晋中.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED901CF6E97300BD42C0 /* 晋中.txt */; };
+		FC86EEF51CF6E97400BD42C0 /* 晋城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED911CF6E97300BD42C0 /* 晋城.txt */; };
+		FC86EEF61CF6E97400BD42C0 /* 景德镇.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED921CF6E97300BD42C0 /* 景德镇.txt */; };
+		FC86EEF71CF6E97400BD42C0 /* 曲靖.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED931CF6E97300BD42C0 /* 曲靖.txt */; };
+		FC86EEF81CF6E97400BD42C0 /* 朔州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED941CF6E97300BD42C0 /* 朔州.txt */; };
+		FC86EEF91CF6E97400BD42C0 /* 朝阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED951CF6E97300BD42C0 /* 朝阳.txt */; };
+		FC86EEFA1CF6E97400BD42C0 /* 本溪.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED961CF6E97300BD42C0 /* 本溪.txt */; };
+		FC86EEFB1CF6E97400BD42C0 /* 来宾.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED971CF6E97300BD42C0 /* 来宾.txt */; };
+		FC86EEFC1CF6E97400BD42C0 /* 杭州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED981CF6E97300BD42C0 /* 杭州.txt */; };
+		FC86EEFD1CF6E97400BD42C0 /* 松原.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED991CF6E97300BD42C0 /* 松原.txt */; };
+		FC86EEFE1CF6E97400BD42C0 /* 林芝.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED9A1CF6E97300BD42C0 /* 林芝.txt */; };
+		FC86EEFF1CF6E97400BD42C0 /* 果洛.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED9B1CF6E97300BD42C0 /* 果洛.txt */; };
+		FC86EF001CF6E97400BD42C0 /* 枣庄.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED9C1CF6E97300BD42C0 /* 枣庄.txt */; };
+		FC86EF011CF6E97400BD42C0 /* 柳州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED9D1CF6E97300BD42C0 /* 柳州.txt */; };
+		FC86EF021CF6E97400BD42C0 /* 株洲.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED9E1CF6E97300BD42C0 /* 株洲.txt */; };
+		FC86EF031CF6E97400BD42C0 /* 格尔木.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86ED9F1CF6E97300BD42C0 /* 格尔木.txt */; };
+		FC86EF041CF6E97400BD42C0 /* 桂林.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA01CF6E97300BD42C0 /* 桂林.txt */; };
+		FC86EF051CF6E97400BD42C0 /* 梅州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA11CF6E97300BD42C0 /* 梅州.txt */; };
+		FC86EF061CF6E97400BD42C0 /* 梅河口.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA21CF6E97300BD42C0 /* 梅河口.txt */; };
+		FC86EF071CF6E97400BD42C0 /* 梧州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA31CF6E97300BD42C0 /* 梧州.txt */; };
+		FC86EF081CF6E97400BD42C0 /* 楚雄.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA41CF6E97300BD42C0 /* 楚雄.txt */; };
+		FC86EF091CF6E97400BD42C0 /* 榆林.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA51CF6E97300BD42C0 /* 榆林.txt */; };
+		FC86EF0A1CF6E97400BD42C0 /* 武威.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA61CF6E97300BD42C0 /* 武威.txt */; };
+		FC86EF0B1CF6E97400BD42C0 /* 武汉.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA71CF6E97300BD42C0 /* 武汉.txt */; };
+		FC86EF0C1CF6E97400BD42C0 /* 毕节.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA81CF6E97300BD42C0 /* 毕节.txt */; };
+		FC86EF0D1CF6E97400BD42C0 /* 毫州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDA91CF6E97300BD42C0 /* 毫州.txt */; };
+		FC86EF0E1CF6E97400BD42C0 /* 永州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDAA1CF6E97300BD42C0 /* 永州.txt */; };
+		FC86EF0F1CF6E97400BD42C0 /* 汉中.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDAB1CF6E97300BD42C0 /* 汉中.txt */; };
+		FC86EF101CF6E97400BD42C0 /* 汕头.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDAC1CF6E97300BD42C0 /* 汕头.txt */; };
+		FC86EF111CF6E97400BD42C0 /* 汕尾.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDAD1CF6E97300BD42C0 /* 汕尾.txt */; };
+		FC86EF121CF6E97400BD42C0 /* 江汉.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDAE1CF6E97300BD42C0 /* 江汉.txt */; };
+		FC86EF131CF6E97400BD42C0 /* 江门.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDAF1CF6E97300BD42C0 /* 江门.txt */; };
+		FC86EF141CF6E97400BD42C0 /* 池州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB01CF6E97300BD42C0 /* 池州.txt */; };
+		FC86EF151CF6E97400BD42C0 /* 沈阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB11CF6E97300BD42C0 /* 沈阳.txt */; };
+		FC86EF161CF6E97400BD42C0 /* 沧州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB21CF6E97300BD42C0 /* 沧州.txt */; };
+		FC86EF171CF6E97400BD42C0 /* 河池.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB31CF6E97300BD42C0 /* 河池.txt */; };
+		FC86EF181CF6E97400BD42C0 /* 河源.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB41CF6E97300BD42C0 /* 河源.txt */; };
+		FC86EF191CF6E97400BD42C0 /* 泉州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB51CF6E97300BD42C0 /* 泉州.txt */; };
+		FC86EF1A1CF6E97400BD42C0 /* 泰安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB61CF6E97300BD42C0 /* 泰安.txt */; };
+		FC86EF1B1CF6E97400BD42C0 /* 泰州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB71CF6E97300BD42C0 /* 泰州.txt */; };
+		FC86EF1C1CF6E97400BD42C0 /* 泸州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB81CF6E97300BD42C0 /* 泸州.txt */; };
+		FC86EF1D1CF6E97400BD42C0 /* 洛阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDB91CF6E97300BD42C0 /* 洛阳.txt */; };
+		FC86EF1E1CF6E97400BD42C0 /* 济南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDBA1CF6E97300BD42C0 /* 济南.txt */; };
+		FC86EF1F1CF6E97400BD42C0 /* 济宁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDBB1CF6E97300BD42C0 /* 济宁.txt */; };
+		FC86EF201CF6E97400BD42C0 /* 海东.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDBC1CF6E97300BD42C0 /* 海东.txt */; };
+		FC86EF211CF6E97400BD42C0 /* 海北州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDBD1CF6E97300BD42C0 /* 海北州.txt */; };
+		FC86EF221CF6E97400BD42C0 /* 海南州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDBE1CF6E97300BD42C0 /* 海南州.txt */; };
+		FC86EF231CF6E97400BD42C0 /* 海口.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDBF1CF6E97300BD42C0 /* 海口.txt */; };
+		FC86EF241CF6E97400BD42C0 /* 海拉尔.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC01CF6E97300BD42C0 /* 海拉尔.txt */; };
+		FC86EF251CF6E97400BD42C0 /* 海晏.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC11CF6E97300BD42C0 /* 海晏.txt */; };
+		FC86EF261CF6E97400BD42C0 /* 海西州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC21CF6E97300BD42C0 /* 海西州.txt */; };
+		FC86EF271CF6E97400BD42C0 /* 淄博.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC31CF6E97300BD42C0 /* 淄博.txt */; };
+		FC86EF281CF6E97400BD42C0 /* 淮北.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC41CF6E97300BD42C0 /* 淮北.txt */; };
+		FC86EF291CF6E97400BD42C0 /* 淮南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC51CF6E97300BD42C0 /* 淮南.txt */; };
+		FC86EF2A1CF6E97400BD42C0 /* 淮安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC61CF6E97300BD42C0 /* 淮安.txt */; };
+		FC86EF2B1CF6E97400BD42C0 /* 深圳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC71CF6E97300BD42C0 /* 深圳.txt */; };
+		FC86EF2C1CF6E97400BD42C0 /* 清远.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC81CF6E97300BD42C0 /* 清远.txt */; };
+		FC86EF2D1CF6E97400BD42C0 /* 温州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDC91CF6E97300BD42C0 /* 温州.txt */; };
+		FC86EF2E1CF6E97400BD42C0 /* 渭南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDCA1CF6E97300BD42C0 /* 渭南.txt */; };
+		FC86EF2F1CF6E97400BD42C0 /* 湖州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDCB1CF6E97300BD42C0 /* 湖州.txt */; };
+		FC86EF301CF6E97400BD42C0 /* 湘潭.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDCC1CF6E97300BD42C0 /* 湘潭.txt */; };
+		FC86EF311CF6E97400BD42C0 /* 湛江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDCD1CF6E97300BD42C0 /* 湛江.txt */; };
+		FC86EF321CF6E97400BD42C0 /* 滁州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDCE1CF6E97300BD42C0 /* 滁州.txt */; };
+		FC86EF331CF6E97400BD42C0 /* 滨州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDCF1CF6E97300BD42C0 /* 滨州.txt */; };
+		FC86EF341CF6E97400BD42C0 /* 漯河.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD01CF6E97300BD42C0 /* 漯河.txt */; };
+		FC86EF351CF6E97400BD42C0 /* 漳州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD11CF6E97300BD42C0 /* 漳州.txt */; };
+		FC86EF361CF6E97400BD42C0 /* 潍坊.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD21CF6E97300BD42C0 /* 潍坊.txt */; };
+		FC86EF371CF6E97400BD42C0 /* 潢川.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD31CF6E97300BD42C0 /* 潢川.txt */; };
+		FC86EF381CF6E97400BD42C0 /* 潮州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD41CF6E97300BD42C0 /* 潮州.txt */; };
+		FC86EF391CF6E97400BD42C0 /* 濮阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD51CF6E97300BD42C0 /* 濮阳.txt */; };
+		FC86EF3A1CF6E97400BD42C0 /* 烟台.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD61CF6E97300BD42C0 /* 烟台.txt */; };
+		FC86EF3B1CF6E97400BD42C0 /* 焦作.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD71CF6E97300BD42C0 /* 焦作.txt */; };
+		FC86EF3C1CF6E97400BD42C0 /* 牡丹江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD81CF6E97300BD42C0 /* 牡丹江.txt */; };
+		FC86EF3D1CF6E97400BD42C0 /* 玉林.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDD91CF6E97300BD42C0 /* 玉林.txt */; };
+		FC86EF3E1CF6E97400BD42C0 /* 玉树.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDDA1CF6E97300BD42C0 /* 玉树.txt */; };
+		FC86EF3F1CF6E97400BD42C0 /* 玉溪.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDDB1CF6E97300BD42C0 /* 玉溪.txt */; };
+		FC86EF401CF6E97400BD42C0 /* 珠海.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDDC1CF6E97300BD42C0 /* 珠海.txt */; };
+		FC86EF411CF6E97400BD42C0 /* 珲春.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDDD1CF6E97300BD42C0 /* 珲春.txt */; };
+		FC86EF421CF6E97400BD42C0 /* 甘南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDDE1CF6E97300BD42C0 /* 甘南.txt */; };
+		FC86EF431CF6E97400BD42C0 /* 甘孜州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDDF1CF6E97300BD42C0 /* 甘孜州.txt */; };
+		FC86EF441CF6E97400BD42C0 /* 白城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE01CF6E97300BD42C0 /* 白城.txt */; };
+		FC86EF451CF6E97400BD42C0 /* 白山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE11CF6E97300BD42C0 /* 白山.txt */; };
+		FC86EF461CF6E97400BD42C0 /* 白银.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE21CF6E97300BD42C0 /* 白银.txt */; };
+		FC86EF471CF6E97400BD42C0 /* 百色.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE31CF6E97300BD42C0 /* 百色.txt */; };
+		FC86EF481CF6E97400BD42C0 /* 益阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE41CF6E97300BD42C0 /* 益阳.txt */; };
+		FC86EF491CF6E97400BD42C0 /* 盐城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE51CF6E97300BD42C0 /* 盐城.txt */; };
+		FC86EF4A1CF6E97400BD42C0 /* 盘锦.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE61CF6E97300BD42C0 /* 盘锦.txt */; };
+		FC86EF4B1CF6E97400BD42C0 /* 眉山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE71CF6E97300BD42C0 /* 眉山.txt */; };
+		FC86EF4C1CF6E97400BD42C0 /* 石嘴山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE81CF6E97300BD42C0 /* 石嘴山.txt */; };
+		FC86EF4D1CF6E97400BD42C0 /* 石家庄.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDE91CF6E97300BD42C0 /* 石家庄.txt */; };
+		FC86EF4E1CF6E97400BD42C0 /* 石河子.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDEA1CF6E97300BD42C0 /* 石河子.txt */; };
+		FC86EF4F1CF6E97400BD42C0 /* 福州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDEB1CF6E97300BD42C0 /* 福州.txt */; };
+		FC86EF501CF6E97400BD42C0 /* 秦皇岛.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDEC1CF6E97300BD42C0 /* 秦皇岛.txt */; };
+		FC86EF511CF6E97400BD42C0 /* 红河.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDED1CF6E97300BD42C0 /* 红河.txt */; };
+		FC86EF521CF6E97400BD42C0 /* 绍兴.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDEE1CF6E97300BD42C0 /* 绍兴.txt */; };
+		FC86EF531CF6E97400BD42C0 /* 绥化.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDEF1CF6E97300BD42C0 /* 绥化.txt */; };
+		FC86EF541CF6E97400BD42C0 /* 绵阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF01CF6E97300BD42C0 /* 绵阳.txt */; };
+		FC86EF551CF6E97400BD42C0 /* 聊城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF11CF6E97300BD42C0 /* 聊城.txt */; };
+		FC86EF561CF6E97400BD42C0 /* 肇庆.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF21CF6E97300BD42C0 /* 肇庆.txt */; };
+		FC86EF571CF6E97400BD42C0 /* 自宫.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF31CF6E97300BD42C0 /* 自宫.txt */; };
+		FC86EF581CF6E97400BD42C0 /* 舟山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF41CF6E97300BD42C0 /* 舟山.txt */; };
+		FC86EF591CF6E97400BD42C0 /* 芜湖.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF51CF6E97300BD42C0 /* 芜湖.txt */; };
+		FC86EF5A1CF6E97400BD42C0 /* 苏州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF61CF6E97300BD42C0 /* 苏州.txt */; };
+		FC86EF5B1CF6E97400BD42C0 /* 茂名.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF71CF6E97300BD42C0 /* 茂名.txt */; };
+		FC86EF5C1CF6E97400BD42C0 /* 荆州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF81CF6E97300BD42C0 /* 荆州.txt */; };
+		FC86EF5D1CF6E97400BD42C0 /* 荆门.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDF91CF6E97300BD42C0 /* 荆门.txt */; };
+		FC86EF5E1CF6E97400BD42C0 /* 莆田.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDFA1CF6E97300BD42C0 /* 莆田.txt */; };
+		FC86EF5F1CF6E97400BD42C0 /* 莱芜.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDFB1CF6E97300BD42C0 /* 莱芜.txt */; };
+		FC86EF601CF6E97400BD42C0 /* 菏泽.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDFC1CF6E97300BD42C0 /* 菏泽.txt */; };
+		FC86EF611CF6E97400BD42C0 /* 萍乡.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDFD1CF6E97300BD42C0 /* 萍乡.txt */; };
+		FC86EF621CF6E97400BD42C0 /* 营口.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDFE1CF6E97300BD42C0 /* 营口.txt */; };
+		FC86EF631CF6E97400BD42C0 /* 葫芦岛.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EDFF1CF6E97300BD42C0 /* 葫芦岛.txt */; };
+		FC86EF641CF6E97400BD42C0 /* 蚌埠.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE001CF6E97300BD42C0 /* 蚌埠.txt */; };
+		FC86EF651CF6E97400BD42C0 /* 衡州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE011CF6E97300BD42C0 /* 衡州.txt */; };
+		FC86EF661CF6E97400BD42C0 /* 衡水.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE021CF6E97300BD42C0 /* 衡水.txt */; };
+		FC86EF671CF6E97400BD42C0 /* 衡阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE031CF6E97300BD42C0 /* 衡阳.txt */; };
+		FC86EF681CF6E97400BD42C0 /* 襄樊.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE041CF6E97300BD42C0 /* 襄樊.txt */; };
+		FC86EF691CF6E97400BD42C0 /* 西双版纳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE051CF6E97300BD42C0 /* 西双版纳.txt */; };
+		FC86EF6A1CF6E97400BD42C0 /* 西宁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE061CF6E97300BD42C0 /* 西宁.txt */; };
+		FC86EF6B1CF6E97400BD42C0 /* 西安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE071CF6E97300BD42C0 /* 西安.txt */; };
+		FC86EF6C1CF6E97400BD42C0 /* 西昌.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE081CF6E97300BD42C0 /* 西昌.txt */; };
+		FC86EF6D1CF6E97400BD42C0 /* 许昌.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE091CF6E97300BD42C0 /* 许昌.txt */; };
+		FC86EF6E1CF6E97400BD42C0 /* 贵港.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE0A1CF6E97300BD42C0 /* 贵港.txt */; };
+		FC86EF6F1CF6E97400BD42C0 /* 贵阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE0B1CF6E97300BD42C0 /* 贵阳.txt */; };
+		FC86EF701CF6E97400BD42C0 /* 贺州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE0C1CF6E97300BD42C0 /* 贺州.txt */; };
+		FC86EF711CF6E97400BD42C0 /* 资阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE0D1CF6E97300BD42C0 /* 资阳.txt */; };
+		FC86EF721CF6E97400BD42C0 /* 赣州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE0E1CF6E97300BD42C0 /* 赣州.txt */; };
+		FC86EF731CF6E97400BD42C0 /* 赤峰.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE0F1CF6E97300BD42C0 /* 赤峰.txt */; };
+		FC86EF741CF6E97400BD42C0 /* 辽源.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE101CF6E97300BD42C0 /* 辽源.txt */; };
+		FC86EF751CF6E97400BD42C0 /* 辽阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE111CF6E97300BD42C0 /* 辽阳.txt */; };
+		FC86EF761CF6E97400BD42C0 /* 达州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE121CF6E97300BD42C0 /* 达州.txt */; };
+		FC86EF771CF6E97400BD42C0 /* 运城.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE131CF6E97300BD42C0 /* 运城.txt */; };
+		FC86EF781CF6E97400BD42C0 /* 连云港.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE141CF6E97300BD42C0 /* 连云港.txt */; };
+		FC86EF791CF6E97400BD42C0 /* 迪庆.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE151CF6E97300BD42C0 /* 迪庆.txt */; };
+		FC86EF7A1CF6E97400BD42C0 /* 通化.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE161CF6E97300BD42C0 /* 通化.txt */; };
+		FC86EF7B1CF6E97400BD42C0 /* 通辽.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE171CF6E97300BD42C0 /* 通辽.txt */; };
+		FC86EF7C1CF6E97400BD42C0 /* 遂宁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE181CF6E97300BD42C0 /* 遂宁.txt */; };
+		FC86EF7D1CF6E97400BD42C0 /* 遵义.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE191CF6E97300BD42C0 /* 遵义.txt */; };
+		FC86EF7E1CF6E97400BD42C0 /* 邢台.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE1A1CF6E97400BD42C0 /* 邢台.txt */; };
+		FC86EF7F1CF6E97400BD42C0 /* 那曲.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE1B1CF6E97400BD42C0 /* 那曲.txt */; };
+		FC86EF801CF6E97400BD42C0 /* 邯郸.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE1C1CF6E97400BD42C0 /* 邯郸.txt */; };
+		FC86EF811CF6E97400BD42C0 /* 邵阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE1D1CF6E97400BD42C0 /* 邵阳.txt */; };
+		FC86EF821CF6E97400BD42C0 /* 郑州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE1E1CF6E97400BD42C0 /* 郑州.txt */; };
+		FC86EF831CF6E97400BD42C0 /* 郴州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE1F1CF6E97400BD42C0 /* 郴州.txt */; };
+		FC86EF841CF6E97400BD42C0 /* 都匀.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE201CF6E97400BD42C0 /* 都匀.txt */; };
+		FC86EF851CF6E97400BD42C0 /* 鄂尔多斯.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE211CF6E97400BD42C0 /* 鄂尔多斯.txt */; };
+		FC86EF861CF6E97400BD42C0 /* 鄂州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE221CF6E97400BD42C0 /* 鄂州.txt */; };
+		FC86EF871CF6E97400BD42C0 /* 酒泉嘉峪关.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE231CF6E97400BD42C0 /* 酒泉嘉峪关.txt */; };
+		FC86EF881CF6E97400BD42C0 /* 重庆.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE241CF6E97400BD42C0 /* 重庆.txt */; };
+		FC86EF891CF6E97400BD42C0 /* 金华.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE251CF6E97400BD42C0 /* 金华.txt */; };
+		FC86EF8A1CF6E97400BD42C0 /* 金昌武威.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE261CF6E97400BD42C0 /* 金昌武威.txt */; };
+		FC86EF8B1CF6E97400BD42C0 /* 钦州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE271CF6E97400BD42C0 /* 钦州.txt */; };
+		FC86EF8C1CF6E97400BD42C0 /* 铁岭.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE281CF6E97400BD42C0 /* 铁岭.txt */; };
+		FC86EF8D1CF6E97400BD42C0 /* 铜仁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE291CF6E97400BD42C0 /* 铜仁.txt */; };
+		FC86EF8E1CF6E97400BD42C0 /* 铜川.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE2A1CF6E97400BD42C0 /* 铜川.txt */; };
+		FC86EF8F1CF6E97400BD42C0 /* 铜陵.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE2B1CF6E97400BD42C0 /* 铜陵.txt */; };
+		FC86EF901CF6E97400BD42C0 /* 银川.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE2C1CF6E97400BD42C0 /* 银川.txt */; };
+		FC86EF911CF6E97400BD42C0 /* 锡林浩特.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE2D1CF6E97400BD42C0 /* 锡林浩特.txt */; };
+		FC86EF921CF6E97400BD42C0 /* 锦州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE2E1CF6E97400BD42C0 /* 锦州.txt */; };
+		FC86EF931CF6E97400BD42C0 /* 镇江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE2F1CF6E97400BD42C0 /* 镇江.txt */; };
+		FC86EF941CF6E97400BD42C0 /* 长春.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE301CF6E97400BD42C0 /* 长春.txt */; };
+		FC86EF951CF6E97400BD42C0 /* 长沙.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE311CF6E97400BD42C0 /* 长沙.txt */; };
+		FC86EF961CF6E97400BD42C0 /* 长治.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE321CF6E97400BD42C0 /* 长治.txt */; };
+		FC86EF971CF6E97400BD42C0 /* 阜新.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE331CF6E97400BD42C0 /* 阜新.txt */; };
+		FC86EF981CF6E97400BD42C0 /* 阜阳.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE341CF6E97400BD42C0 /* 阜阳.txt */; };
+		FC86EF991CF6E97400BD42C0 /* 防城港.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE351CF6E97400BD42C0 /* 防城港.txt */; };
+		FC86EF9A1CF6E97400BD42C0 /* 阳江.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE361CF6E97400BD42C0 /* 阳江.txt */; };
+		FC86EF9B1CF6E97400BD42C0 /* 阳泉.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE371CF6E97400BD42C0 /* 阳泉.txt */; };
+		FC86EF9C1CF6E97400BD42C0 /* 阿克苏.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE381CF6E97400BD42C0 /* 阿克苏.txt */; };
+		FC86EF9D1CF6E97400BD42C0 /* 阿勒泰.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE391CF6E97400BD42C0 /* 阿勒泰.txt */; };
+		FC86EF9E1CF6E97400BD42C0 /* 阿坝州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE3A1CF6E97400BD42C0 /* 阿坝州.txt */; };
+		FC86EF9F1CF6E97400BD42C0 /* 阿盟.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE3B1CF6E97400BD42C0 /* 阿盟.txt */; };
+		FC86EFA01CF6E97400BD42C0 /* 阿里.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE3C1CF6E97400BD42C0 /* 阿里.txt */; };
+		FC86EFA11CF6E97400BD42C0 /* 陇南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE3D1CF6E97400BD42C0 /* 陇南.txt */; };
+		FC86EFA21CF6E97400BD42C0 /* 随州.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE3E1CF6E97400BD42C0 /* 随州.txt */; };
+		FC86EFA31CF6E97400BD42C0 /* 雅安.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE3F1CF6E97400BD42C0 /* 雅安.txt */; };
+		FC86EFA41CF6E97400BD42C0 /* 集宁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE401CF6E97400BD42C0 /* 集宁.txt */; };
+		FC86EFA51CF6E97400BD42C0 /* 青岛.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE411CF6E97400BD42C0 /* 青岛.txt */; };
+		FC86EFA61CF6E97400BD42C0 /* 鞍山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE421CF6E97400BD42C0 /* 鞍山.txt */; };
+		FC86EFA71CF6E97400BD42C0 /* 韶关.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE431CF6E97400BD42C0 /* 韶关.txt */; };
+		FC86EFA81CF6E97400BD42C0 /* 马鞍山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE441CF6E97400BD42C0 /* 马鞍山.txt */; };
+		FC86EFA91CF6E97400BD42C0 /* 驻马店.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE451CF6E97400BD42C0 /* 驻马店.txt */; };
+		FC86EFAA1CF6E97400BD42C0 /* 鸡西.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE461CF6E97400BD42C0 /* 鸡西.txt */; };
+		FC86EFAB1CF6E97400BD42C0 /* 鹤壁.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE471CF6E97400BD42C0 /* 鹤壁.txt */; };
+		FC86EFAC1CF6E97400BD42C0 /* 鹤岗.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE481CF6E97400BD42C0 /* 鹤岗.txt */; };
+		FC86EFAD1CF6E97400BD42C0 /* 鹰潭.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE491CF6E97400BD42C0 /* 鹰潭.txt */; };
+		FC86EFAE1CF6E97400BD42C0 /* 黄南.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE4A1CF6E97400BD42C0 /* 黄南.txt */; };
+		FC86EFAF1CF6E97400BD42C0 /* 黄山.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE4B1CF6E97400BD42C0 /* 黄山.txt */; };
+		FC86EFB01CF6E97400BD42C0 /* 黄岗.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE4C1CF6E97400BD42C0 /* 黄岗.txt */; };
+		FC86EFB11CF6E97400BD42C0 /* 黄石.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE4D1CF6E97400BD42C0 /* 黄石.txt */; };
+		FC86EFB21CF6E97400BD42C0 /* 黑河.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE4E1CF6E97400BD42C0 /* 黑河.txt */; };
+		FC86EFB31CF6E97400BD42C0 /* 齐齐哈尔.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE4F1CF6E97400BD42C0 /* 齐齐哈尔.txt */; };
+		FC86EFB41CF6E97400BD42C0 /* 龙岩.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE501CF6E97400BD42C0 /* 龙岩.txt */; };
+		FC86EFB51CF6E97400BD42C0 /* hot.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE511CF6E97400BD42C0 /* hot.txt */; };
+		FC86EFB61CF6E97400BD42C0 /* province.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC86EE521CF6E97400BD42C0 /* province.txt */; };
+		FC86EFCE1CF6E98500BD42C0 /* head@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFB81CF6E98500BD42C0 /* head@2x.png */; };
+		FC86EFCF1CF6E98500BD42C0 /* home_add_contact_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFB91CF6E98500BD42C0 /* home_add_contact_icon@2x.png */; };
+		FC86EFD01CF6E98500BD42C0 /* home_clear_contact_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFBA1CF6E98500BD42C0 /* home_clear_contact_icon@2x.png */; };
+		FC86EFD11CF6E98500BD42C0 /* home_clear_history_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFBB1CF6E98500BD42C0 /* home_clear_history_icon@2x.png */; };
+		FC86EFD21CF6E98500BD42C0 /* home_title_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFBC1CF6E98500BD42C0 /* home_title_logo@2x.png */; };
+		FC86EFD31CF6E98500BD42C0 /* home_update_contact_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFBD1CF6E98500BD42C0 /* home_update_contact_icon@2x.png */; };
+		FC86EFD41CF6E98500BD42C0 /* import_data_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFBE1CF6E98500BD42C0 /* import_data_icon@2x.png */; };
+		FC86EFD51CF6E98500BD42C0 /* setting_activate_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFBF1CF6E98500BD42C0 /* setting_activate_button@2x.png */; };
+		FC86EFD61CF6E98500BD42C0 /* setting_title_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC01CF6E98500BD42C0 /* setting_title_logo@2x.png */; };
+		FC86EFD71CF6E98500BD42C0 /* splash_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC11CF6E98500BD42C0 /* splash_logo@2x.png */; };
+		FC86EFD81CF6E98500BD42C0 /* splash_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC21CF6E98500BD42C0 /* splash_text@2x.png */; };
+		FC86EFD91CF6E98500BD42C0 /* store_city_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC31CF6E98500BD42C0 /* store_city_icon@2x.png */; };
+		FC86EFDA1CF6E98500BD42C0 /* store_gen_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC41CF6E98500BD42C0 /* store_gen_icon@2x.png */; };
+		FC86EFDB1CF6E98500BD42C0 /* store_title_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC51CF6E98500BD42C0 /* store_title_logo@2x.png */; };
+		FC86EFDC1CF6E98500BD42C0 /* tab_bottom_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC61CF6E98500BD42C0 /* tab_bottom_bg@2x.png */; };
+		FC86EFDD1CF6E98500BD42C0 /* tab_item_home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC71CF6E98500BD42C0 /* tab_item_home_selected@2x.png */; };
+		FC86EFDE1CF6E98500BD42C0 /* tab_item_home_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC81CF6E98500BD42C0 /* tab_item_home_unselected@2x.png */; };
+		FC86EFDF1CF6E98500BD42C0 /* tab_item_selected_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFC91CF6E98500BD42C0 /* tab_item_selected_bg@2x.png */; };
+		FC86EFE01CF6E98500BD42C0 /* tab_item_setting_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFCA1CF6E98500BD42C0 /* tab_item_setting_selected@2x.png */; };
+		FC86EFE11CF6E98500BD42C0 /* tab_item_setting_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFCB1CF6E98500BD42C0 /* tab_item_setting_unselected@2x.png */; };
+		FC86EFE21CF6E98500BD42C0 /* tab_item_store_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFCC1CF6E98500BD42C0 /* tab_item_store_selected@2x.png */; };
+		FC86EFE31CF6E98500BD42C0 /* tab_item_store_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFCD1CF6E98500BD42C0 /* tab_item_store_unselected@2x.png */; };
+		FC86EFF51CF6E9A200BD42C0 /* UIView+ym_extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFE51CF6E9A200BD42C0 /* UIView+ym_extension.m */; };
+		FC86EFF61CF6E9A200BD42C0 /* YMCityGroupsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFE71CF6E9A200BD42C0 /* YMCityGroupsModel.m */; };
+		FC86EFF71CF6E9A200BD42C0 /* YMCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFE91CF6E9A200BD42C0 /* YMCityModel.m */; };
+		FC86EFF81CF6E9A200BD42C0 /* YMCitySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFEB1CF6E9A200BD42C0 /* YMCitySearch.m */; };
+		FC86EFF91CF6E9A200BD42C0 /* YMCitySelect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC86EFEC1CF6E9A200BD42C0 /* YMCitySelect.bundle */; };
+		FC86EFFA1CF6E9A200BD42C0 /* YMCitySelect.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFEE1CF6E9A200BD42C0 /* YMCitySelect.m */; };
+		FC86EFFB1CF6E9A200BD42C0 /* YMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFF01CF6E9A200BD42C0 /* YMCollectionViewCell.m */; };
+		FC86EFFC1CF6E9A200BD42C0 /* YMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFF21CF6E9A200BD42C0 /* YMSearchBar.m */; };
+		FC86EFFD1CF6E9A200BD42C0 /* YMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFF41CF6E9A200BD42C0 /* YMTableViewCell.m */; };
+		FC86F0021CF6E9CA00BD42C0 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86EFFF1CF6E9CA00BD42C0 /* SettingCell.m */; };
+		FC86F0031CF6E9CA00BD42C0 /* VCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0011CF6E9CA00BD42C0 /* VCityCell.m */; };
+		FC86F0061CF6E9E100BD42C0 /* EaseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0051CF6E9E100BD42C0 /* EaseStartView.m */; };
+		FC86F0091CF6EA0A00BD42C0 /* DES3Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0081CF6EA0A00BD42C0 /* DES3Util.m */; };
+		FC86F00C1CF6EA1B00BD42C0 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F00B1CF6EA1B00BD42C0 /* GTMBase64.m */; };
+		FC86F00F1CF6EA3400BD42C0 /* ObjcRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F00E1CF6EA3400BD42C0 /* ObjcRuntime.m */; };
+		FC86F01A1CF6EA8B00BD42C0 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0171CF6EA8B00BD42C0 /* UIView+Common.m */; };
+		FC86F01B1CF6EA8B00BD42C0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0191CF6EA8B00BD42C0 /* UIView+Frame.m */; };
+		FC86F01E1CF6EAAE00BD42C0 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F01D1CF6EAAE00BD42C0 /* UIButton+Bootstrap.m */; };
+		FC86F0211CF6EAC700BD42C0 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0201CF6EAC700BD42C0 /* UIImage+Common.m */; };
+		FC86F0241CF6EAD800BD42C0 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0231CF6EAD800BD42C0 /* UIColor+expanded.m */; };
+		FC86F0271CF6EAE800BD42C0 /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0261CF6EAE800BD42C0 /* UIViewController+Swizzle.m */; };
+		FC86F02A1CF6EB9F00BD42C0 /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F0291CF6EB9F00BD42C0 /* UITableView+Common.m */; };
+		FC86F02D1CF6EBF600BD42C0 /* UITapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F02C1CF6EBF600BD42C0 /* UITapImageView.m */; };
+		FC86F02F1CF6EC4C00BD42C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86F02E1CF6EC4C00BD42C0 /* main.m */; };
+		FCB094701CF6ED43009A4615 /* RootTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB0946E1CF6ED43009A4615 /* RootTabViewController.m */; };
+		FCB094731CF6ED53009A4615 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB094711CF6ED53009A4615 /* BaseViewController.m */; };
+		FCB0947A1CF6ED73009A4615 /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB094741CF6ED73009A4615 /* StoreViewController.m */; };
+		FCB0947B1CF6ED73009A4615 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB094761CF6ED73009A4615 /* SettingViewController.m */; };
+		FCB0947C1CF6ED73009A4615 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB094781CF6ED73009A4615 /* HomeViewController.m */; };
+		FCB0947F1CF6EDCE009A4615 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB0947D1CF6EDCE009A4615 /* BaseNavigationController.m */; };
+		FCB094811CF6EE4B009A4615 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB094801CF6EE4B009A4615 /* libPods.a */; };
+		FCB094831CF6EECF009A4615 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCB094821CF6EECF009A4615 /* Info.plist */; };
+		FCB094871CF73CC3009A4615 /* KTSContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB094861CF73CC3009A4615 /* KTSContactsManager.m */; };
+		FCBD0B7F1CEDA8FA006E40E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD0B7E1CEDA8FA006E40E2 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FCBD0B811CEEA859006E40E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD0B801CEEA859006E40E2 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FCBD0B831CEEF02B006E40E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD0B821CEEF02B006E40E2 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FCBD0B851CEEF040006E40E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD0B841CEEF040006E40E2 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FCBD0B871CEEF051006E40E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD0B861CEEF051006E40E2 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FCBD0B891CEEF0E1006E40E2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBD0B881CEEF0E1006E40E2 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FCD626FA1CCA08900016F388 /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD626F91CCA08900016F388 /* Launch.xib */; };
+		FCE2ED431CF6D7E9002B24D4 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE2ED421CF6D7E9002B24D4 /* Contacts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0128E64A64474D095F85D6E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8B8FB52CC66A0898F2B1E82A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2C8FCF1D1576B300BB84B1 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		FC68313D1CBCEE6400162502 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6831431CBCEE6400162502 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC6831441CBCEE6400162502 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC68314F1CBCEE6400162502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC86ECE11CF6E91F00BD42C0 /* RRFPSBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRFPSBar.h; sourceTree = "<group>"; };
+		FC86ECE21CF6E91F00BD42C0 /* RRFPSBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRFPSBar.m; sourceTree = "<group>"; };
+		FC86ECE41CF6E95900BD42C0 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		FC86ECE51CF6E95900BD42C0 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		FC86ECE61CF6E95900BD42C0 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		FC86ECE71CF6E95900BD42C0 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		FC86ECE81CF6E95900BD42C0 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		FC86ECE91CF6E95900BD42C0 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		FC86ECEF1CF6E97300BD42C0 /* 七台河.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "七台河.txt"; sourceTree = "<group>"; };
+		FC86ECF01CF6E97300BD42C0 /* 三亚.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三亚.txt"; sourceTree = "<group>"; };
+		FC86ECF11CF6E97300BD42C0 /* 三明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三明.txt"; sourceTree = "<group>"; };
+		FC86ECF21CF6E97300BD42C0 /* 三门峡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三门峡.txt"; sourceTree = "<group>"; };
+		FC86ECF31CF6E97300BD42C0 /* 上海.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "上海.txt"; sourceTree = "<group>"; };
+		FC86ECF41CF6E97300BD42C0 /* 上饶.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "上饶.txt"; sourceTree = "<group>"; };
+		FC86ECF51CF6E97300BD42C0 /* 东莞.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "东莞.txt"; sourceTree = "<group>"; };
+		FC86ECF61CF6E97300BD42C0 /* 东营.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "东营.txt"; sourceTree = "<group>"; };
+		FC86ECF71CF6E97300BD42C0 /* 中卫.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "中卫.txt"; sourceTree = "<group>"; };
+		FC86ECF81CF6E97300BD42C0 /* 中山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "中山.txt"; sourceTree = "<group>"; };
+		FC86ECF91CF6E97300BD42C0 /* 临夏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "临夏.txt"; sourceTree = "<group>"; };
+		FC86ECFA1CF6E97300BD42C0 /* 临汾.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "临汾.txt"; sourceTree = "<group>"; };
+		FC86ECFB1CF6E97300BD42C0 /* 临沂.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "临沂.txt"; sourceTree = "<group>"; };
+		FC86ECFC1CF6E97300BD42C0 /* 临沧.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "临沧.txt"; sourceTree = "<group>"; };
+		FC86ECFD1CF6E97300BD42C0 /* 临河.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "临河.txt"; sourceTree = "<group>"; };
+		FC86ECFE1CF6E97300BD42C0 /* 丹东.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "丹东.txt"; sourceTree = "<group>"; };
+		FC86ECFF1CF6E97300BD42C0 /* 丽水.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "丽水.txt"; sourceTree = "<group>"; };
+		FC86ED001CF6E97300BD42C0 /* 丽江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "丽江.txt"; sourceTree = "<group>"; };
+		FC86ED011CF6E97300BD42C0 /* 乌兰查布.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "乌兰查布.txt"; sourceTree = "<group>"; };
+		FC86ED021CF6E97300BD42C0 /* 乌兰浩特.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "乌兰浩特.txt"; sourceTree = "<group>"; };
+		FC86ED031CF6E97300BD42C0 /* 乌海.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "乌海.txt"; sourceTree = "<group>"; };
+		FC86ED041CF6E97300BD42C0 /* 乌鲁木齐.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "乌鲁木齐.txt"; sourceTree = "<group>"; };
+		FC86ED051CF6E97300BD42C0 /* 乐山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "乐山.txt"; sourceTree = "<group>"; };
+		FC86ED061CF6E97300BD42C0 /* 九江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "九江.txt"; sourceTree = "<group>"; };
+		FC86ED071CF6E97300BD42C0 /* 云浮.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "云浮.txt"; sourceTree = "<group>"; };
+		FC86ED081CF6E97300BD42C0 /* 仙桃.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "仙桃.txt"; sourceTree = "<group>"; };
+		FC86ED091CF6E97300BD42C0 /* 伊春.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "伊春.txt"; sourceTree = "<group>"; };
+		FC86ED0A1CF6E97300BD42C0 /* 伊犁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "伊犁.txt"; sourceTree = "<group>"; };
+		FC86ED0B1CF6E97300BD42C0 /* 佛山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "佛山.txt"; sourceTree = "<group>"; };
+		FC86ED0C1CF6E97300BD42C0 /* 佳木斯.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "佳木斯.txt"; sourceTree = "<group>"; };
+		FC86ED0D1CF6E97300BD42C0 /* 保定.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "保定.txt"; sourceTree = "<group>"; };
+		FC86ED0E1CF6E97300BD42C0 /* 保山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "保山.txt"; sourceTree = "<group>"; };
+		FC86ED0F1CF6E97300BD42C0 /* 信阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "信阳.txt"; sourceTree = "<group>"; };
+		FC86ED101CF6E97300BD42C0 /* 克州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "克州.txt"; sourceTree = "<group>"; };
+		FC86ED111CF6E97300BD42C0 /* 克拉玛依.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "克拉玛依.txt"; sourceTree = "<group>"; };
+		FC86ED121CF6E97300BD42C0 /* 六安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "六安.txt"; sourceTree = "<group>"; };
+		FC86ED131CF6E97300BD42C0 /* 六盘水.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "六盘水.txt"; sourceTree = "<group>"; };
+		FC86ED141CF6E97300BD42C0 /* 兰州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "兰州.txt"; sourceTree = "<group>"; };
+		FC86ED151CF6E97300BD42C0 /* 共和.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "共和.txt"; sourceTree = "<group>"; };
+		FC86ED161CF6E97300BD42C0 /* 兴义.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "兴义.txt"; sourceTree = "<group>"; };
+		FC86ED171CF6E97300BD42C0 /* 兴安盟.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "兴安盟.txt"; sourceTree = "<group>"; };
+		FC86ED181CF6E97300BD42C0 /* 内江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "内江.txt"; sourceTree = "<group>"; };
+		FC86ED191CF6E97300BD42C0 /* 凉山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "凉山.txt"; sourceTree = "<group>"; };
+		FC86ED1A1CF6E97300BD42C0 /* 凯里.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "凯里.txt"; sourceTree = "<group>"; };
+		FC86ED1B1CF6E97300BD42C0 /* 包头.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "包头.txt"; sourceTree = "<group>"; };
+		FC86ED1C1CF6E97300BD42C0 /* 北京.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "北京.txt"; sourceTree = "<group>"; };
+		FC86ED1D1CF6E97300BD42C0 /* 北海.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "北海.txt"; sourceTree = "<group>"; };
+		FC86ED1E1CF6E97300BD42C0 /* 十堰.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "十堰.txt"; sourceTree = "<group>"; };
+		FC86ED1F1CF6E97300BD42C0 /* 南京.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南京.txt"; sourceTree = "<group>"; };
+		FC86ED201CF6E97300BD42C0 /* 南充.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南充.txt"; sourceTree = "<group>"; };
+		FC86ED211CF6E97300BD42C0 /* 南宁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南宁.txt"; sourceTree = "<group>"; };
+		FC86ED221CF6E97300BD42C0 /* 南平.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南平.txt"; sourceTree = "<group>"; };
+		FC86ED231CF6E97300BD42C0 /* 南昌.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南昌.txt"; sourceTree = "<group>"; };
+		FC86ED241CF6E97300BD42C0 /* 南通.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南通.txt"; sourceTree = "<group>"; };
+		FC86ED251CF6E97300BD42C0 /* 南阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南阳.txt"; sourceTree = "<group>"; };
+		FC86ED261CF6E97300BD42C0 /* 博乐.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "博乐.txt"; sourceTree = "<group>"; };
+		FC86ED271CF6E97300BD42C0 /* 厦门.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "厦门.txt"; sourceTree = "<group>"; };
+		FC86ED281CF6E97300BD42C0 /* 双鸭山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "双鸭山.txt"; sourceTree = "<group>"; };
+		FC86ED291CF6E97300BD42C0 /* 台州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "台州.txt"; sourceTree = "<group>"; };
+		FC86ED2A1CF6E97300BD42C0 /* 合肥.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "合肥.txt"; sourceTree = "<group>"; };
+		FC86ED2B1CF6E97300BD42C0 /* 吉安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "吉安.txt"; sourceTree = "<group>"; };
+		FC86ED2C1CF6E97300BD42C0 /* 吉林.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "吉林.txt"; sourceTree = "<group>"; };
+		FC86ED2D1CF6E97300BD42C0 /* 吉首.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "吉首.txt"; sourceTree = "<group>"; };
+		FC86ED2E1CF6E97300BD42C0 /* 吐鲁番.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "吐鲁番.txt"; sourceTree = "<group>"; };
+		FC86ED2F1CF6E97300BD42C0 /* 吕梁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "吕梁.txt"; sourceTree = "<group>"; };
+		FC86ED301CF6E97300BD42C0 /* 吴忠.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "吴忠.txt"; sourceTree = "<group>"; };
+		FC86ED311CF6E97300BD42C0 /* 周口.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "周口.txt"; sourceTree = "<group>"; };
+		FC86ED321CF6E97300BD42C0 /* 呼伦贝尔.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "呼伦贝尔.txt"; sourceTree = "<group>"; };
+		FC86ED331CF6E97300BD42C0 /* 呼和浩特.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "呼和浩特.txt"; sourceTree = "<group>"; };
+		FC86ED341CF6E97300BD42C0 /* 和田.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "和田.txt"; sourceTree = "<group>"; };
+		FC86ED351CF6E97300BD42C0 /* 咸宁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "咸宁.txt"; sourceTree = "<group>"; };
+		FC86ED361CF6E97300BD42C0 /* 咸阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "咸阳.txt"; sourceTree = "<group>"; };
+		FC86ED371CF6E97300BD42C0 /* 哈密.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "哈密.txt"; sourceTree = "<group>"; };
+		FC86ED381CF6E97300BD42C0 /* 哈尔滨.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "哈尔滨.txt"; sourceTree = "<group>"; };
+		FC86ED391CF6E97300BD42C0 /* 唐山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "唐山.txt"; sourceTree = "<group>"; };
+		FC86ED3A1CF6E97300BD42C0 /* 商丘.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "商丘.txt"; sourceTree = "<group>"; };
+		FC86ED3B1CF6E97300BD42C0 /* 商洛.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "商洛.txt"; sourceTree = "<group>"; };
+		FC86ED3C1CF6E97300BD42C0 /* 喀什.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "喀什.txt"; sourceTree = "<group>"; };
+		FC86ED3D1CF6E97300BD42C0 /* 嘉兴.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "嘉兴.txt"; sourceTree = "<group>"; };
+		FC86ED3E1CF6E97300BD42C0 /* 嘉峪关.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "嘉峪关.txt"; sourceTree = "<group>"; };
+		FC86ED3F1CF6E97300BD42C0 /* 四平.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "四平.txt"; sourceTree = "<group>"; };
+		FC86ED401CF6E97300BD42C0 /* 固原.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "固原.txt"; sourceTree = "<group>"; };
+		FC86ED411CF6E97300BD42C0 /* 塔城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "塔城.txt"; sourceTree = "<group>"; };
+		FC86ED421CF6E97300BD42C0 /* 大兴安岭.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "大兴安岭.txt"; sourceTree = "<group>"; };
+		FC86ED431CF6E97300BD42C0 /* 大同.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "大同.txt"; sourceTree = "<group>"; };
+		FC86ED441CF6E97300BD42C0 /* 大庆.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "大庆.txt"; sourceTree = "<group>"; };
+		FC86ED451CF6E97300BD42C0 /* 大理.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "大理.txt"; sourceTree = "<group>"; };
+		FC86ED461CF6E97300BD42C0 /* 大连.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "大连.txt"; sourceTree = "<group>"; };
+		FC86ED471CF6E97300BD42C0 /* 天水.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "天水.txt"; sourceTree = "<group>"; };
+		FC86ED481CF6E97300BD42C0 /* 天津.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "天津.txt"; sourceTree = "<group>"; };
+		FC86ED491CF6E97300BD42C0 /* 太原.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "太原.txt"; sourceTree = "<group>"; };
+		FC86ED4A1CF6E97300BD42C0 /* 奎屯.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "奎屯.txt"; sourceTree = "<group>"; };
+		FC86ED4B1CF6E97300BD42C0 /* 威海.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "威海.txt"; sourceTree = "<group>"; };
+		FC86ED4C1CF6E97300BD42C0 /* 娄底.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "娄底.txt"; sourceTree = "<group>"; };
+		FC86ED4D1CF6E97300BD42C0 /* 孝感.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "孝感.txt"; sourceTree = "<group>"; };
+		FC86ED4E1CF6E97300BD42C0 /* 宁德.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宁德.txt"; sourceTree = "<group>"; };
+		FC86ED4F1CF6E97300BD42C0 /* 宁波.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宁波.txt"; sourceTree = "<group>"; };
+		FC86ED501CF6E97300BD42C0 /* 安庆.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "安庆.txt"; sourceTree = "<group>"; };
+		FC86ED511CF6E97300BD42C0 /* 安康.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "安康.txt"; sourceTree = "<group>"; };
+		FC86ED521CF6E97300BD42C0 /* 安阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "安阳.txt"; sourceTree = "<group>"; };
+		FC86ED531CF6E97300BD42C0 /* 安顺.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "安顺.txt"; sourceTree = "<group>"; };
+		FC86ED541CF6E97300BD42C0 /* 定西.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "定西.txt"; sourceTree = "<group>"; };
+		FC86ED551CF6E97300BD42C0 /* 宜宾.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宜宾.txt"; sourceTree = "<group>"; };
+		FC86ED561CF6E97300BD42C0 /* 宜昌 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宜昌 2.txt"; sourceTree = "<group>"; };
+		FC86ED571CF6E97300BD42C0 /* 宜昌.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宜昌.txt"; sourceTree = "<group>"; };
+		FC86ED581CF6E97300BD42C0 /* 宝鸡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宝鸡.txt"; sourceTree = "<group>"; };
+		FC86ED591CF6E97300BD42C0 /* 宣城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宣城.txt"; sourceTree = "<group>"; };
+		FC86ED5A1CF6E97300BD42C0 /* 宿州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宿州.txt"; sourceTree = "<group>"; };
+		FC86ED5B1CF6E97300BD42C0 /* 宿迁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宿迁.txt"; sourceTree = "<group>"; };
+		FC86ED5C1CF6E97300BD42C0 /* 山南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "山南.txt"; sourceTree = "<group>"; };
+		FC86ED5D1CF6E97300BD42C0 /* 岳阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "岳阳.txt"; sourceTree = "<group>"; };
+		FC86ED5E1CF6E97300BD42C0 /* 崇左.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "崇左.txt"; sourceTree = "<group>"; };
+		FC86ED5F1CF6E97300BD42C0 /* 巢湖.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "巢湖.txt"; sourceTree = "<group>"; };
+		FC86ED601CF6E97300BD42C0 /* 巴中.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "巴中.txt"; sourceTree = "<group>"; };
+		FC86ED611CF6E97300BD42C0 /* 巴彦浩特.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "巴彦浩特.txt"; sourceTree = "<group>"; };
+		FC86ED621CF6E97300BD42C0 /* 巴彦淖尔.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "巴彦淖尔.txt"; sourceTree = "<group>"; };
+		FC86ED631CF6E97300BD42C0 /* 常州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "常州.txt"; sourceTree = "<group>"; };
+		FC86ED641CF6E97300BD42C0 /* 常德.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "常德.txt"; sourceTree = "<group>"; };
+		FC86ED651CF6E97300BD42C0 /* 平凉.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "平凉.txt"; sourceTree = "<group>"; };
+		FC86ED661CF6E97300BD42C0 /* 平顶山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "平顶山.txt"; sourceTree = "<group>"; };
+		FC86ED671CF6E97300BD42C0 /* 广元.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "广元.txt"; sourceTree = "<group>"; };
+		FC86ED681CF6E97300BD42C0 /* 广安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "广安.txt"; sourceTree = "<group>"; };
+		FC86ED691CF6E97300BD42C0 /* 广州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "广州.txt"; sourceTree = "<group>"; };
+		FC86ED6A1CF6E97300BD42C0 /* 庆阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "庆阳.txt"; sourceTree = "<group>"; };
+		FC86ED6B1CF6E97300BD42C0 /* 库尔勒.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "库尔勒.txt"; sourceTree = "<group>"; };
+		FC86ED6C1CF6E97300BD42C0 /* 廊坊.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "廊坊.txt"; sourceTree = "<group>"; };
+		FC86ED6D1CF6E97300BD42C0 /* 延吉.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "延吉.txt"; sourceTree = "<group>"; };
+		FC86ED6E1CF6E97300BD42C0 /* 延安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "延安.txt"; sourceTree = "<group>"; };
+		FC86ED6F1CF6E97300BD42C0 /* 开封.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "开封.txt"; sourceTree = "<group>"; };
+		FC86ED701CF6E97300BD42C0 /* 张家口.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "张家口.txt"; sourceTree = "<group>"; };
+		FC86ED711CF6E97300BD42C0 /* 张家界.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "张家界.txt"; sourceTree = "<group>"; };
+		FC86ED721CF6E97300BD42C0 /* 张掖.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "张掖.txt"; sourceTree = "<group>"; };
+		FC86ED731CF6E97300BD42C0 /* 徐州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "徐州.txt"; sourceTree = "<group>"; };
+		FC86ED741CF6E97300BD42C0 /* 德令哈.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "德令哈.txt"; sourceTree = "<group>"; };
+		FC86ED751CF6E97300BD42C0 /* 德宏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "德宏.txt"; sourceTree = "<group>"; };
+		FC86ED761CF6E97300BD42C0 /* 德州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "德州.txt"; sourceTree = "<group>"; };
+		FC86ED771CF6E97300BD42C0 /* 德阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "德阳.txt"; sourceTree = "<group>"; };
+		FC86ED781CF6E97300BD42C0 /* 忻州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "忻州.txt"; sourceTree = "<group>"; };
+		FC86ED791CF6E97300BD42C0 /* 怀化.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "怀化.txt"; sourceTree = "<group>"; };
+		FC86ED7A1CF6E97300BD42C0 /* 怒江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "怒江.txt"; sourceTree = "<group>"; };
+		FC86ED7B1CF6E97300BD42C0 /* 思茅.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "思茅.txt"; sourceTree = "<group>"; };
+		FC86ED7C1CF6E97300BD42C0 /* 恩施.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "恩施.txt"; sourceTree = "<group>"; };
+		FC86ED7D1CF6E97300BD42C0 /* 惠州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "惠州.txt"; sourceTree = "<group>"; };
+		FC86ED7E1CF6E97300BD42C0 /* 成都.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "成都.txt"; sourceTree = "<group>"; };
+		FC86ED7F1CF6E97300BD42C0 /* 扬州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "扬州.txt"; sourceTree = "<group>"; };
+		FC86ED801CF6E97300BD42C0 /* 承德.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "承德.txt"; sourceTree = "<group>"; };
+		FC86ED811CF6E97300BD42C0 /* 抚州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "抚州.txt"; sourceTree = "<group>"; };
+		FC86ED821CF6E97300BD42C0 /* 抚顺.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "抚顺.txt"; sourceTree = "<group>"; };
+		FC86ED831CF6E97300BD42C0 /* 拉萨.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "拉萨.txt"; sourceTree = "<group>"; };
+		FC86ED841CF6E97300BD42C0 /* 揭阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "揭阳.txt"; sourceTree = "<group>"; };
+		FC86ED851CF6E97300BD42C0 /* 攀枝花.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "攀枝花.txt"; sourceTree = "<group>"; };
+		FC86ED861CF6E97300BD42C0 /* 文山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "文山.txt"; sourceTree = "<group>"; };
+		FC86ED871CF6E97300BD42C0 /* 新乡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "新乡.txt"; sourceTree = "<group>"; };
+		FC86ED881CF6E97300BD42C0 /* 新余.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "新余.txt"; sourceTree = "<group>"; };
+		FC86ED891CF6E97300BD42C0 /* 无锡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "无锡.txt"; sourceTree = "<group>"; };
+		FC86ED8A1CF6E97300BD42C0 /* 日喀则.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "日喀则.txt"; sourceTree = "<group>"; };
+		FC86ED8B1CF6E97300BD42C0 /* 日照.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "日照.txt"; sourceTree = "<group>"; };
+		FC86ED8C1CF6E97300BD42C0 /* 昆明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "昆明.txt"; sourceTree = "<group>"; };
+		FC86ED8D1CF6E97300BD42C0 /* 昌吉.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "昌吉.txt"; sourceTree = "<group>"; };
+		FC86ED8E1CF6E97300BD42C0 /* 昌都.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "昌都.txt"; sourceTree = "<group>"; };
+		FC86ED8F1CF6E97300BD42C0 /* 昭通.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "昭通.txt"; sourceTree = "<group>"; };
+		FC86ED901CF6E97300BD42C0 /* 晋中.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "晋中.txt"; sourceTree = "<group>"; };
+		FC86ED911CF6E97300BD42C0 /* 晋城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "晋城.txt"; sourceTree = "<group>"; };
+		FC86ED921CF6E97300BD42C0 /* 景德镇.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "景德镇.txt"; sourceTree = "<group>"; };
+		FC86ED931CF6E97300BD42C0 /* 曲靖.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "曲靖.txt"; sourceTree = "<group>"; };
+		FC86ED941CF6E97300BD42C0 /* 朔州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "朔州.txt"; sourceTree = "<group>"; };
+		FC86ED951CF6E97300BD42C0 /* 朝阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "朝阳.txt"; sourceTree = "<group>"; };
+		FC86ED961CF6E97300BD42C0 /* 本溪.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "本溪.txt"; sourceTree = "<group>"; };
+		FC86ED971CF6E97300BD42C0 /* 来宾.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "来宾.txt"; sourceTree = "<group>"; };
+		FC86ED981CF6E97300BD42C0 /* 杭州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "杭州.txt"; sourceTree = "<group>"; };
+		FC86ED991CF6E97300BD42C0 /* 松原.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "松原.txt"; sourceTree = "<group>"; };
+		FC86ED9A1CF6E97300BD42C0 /* 林芝.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "林芝.txt"; sourceTree = "<group>"; };
+		FC86ED9B1CF6E97300BD42C0 /* 果洛.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "果洛.txt"; sourceTree = "<group>"; };
+		FC86ED9C1CF6E97300BD42C0 /* 枣庄.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "枣庄.txt"; sourceTree = "<group>"; };
+		FC86ED9D1CF6E97300BD42C0 /* 柳州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "柳州.txt"; sourceTree = "<group>"; };
+		FC86ED9E1CF6E97300BD42C0 /* 株洲.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "株洲.txt"; sourceTree = "<group>"; };
+		FC86ED9F1CF6E97300BD42C0 /* 格尔木.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "格尔木.txt"; sourceTree = "<group>"; };
+		FC86EDA01CF6E97300BD42C0 /* 桂林.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "桂林.txt"; sourceTree = "<group>"; };
+		FC86EDA11CF6E97300BD42C0 /* 梅州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "梅州.txt"; sourceTree = "<group>"; };
+		FC86EDA21CF6E97300BD42C0 /* 梅河口.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "梅河口.txt"; sourceTree = "<group>"; };
+		FC86EDA31CF6E97300BD42C0 /* 梧州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "梧州.txt"; sourceTree = "<group>"; };
+		FC86EDA41CF6E97300BD42C0 /* 楚雄.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "楚雄.txt"; sourceTree = "<group>"; };
+		FC86EDA51CF6E97300BD42C0 /* 榆林.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "榆林.txt"; sourceTree = "<group>"; };
+		FC86EDA61CF6E97300BD42C0 /* 武威.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "武威.txt"; sourceTree = "<group>"; };
+		FC86EDA71CF6E97300BD42C0 /* 武汉.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "武汉.txt"; sourceTree = "<group>"; };
+		FC86EDA81CF6E97300BD42C0 /* 毕节.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "毕节.txt"; sourceTree = "<group>"; };
+		FC86EDA91CF6E97300BD42C0 /* 毫州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "毫州.txt"; sourceTree = "<group>"; };
+		FC86EDAA1CF6E97300BD42C0 /* 永州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "永州.txt"; sourceTree = "<group>"; };
+		FC86EDAB1CF6E97300BD42C0 /* 汉中.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "汉中.txt"; sourceTree = "<group>"; };
+		FC86EDAC1CF6E97300BD42C0 /* 汕头.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "汕头.txt"; sourceTree = "<group>"; };
+		FC86EDAD1CF6E97300BD42C0 /* 汕尾.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "汕尾.txt"; sourceTree = "<group>"; };
+		FC86EDAE1CF6E97300BD42C0 /* 江汉.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "江汉.txt"; sourceTree = "<group>"; };
+		FC86EDAF1CF6E97300BD42C0 /* 江门.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "江门.txt"; sourceTree = "<group>"; };
+		FC86EDB01CF6E97300BD42C0 /* 池州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "池州.txt"; sourceTree = "<group>"; };
+		FC86EDB11CF6E97300BD42C0 /* 沈阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "沈阳.txt"; sourceTree = "<group>"; };
+		FC86EDB21CF6E97300BD42C0 /* 沧州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "沧州.txt"; sourceTree = "<group>"; };
+		FC86EDB31CF6E97300BD42C0 /* 河池.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "河池.txt"; sourceTree = "<group>"; };
+		FC86EDB41CF6E97300BD42C0 /* 河源.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "河源.txt"; sourceTree = "<group>"; };
+		FC86EDB51CF6E97300BD42C0 /* 泉州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泉州.txt"; sourceTree = "<group>"; };
+		FC86EDB61CF6E97300BD42C0 /* 泰安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泰安.txt"; sourceTree = "<group>"; };
+		FC86EDB71CF6E97300BD42C0 /* 泰州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泰州.txt"; sourceTree = "<group>"; };
+		FC86EDB81CF6E97300BD42C0 /* 泸州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泸州.txt"; sourceTree = "<group>"; };
+		FC86EDB91CF6E97300BD42C0 /* 洛阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "洛阳.txt"; sourceTree = "<group>"; };
+		FC86EDBA1CF6E97300BD42C0 /* 济南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "济南.txt"; sourceTree = "<group>"; };
+		FC86EDBB1CF6E97300BD42C0 /* 济宁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "济宁.txt"; sourceTree = "<group>"; };
+		FC86EDBC1CF6E97300BD42C0 /* 海东.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海东.txt"; sourceTree = "<group>"; };
+		FC86EDBD1CF6E97300BD42C0 /* 海北州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海北州.txt"; sourceTree = "<group>"; };
+		FC86EDBE1CF6E97300BD42C0 /* 海南州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海南州.txt"; sourceTree = "<group>"; };
+		FC86EDBF1CF6E97300BD42C0 /* 海口.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海口.txt"; sourceTree = "<group>"; };
+		FC86EDC01CF6E97300BD42C0 /* 海拉尔.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海拉尔.txt"; sourceTree = "<group>"; };
+		FC86EDC11CF6E97300BD42C0 /* 海晏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海晏.txt"; sourceTree = "<group>"; };
+		FC86EDC21CF6E97300BD42C0 /* 海西州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海西州.txt"; sourceTree = "<group>"; };
+		FC86EDC31CF6E97300BD42C0 /* 淄博.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "淄博.txt"; sourceTree = "<group>"; };
+		FC86EDC41CF6E97300BD42C0 /* 淮北.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "淮北.txt"; sourceTree = "<group>"; };
+		FC86EDC51CF6E97300BD42C0 /* 淮南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "淮南.txt"; sourceTree = "<group>"; };
+		FC86EDC61CF6E97300BD42C0 /* 淮安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "淮安.txt"; sourceTree = "<group>"; };
+		FC86EDC71CF6E97300BD42C0 /* 深圳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "深圳.txt"; sourceTree = "<group>"; };
+		FC86EDC81CF6E97300BD42C0 /* 清远.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "清远.txt"; sourceTree = "<group>"; };
+		FC86EDC91CF6E97300BD42C0 /* 温州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "温州.txt"; sourceTree = "<group>"; };
+		FC86EDCA1CF6E97300BD42C0 /* 渭南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "渭南.txt"; sourceTree = "<group>"; };
+		FC86EDCB1CF6E97300BD42C0 /* 湖州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "湖州.txt"; sourceTree = "<group>"; };
+		FC86EDCC1CF6E97300BD42C0 /* 湘潭.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "湘潭.txt"; sourceTree = "<group>"; };
+		FC86EDCD1CF6E97300BD42C0 /* 湛江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "湛江.txt"; sourceTree = "<group>"; };
+		FC86EDCE1CF6E97300BD42C0 /* 滁州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "滁州.txt"; sourceTree = "<group>"; };
+		FC86EDCF1CF6E97300BD42C0 /* 滨州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "滨州.txt"; sourceTree = "<group>"; };
+		FC86EDD01CF6E97300BD42C0 /* 漯河.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "漯河.txt"; sourceTree = "<group>"; };
+		FC86EDD11CF6E97300BD42C0 /* 漳州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "漳州.txt"; sourceTree = "<group>"; };
+		FC86EDD21CF6E97300BD42C0 /* 潍坊.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "潍坊.txt"; sourceTree = "<group>"; };
+		FC86EDD31CF6E97300BD42C0 /* 潢川.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "潢川.txt"; sourceTree = "<group>"; };
+		FC86EDD41CF6E97300BD42C0 /* 潮州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "潮州.txt"; sourceTree = "<group>"; };
+		FC86EDD51CF6E97300BD42C0 /* 濮阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "濮阳.txt"; sourceTree = "<group>"; };
+		FC86EDD61CF6E97300BD42C0 /* 烟台.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "烟台.txt"; sourceTree = "<group>"; };
+		FC86EDD71CF6E97300BD42C0 /* 焦作.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "焦作.txt"; sourceTree = "<group>"; };
+		FC86EDD81CF6E97300BD42C0 /* 牡丹江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "牡丹江.txt"; sourceTree = "<group>"; };
+		FC86EDD91CF6E97300BD42C0 /* 玉林.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "玉林.txt"; sourceTree = "<group>"; };
+		FC86EDDA1CF6E97300BD42C0 /* 玉树.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "玉树.txt"; sourceTree = "<group>"; };
+		FC86EDDB1CF6E97300BD42C0 /* 玉溪.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "玉溪.txt"; sourceTree = "<group>"; };
+		FC86EDDC1CF6E97300BD42C0 /* 珠海.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "珠海.txt"; sourceTree = "<group>"; };
+		FC86EDDD1CF6E97300BD42C0 /* 珲春.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "珲春.txt"; sourceTree = "<group>"; };
+		FC86EDDE1CF6E97300BD42C0 /* 甘南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "甘南.txt"; sourceTree = "<group>"; };
+		FC86EDDF1CF6E97300BD42C0 /* 甘孜州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "甘孜州.txt"; sourceTree = "<group>"; };
+		FC86EDE01CF6E97300BD42C0 /* 白城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "白城.txt"; sourceTree = "<group>"; };
+		FC86EDE11CF6E97300BD42C0 /* 白山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "白山.txt"; sourceTree = "<group>"; };
+		FC86EDE21CF6E97300BD42C0 /* 白银.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "白银.txt"; sourceTree = "<group>"; };
+		FC86EDE31CF6E97300BD42C0 /* 百色.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "百色.txt"; sourceTree = "<group>"; };
+		FC86EDE41CF6E97300BD42C0 /* 益阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "益阳.txt"; sourceTree = "<group>"; };
+		FC86EDE51CF6E97300BD42C0 /* 盐城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盐城.txt"; sourceTree = "<group>"; };
+		FC86EDE61CF6E97300BD42C0 /* 盘锦.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盘锦.txt"; sourceTree = "<group>"; };
+		FC86EDE71CF6E97300BD42C0 /* 眉山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "眉山.txt"; sourceTree = "<group>"; };
+		FC86EDE81CF6E97300BD42C0 /* 石嘴山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "石嘴山.txt"; sourceTree = "<group>"; };
+		FC86EDE91CF6E97300BD42C0 /* 石家庄.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "石家庄.txt"; sourceTree = "<group>"; };
+		FC86EDEA1CF6E97300BD42C0 /* 石河子.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "石河子.txt"; sourceTree = "<group>"; };
+		FC86EDEB1CF6E97300BD42C0 /* 福州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "福州.txt"; sourceTree = "<group>"; };
+		FC86EDEC1CF6E97300BD42C0 /* 秦皇岛.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "秦皇岛.txt"; sourceTree = "<group>"; };
+		FC86EDED1CF6E97300BD42C0 /* 红河.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "红河.txt"; sourceTree = "<group>"; };
+		FC86EDEE1CF6E97300BD42C0 /* 绍兴.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "绍兴.txt"; sourceTree = "<group>"; };
+		FC86EDEF1CF6E97300BD42C0 /* 绥化.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "绥化.txt"; sourceTree = "<group>"; };
+		FC86EDF01CF6E97300BD42C0 /* 绵阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "绵阳.txt"; sourceTree = "<group>"; };
+		FC86EDF11CF6E97300BD42C0 /* 聊城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "聊城.txt"; sourceTree = "<group>"; };
+		FC86EDF21CF6E97300BD42C0 /* 肇庆.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "肇庆.txt"; sourceTree = "<group>"; };
+		FC86EDF31CF6E97300BD42C0 /* 自宫.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "自宫.txt"; sourceTree = "<group>"; };
+		FC86EDF41CF6E97300BD42C0 /* 舟山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "舟山.txt"; sourceTree = "<group>"; };
+		FC86EDF51CF6E97300BD42C0 /* 芜湖.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "芜湖.txt"; sourceTree = "<group>"; };
+		FC86EDF61CF6E97300BD42C0 /* 苏州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "苏州.txt"; sourceTree = "<group>"; };
+		FC86EDF71CF6E97300BD42C0 /* 茂名.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "茂名.txt"; sourceTree = "<group>"; };
+		FC86EDF81CF6E97300BD42C0 /* 荆州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "荆州.txt"; sourceTree = "<group>"; };
+		FC86EDF91CF6E97300BD42C0 /* 荆门.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "荆门.txt"; sourceTree = "<group>"; };
+		FC86EDFA1CF6E97300BD42C0 /* 莆田.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "莆田.txt"; sourceTree = "<group>"; };
+		FC86EDFB1CF6E97300BD42C0 /* 莱芜.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "莱芜.txt"; sourceTree = "<group>"; };
+		FC86EDFC1CF6E97300BD42C0 /* 菏泽.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "菏泽.txt"; sourceTree = "<group>"; };
+		FC86EDFD1CF6E97300BD42C0 /* 萍乡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "萍乡.txt"; sourceTree = "<group>"; };
+		FC86EDFE1CF6E97300BD42C0 /* 营口.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "营口.txt"; sourceTree = "<group>"; };
+		FC86EDFF1CF6E97300BD42C0 /* 葫芦岛.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "葫芦岛.txt"; sourceTree = "<group>"; };
+		FC86EE001CF6E97300BD42C0 /* 蚌埠.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "蚌埠.txt"; sourceTree = "<group>"; };
+		FC86EE011CF6E97300BD42C0 /* 衡州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "衡州.txt"; sourceTree = "<group>"; };
+		FC86EE021CF6E97300BD42C0 /* 衡水.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "衡水.txt"; sourceTree = "<group>"; };
+		FC86EE031CF6E97300BD42C0 /* 衡阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "衡阳.txt"; sourceTree = "<group>"; };
+		FC86EE041CF6E97300BD42C0 /* 襄樊.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "襄樊.txt"; sourceTree = "<group>"; };
+		FC86EE051CF6E97300BD42C0 /* 西双版纳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "西双版纳.txt"; sourceTree = "<group>"; };
+		FC86EE061CF6E97300BD42C0 /* 西宁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "西宁.txt"; sourceTree = "<group>"; };
+		FC86EE071CF6E97300BD42C0 /* 西安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "西安.txt"; sourceTree = "<group>"; };
+		FC86EE081CF6E97300BD42C0 /* 西昌.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "西昌.txt"; sourceTree = "<group>"; };
+		FC86EE091CF6E97300BD42C0 /* 许昌.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "许昌.txt"; sourceTree = "<group>"; };
+		FC86EE0A1CF6E97300BD42C0 /* 贵港.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "贵港.txt"; sourceTree = "<group>"; };
+		FC86EE0B1CF6E97300BD42C0 /* 贵阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "贵阳.txt"; sourceTree = "<group>"; };
+		FC86EE0C1CF6E97300BD42C0 /* 贺州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "贺州.txt"; sourceTree = "<group>"; };
+		FC86EE0D1CF6E97300BD42C0 /* 资阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "资阳.txt"; sourceTree = "<group>"; };
+		FC86EE0E1CF6E97300BD42C0 /* 赣州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "赣州.txt"; sourceTree = "<group>"; };
+		FC86EE0F1CF6E97300BD42C0 /* 赤峰.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "赤峰.txt"; sourceTree = "<group>"; };
+		FC86EE101CF6E97300BD42C0 /* 辽源.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "辽源.txt"; sourceTree = "<group>"; };
+		FC86EE111CF6E97300BD42C0 /* 辽阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "辽阳.txt"; sourceTree = "<group>"; };
+		FC86EE121CF6E97300BD42C0 /* 达州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "达州.txt"; sourceTree = "<group>"; };
+		FC86EE131CF6E97300BD42C0 /* 运城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "运城.txt"; sourceTree = "<group>"; };
+		FC86EE141CF6E97300BD42C0 /* 连云港.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "连云港.txt"; sourceTree = "<group>"; };
+		FC86EE151CF6E97300BD42C0 /* 迪庆.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "迪庆.txt"; sourceTree = "<group>"; };
+		FC86EE161CF6E97300BD42C0 /* 通化.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "通化.txt"; sourceTree = "<group>"; };
+		FC86EE171CF6E97300BD42C0 /* 通辽.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "通辽.txt"; sourceTree = "<group>"; };
+		FC86EE181CF6E97300BD42C0 /* 遂宁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "遂宁.txt"; sourceTree = "<group>"; };
+		FC86EE191CF6E97300BD42C0 /* 遵义.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "遵义.txt"; sourceTree = "<group>"; };
+		FC86EE1A1CF6E97400BD42C0 /* 邢台.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "邢台.txt"; sourceTree = "<group>"; };
+		FC86EE1B1CF6E97400BD42C0 /* 那曲.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "那曲.txt"; sourceTree = "<group>"; };
+		FC86EE1C1CF6E97400BD42C0 /* 邯郸.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "邯郸.txt"; sourceTree = "<group>"; };
+		FC86EE1D1CF6E97400BD42C0 /* 邵阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "邵阳.txt"; sourceTree = "<group>"; };
+		FC86EE1E1CF6E97400BD42C0 /* 郑州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "郑州.txt"; sourceTree = "<group>"; };
+		FC86EE1F1CF6E97400BD42C0 /* 郴州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "郴州.txt"; sourceTree = "<group>"; };
+		FC86EE201CF6E97400BD42C0 /* 都匀.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "都匀.txt"; sourceTree = "<group>"; };
+		FC86EE211CF6E97400BD42C0 /* 鄂尔多斯.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鄂尔多斯.txt"; sourceTree = "<group>"; };
+		FC86EE221CF6E97400BD42C0 /* 鄂州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鄂州.txt"; sourceTree = "<group>"; };
+		FC86EE231CF6E97400BD42C0 /* 酒泉嘉峪关.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "酒泉嘉峪关.txt"; sourceTree = "<group>"; };
+		FC86EE241CF6E97400BD42C0 /* 重庆.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "重庆.txt"; sourceTree = "<group>"; };
+		FC86EE251CF6E97400BD42C0 /* 金华.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "金华.txt"; sourceTree = "<group>"; };
+		FC86EE261CF6E97400BD42C0 /* 金昌武威.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "金昌武威.txt"; sourceTree = "<group>"; };
+		FC86EE271CF6E97400BD42C0 /* 钦州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "钦州.txt"; sourceTree = "<group>"; };
+		FC86EE281CF6E97400BD42C0 /* 铁岭.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "铁岭.txt"; sourceTree = "<group>"; };
+		FC86EE291CF6E97400BD42C0 /* 铜仁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "铜仁.txt"; sourceTree = "<group>"; };
+		FC86EE2A1CF6E97400BD42C0 /* 铜川.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "铜川.txt"; sourceTree = "<group>"; };
+		FC86EE2B1CF6E97400BD42C0 /* 铜陵.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "铜陵.txt"; sourceTree = "<group>"; };
+		FC86EE2C1CF6E97400BD42C0 /* 银川.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "银川.txt"; sourceTree = "<group>"; };
+		FC86EE2D1CF6E97400BD42C0 /* 锡林浩特.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "锡林浩特.txt"; sourceTree = "<group>"; };
+		FC86EE2E1CF6E97400BD42C0 /* 锦州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "锦州.txt"; sourceTree = "<group>"; };
+		FC86EE2F1CF6E97400BD42C0 /* 镇江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "镇江.txt"; sourceTree = "<group>"; };
+		FC86EE301CF6E97400BD42C0 /* 长春.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "长春.txt"; sourceTree = "<group>"; };
+		FC86EE311CF6E97400BD42C0 /* 长沙.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "长沙.txt"; sourceTree = "<group>"; };
+		FC86EE321CF6E97400BD42C0 /* 长治.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "长治.txt"; sourceTree = "<group>"; };
+		FC86EE331CF6E97400BD42C0 /* 阜新.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阜新.txt"; sourceTree = "<group>"; };
+		FC86EE341CF6E97400BD42C0 /* 阜阳.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阜阳.txt"; sourceTree = "<group>"; };
+		FC86EE351CF6E97400BD42C0 /* 防城港.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "防城港.txt"; sourceTree = "<group>"; };
+		FC86EE361CF6E97400BD42C0 /* 阳江.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阳江.txt"; sourceTree = "<group>"; };
+		FC86EE371CF6E97400BD42C0 /* 阳泉.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阳泉.txt"; sourceTree = "<group>"; };
+		FC86EE381CF6E97400BD42C0 /* 阿克苏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阿克苏.txt"; sourceTree = "<group>"; };
+		FC86EE391CF6E97400BD42C0 /* 阿勒泰.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阿勒泰.txt"; sourceTree = "<group>"; };
+		FC86EE3A1CF6E97400BD42C0 /* 阿坝州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阿坝州.txt"; sourceTree = "<group>"; };
+		FC86EE3B1CF6E97400BD42C0 /* 阿盟.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阿盟.txt"; sourceTree = "<group>"; };
+		FC86EE3C1CF6E97400BD42C0 /* 阿里.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "阿里.txt"; sourceTree = "<group>"; };
+		FC86EE3D1CF6E97400BD42C0 /* 陇南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "陇南.txt"; sourceTree = "<group>"; };
+		FC86EE3E1CF6E97400BD42C0 /* 随州.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "随州.txt"; sourceTree = "<group>"; };
+		FC86EE3F1CF6E97400BD42C0 /* 雅安.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "雅安.txt"; sourceTree = "<group>"; };
+		FC86EE401CF6E97400BD42C0 /* 集宁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "集宁.txt"; sourceTree = "<group>"; };
+		FC86EE411CF6E97400BD42C0 /* 青岛.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "青岛.txt"; sourceTree = "<group>"; };
+		FC86EE421CF6E97400BD42C0 /* 鞍山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鞍山.txt"; sourceTree = "<group>"; };
+		FC86EE431CF6E97400BD42C0 /* 韶关.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "韶关.txt"; sourceTree = "<group>"; };
+		FC86EE441CF6E97400BD42C0 /* 马鞍山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "马鞍山.txt"; sourceTree = "<group>"; };
+		FC86EE451CF6E97400BD42C0 /* 驻马店.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "驻马店.txt"; sourceTree = "<group>"; };
+		FC86EE461CF6E97400BD42C0 /* 鸡西.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鸡西.txt"; sourceTree = "<group>"; };
+		FC86EE471CF6E97400BD42C0 /* 鹤壁.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鹤壁.txt"; sourceTree = "<group>"; };
+		FC86EE481CF6E97400BD42C0 /* 鹤岗.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鹤岗.txt"; sourceTree = "<group>"; };
+		FC86EE491CF6E97400BD42C0 /* 鹰潭.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鹰潭.txt"; sourceTree = "<group>"; };
+		FC86EE4A1CF6E97400BD42C0 /* 黄南.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "黄南.txt"; sourceTree = "<group>"; };
+		FC86EE4B1CF6E97400BD42C0 /* 黄山.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "黄山.txt"; sourceTree = "<group>"; };
+		FC86EE4C1CF6E97400BD42C0 /* 黄岗.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "黄岗.txt"; sourceTree = "<group>"; };
+		FC86EE4D1CF6E97400BD42C0 /* 黄石.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "黄石.txt"; sourceTree = "<group>"; };
+		FC86EE4E1CF6E97400BD42C0 /* 黑河.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "黑河.txt"; sourceTree = "<group>"; };
+		FC86EE4F1CF6E97400BD42C0 /* 齐齐哈尔.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "齐齐哈尔.txt"; sourceTree = "<group>"; };
+		FC86EE501CF6E97400BD42C0 /* 龙岩.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "龙岩.txt"; sourceTree = "<group>"; };
+		FC86EE511CF6E97400BD42C0 /* hot.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hot.txt; sourceTree = "<group>"; };
+		FC86EE521CF6E97400BD42C0 /* province.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = province.txt; sourceTree = "<group>"; };
+		FC86EFB81CF6E98500BD42C0 /* head@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head@2x.png"; sourceTree = "<group>"; };
+		FC86EFB91CF6E98500BD42C0 /* home_add_contact_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_add_contact_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFBA1CF6E98500BD42C0 /* home_clear_contact_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_clear_contact_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFBB1CF6E98500BD42C0 /* home_clear_history_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_clear_history_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFBC1CF6E98500BD42C0 /* home_title_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_title_logo@2x.png"; sourceTree = "<group>"; };
+		FC86EFBD1CF6E98500BD42C0 /* home_update_contact_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_update_contact_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFBE1CF6E98500BD42C0 /* import_data_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "import_data_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFBF1CF6E98500BD42C0 /* setting_activate_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_activate_button@2x.png"; sourceTree = "<group>"; };
+		FC86EFC01CF6E98500BD42C0 /* setting_title_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_title_logo@2x.png"; sourceTree = "<group>"; };
+		FC86EFC11CF6E98500BD42C0 /* splash_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash_logo@2x.png"; sourceTree = "<group>"; };
+		FC86EFC21CF6E98500BD42C0 /* splash_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash_text@2x.png"; sourceTree = "<group>"; };
+		FC86EFC31CF6E98500BD42C0 /* store_city_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store_city_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFC41CF6E98500BD42C0 /* store_gen_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store_gen_icon@2x.png"; sourceTree = "<group>"; };
+		FC86EFC51CF6E98500BD42C0 /* store_title_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store_title_logo@2x.png"; sourceTree = "<group>"; };
+		FC86EFC61CF6E98500BD42C0 /* tab_bottom_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bottom_bg@2x.png"; sourceTree = "<group>"; };
+		FC86EFC71CF6E98500BD42C0 /* tab_item_home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_home_selected@2x.png"; sourceTree = "<group>"; };
+		FC86EFC81CF6E98500BD42C0 /* tab_item_home_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_home_unselected@2x.png"; sourceTree = "<group>"; };
+		FC86EFC91CF6E98500BD42C0 /* tab_item_selected_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_selected_bg@2x.png"; sourceTree = "<group>"; };
+		FC86EFCA1CF6E98500BD42C0 /* tab_item_setting_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_setting_selected@2x.png"; sourceTree = "<group>"; };
+		FC86EFCB1CF6E98500BD42C0 /* tab_item_setting_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_setting_unselected@2x.png"; sourceTree = "<group>"; };
+		FC86EFCC1CF6E98500BD42C0 /* tab_item_store_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_store_selected@2x.png"; sourceTree = "<group>"; };
+		FC86EFCD1CF6E98500BD42C0 /* tab_item_store_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_item_store_unselected@2x.png"; sourceTree = "<group>"; };
+		FC86EFE41CF6E9A200BD42C0 /* UIView+ym_extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ym_extension.h"; sourceTree = "<group>"; };
+		FC86EFE51CF6E9A200BD42C0 /* UIView+ym_extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ym_extension.m"; sourceTree = "<group>"; };
+		FC86EFE61CF6E9A200BD42C0 /* YMCityGroupsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMCityGroupsModel.h; sourceTree = "<group>"; };
+		FC86EFE71CF6E9A200BD42C0 /* YMCityGroupsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMCityGroupsModel.m; sourceTree = "<group>"; };
+		FC86EFE81CF6E9A200BD42C0 /* YMCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMCityModel.h; sourceTree = "<group>"; };
+		FC86EFE91CF6E9A200BD42C0 /* YMCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMCityModel.m; sourceTree = "<group>"; };
+		FC86EFEA1CF6E9A200BD42C0 /* YMCitySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMCitySearch.h; sourceTree = "<group>"; };
+		FC86EFEB1CF6E9A200BD42C0 /* YMCitySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMCitySearch.m; sourceTree = "<group>"; };
+		FC86EFEC1CF6E9A200BD42C0 /* YMCitySelect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YMCitySelect.bundle; sourceTree = "<group>"; };
+		FC86EFED1CF6E9A200BD42C0 /* YMCitySelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMCitySelect.h; sourceTree = "<group>"; };
+		FC86EFEE1CF6E9A200BD42C0 /* YMCitySelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMCitySelect.m; sourceTree = "<group>"; };
+		FC86EFEF1CF6E9A200BD42C0 /* YMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMCollectionViewCell.h; sourceTree = "<group>"; };
+		FC86EFF01CF6E9A200BD42C0 /* YMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMCollectionViewCell.m; sourceTree = "<group>"; };
+		FC86EFF11CF6E9A200BD42C0 /* YMSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSearchBar.h; sourceTree = "<group>"; };
+		FC86EFF21CF6E9A200BD42C0 /* YMSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSearchBar.m; sourceTree = "<group>"; };
+		FC86EFF31CF6E9A200BD42C0 /* YMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTableViewCell.h; sourceTree = "<group>"; };
+		FC86EFF41CF6E9A200BD42C0 /* YMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTableViewCell.m; sourceTree = "<group>"; };
+		FC86EFFE1CF6E9CA00BD42C0 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		FC86EFFF1CF6E9CA00BD42C0 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		FC86F0001CF6E9CA00BD42C0 /* VCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCityCell.h; sourceTree = "<group>"; };
+		FC86F0011CF6E9CA00BD42C0 /* VCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCityCell.m; sourceTree = "<group>"; };
+		FC86F0041CF6E9E100BD42C0 /* EaseStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseStartView.h; sourceTree = "<group>"; };
+		FC86F0051CF6E9E100BD42C0 /* EaseStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseStartView.m; sourceTree = "<group>"; };
+		FC86F0071CF6EA0A00BD42C0 /* DES3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3Util.h; sourceTree = "<group>"; };
+		FC86F0081CF6EA0A00BD42C0 /* DES3Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES3Util.m; sourceTree = "<group>"; };
+		FC86F00A1CF6EA1B00BD42C0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		FC86F00B1CF6EA1B00BD42C0 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		FC86F00D1CF6EA3400BD42C0 /* ObjcRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRuntime.h; sourceTree = "<group>"; };
+		FC86F00E1CF6EA3400BD42C0 /* ObjcRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcRuntime.m; sourceTree = "<group>"; };
+		FC86F0161CF6EA8B00BD42C0 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		FC86F0171CF6EA8B00BD42C0 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		FC86F0181CF6EA8B00BD42C0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		FC86F0191CF6EA8B00BD42C0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FC86F01C1CF6EAAE00BD42C0 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		FC86F01D1CF6EAAE00BD42C0 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		FC86F01F1CF6EAC700BD42C0 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		FC86F0201CF6EAC700BD42C0 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		FC86F0221CF6EAD800BD42C0 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		FC86F0231CF6EAD800BD42C0 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		FC86F0251CF6EAE800BD42C0 /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
+		FC86F0261CF6EAE800BD42C0 /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		FC86F0281CF6EB9F00BD42C0 /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
+		FC86F0291CF6EB9F00BD42C0 /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
+		FC86F02B1CF6EBF600BD42C0 /* UITapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapImageView.h; sourceTree = "<group>"; };
+		FC86F02C1CF6EBF600BD42C0 /* UITapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITapImageView.m; sourceTree = "<group>"; };
+		FC86F02E1CF6EC4C00BD42C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCB0946E1CF6ED43009A4615 /* RootTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabViewController.m; sourceTree = "<group>"; };
+		FCB0946F1CF6ED43009A4615 /* RootTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabViewController.h; sourceTree = "<group>"; };
+		FCB094711CF6ED53009A4615 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FCB094721CF6ED53009A4615 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FCB094741CF6ED73009A4615 /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		FCB094751CF6ED73009A4615 /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		FCB094761CF6ED73009A4615 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		FCB094771CF6ED73009A4615 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		FCB094781CF6ED73009A4615 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FCB094791CF6ED73009A4615 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FCB0947D1CF6EDCE009A4615 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		FCB0947E1CF6EDCE009A4615 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		FCB094801CF6EE4B009A4615 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		FCB094821CF6EECF009A4615 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB094851CF73CC3009A4615 /* KTSContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTSContactsManager.h; sourceTree = "<group>"; };
+		FCB094861CF73CC3009A4615 /* KTSContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTSContactsManager.m; sourceTree = "<group>"; };
+		FCBD0B7E1CEDA8FA006E40E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FCBD0B801CEEA859006E40E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FCBD0B821CEEF02B006E40E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCBD0B841CEEF040006E40E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCBD0B861CEEF051006E40E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCBD0B881CEEF0E1006E40E2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FCD626F91CCA08900016F388 /* Launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
+		FCE2ED421CF6D7E9002B24D4 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		FCFFB83F1CC4D761001C14FE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC68313A1CBCEE6400162502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB094811CF6EE4B009A4615 /* libPods.a in Frameworks */,
+				FCE2ED431CF6D7E9002B24D4 /* Contacts.framework in Frameworks */,
+				FC2C8FD01D1576B300BB84B1 /* ContactsUI.framework in Frameworks */,
+				FCBD0B851CEEF040006E40E2 /* Foundation.framework in Frameworks */,
+				FCBD0B891CEEF0E1006E40E2 /* CoreData.framework in Frameworks */,
+				FCBD0B831CEEF02B006E40E2 /* CoreGraphics.framework in Frameworks */,
+				FCBD0B811CEEA859006E40E2 /* QuartzCore.framework in Frameworks */,
+				FCBD0B7F1CEDA8FA006E40E2 /* Security.framework in Frameworks */,
+				FCBD0B871CEEF051006E40E2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71EE012672668EE4E741E6E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB52CC66A0898F2B1E82A /* Pods.debug.xcconfig */,
+				0128E64A64474D095F85D6E5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		875548E506F62C686CFAE1E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC2C8FCF1D1576B300BB84B1 /* ContactsUI.framework */,
+				FCB094801CF6EE4B009A4615 /* libPods.a */,
+				FCE2ED421CF6D7E9002B24D4 /* Contacts.framework */,
+				FCBD0B881CEEF0E1006E40E2 /* CoreData.framework */,
+				FCBD0B861CEEF051006E40E2 /* UIKit.framework */,
+				FCBD0B841CEEF040006E40E2 /* Foundation.framework */,
+				FCBD0B821CEEF02B006E40E2 /* CoreGraphics.framework */,
+				FCBD0B801CEEA859006E40E2 /* QuartzCore.framework */,
+				FCBD0B7E1CEDA8FA006E40E2 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC6831341CBCEE6400162502 = {
+			isa = PBXGroup;
+			children = (
+				FC68313F1CBCEE6400162502 /* app */,
+				FC68313E1CBCEE6400162502 /* Products */,
+				71EE012672668EE4E741E6E8 /* Pods */,
+				875548E506F62C686CFAE1E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC68313E1CBCEE6400162502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC68313D1CBCEE6400162502 /* app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC68313F1CBCEE6400162502 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				FCB094821CF6EECF009A4615 /* Info.plist */,
+				FC86EFB71CF6E98500BD42C0 /* Images */,
+				FC86ECED1CF6E97300BD42C0 /* Assets */,
+				FC6831641CBE3F1700162502 /* Vendor */,
+				FC6831631CBE3F0700162502 /* Resources */,
+				FC6831621CBE3BF900162502 /* Controllers */,
+				FC6831601CBDFFD600162502 /* Views */,
+				FC68315F1CBDFFCD00162502 /* Utils */,
+				FC6831431CBCEE6400162502 /* AppDelegate.h */,
+				FC6831441CBCEE6400162502 /* AppDelegate.m */,
+				FCD626F91CCA08900016F388 /* Launch.xib */,
+				FC68314F1CBCEE6400162502 /* Assets.xcassets */,
+				FC6831401CBCEE6400162502 /* Supporting Files */,
+				FCFFB83F1CC4D761001C14FE /* PrefixHeader.pch */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		FC6831401CBCEE6400162502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC86F02E1CF6EC4C00BD42C0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC68315F1CBDFFCD00162502 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCB094841CF6F732009A4615 /* Contacts */,
+				FC86F01C1CF6EAAE00BD42C0 /* UIButton+Bootstrap.h */,
+				FC86F0221CF6EAD800BD42C0 /* UIColor+expanded.h */,
+				FC86F01F1CF6EAC700BD42C0 /* UIImage+Common.h */,
+				FC86F0281CF6EB9F00BD42C0 /* UITableView+Common.h */,
+				FC86F02B1CF6EBF600BD42C0 /* UITapImageView.h */,
+				FC86F0161CF6EA8B00BD42C0 /* UIView+Common.h */,
+				FC86F0181CF6EA8B00BD42C0 /* UIView+Frame.h */,
+				FC86F0251CF6EAE800BD42C0 /* UIViewController+Swizzle.h */,
+				FC86F01D1CF6EAAE00BD42C0 /* UIButton+Bootstrap.m */,
+				FC86F0231CF6EAD800BD42C0 /* UIColor+expanded.m */,
+				FC86F0201CF6EAC700BD42C0 /* UIImage+Common.m */,
+				FC86F0291CF6EB9F00BD42C0 /* UITableView+Common.m */,
+				FC86F02C1CF6EBF600BD42C0 /* UITapImageView.m */,
+				FC86F0171CF6EA8B00BD42C0 /* UIView+Common.m */,
+				FC86F0191CF6EA8B00BD42C0 /* UIView+Frame.m */,
+				FC86F0261CF6EAE800BD42C0 /* UIViewController+Swizzle.m */,
+				FCBD0BA21CF1F8B9006E40E2 /* Base64 */,
+				FC6CD8031CEB245E00D2E8D7 /* ObjcRuntime */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FC6831601CBDFFD600162502 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC86F0041CF6E9E100BD42C0 /* EaseStartView.h */,
+				FC86F0051CF6E9E100BD42C0 /* EaseStartView.m */,
+				FC6CD9871CEC3C5200D2E8D7 /* YMCitySelect */,
+				FC6CD7F61CE957CC00D2E8D7 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC6831621CBE3BF900162502 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCFFB91A1CC8B6CD001C14FE /* Root */,
+				FCB094791CF6ED73009A4615 /* HomeViewController.h */,
+				FCB094781CF6ED73009A4615 /* HomeViewController.m */,
+				FCB094771CF6ED73009A4615 /* SettingViewController.h */,
+				FCB094761CF6ED73009A4615 /* SettingViewController.m */,
+				FCB094751CF6ED73009A4615 /* StoreViewController.h */,
+				FCB094741CF6ED73009A4615 /* StoreViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC6831631CBE3F0700162502 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC6831641CBE3F1700162502 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				FCFFB9241CC8BFAE001C14FE /* RRFPSBar */,
+				FCFFB90C1CC88E2F001C14FE /* RDVTabBarController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		FC6CD7F61CE957CC00D2E8D7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC86EFFE1CF6E9CA00BD42C0 /* SettingCell.h */,
+				FC86EFFF1CF6E9CA00BD42C0 /* SettingCell.m */,
+				FC86F0001CF6E9CA00BD42C0 /* VCityCell.h */,
+				FC86F0011CF6E9CA00BD42C0 /* VCityCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC6CD8031CEB245E00D2E8D7 /* ObjcRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				FC86F00D1CF6EA3400BD42C0 /* ObjcRuntime.h */,
+				FC86F00E1CF6EA3400BD42C0 /* ObjcRuntime.m */,
+			);
+			path = ObjcRuntime;
+			sourceTree = "<group>";
+		};
+		FC6CD9871CEC3C5200D2E8D7 /* YMCitySelect */ = {
+			isa = PBXGroup;
+			children = (
+				FC86EFE41CF6E9A200BD42C0 /* UIView+ym_extension.h */,
+				FC86EFE51CF6E9A200BD42C0 /* UIView+ym_extension.m */,
+				FC86EFE61CF6E9A200BD42C0 /* YMCityGroupsModel.h */,
+				FC86EFE71CF6E9A200BD42C0 /* YMCityGroupsModel.m */,
+				FC86EFE81CF6E9A200BD42C0 /* YMCityModel.h */,
+				FC86EFE91CF6E9A200BD42C0 /* YMCityModel.m */,
+				FC86EFEA1CF6E9A200BD42C0 /* YMCitySearch.h */,
+				FC86EFEB1CF6E9A200BD42C0 /* YMCitySearch.m */,
+				FC86EFEC1CF6E9A200BD42C0 /* YMCitySelect.bundle */,
+				FC86EFED1CF6E9A200BD42C0 /* YMCitySelect.h */,
+				FC86EFEE1CF6E9A200BD42C0 /* YMCitySelect.m */,
+				FC86EFEF1CF6E9A200BD42C0 /* YMCollectionViewCell.h */,
+				FC86EFF01CF6E9A200BD42C0 /* YMCollectionViewCell.m */,
+				FC86EFF11CF6E9A200BD42C0 /* YMSearchBar.h */,
+				FC86EFF21CF6E9A200BD42C0 /* YMSearchBar.m */,
+				FC86EFF31CF6E9A200BD42C0 /* YMTableViewCell.h */,
+				FC86EFF41CF6E9A200BD42C0 /* YMTableViewCell.m */,
+			);
+			path = YMCitySelect;
+			sourceTree = "<group>";
+		};
+		FC86ECED1CF6E97300BD42C0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FC86ECEE1CF6E97300BD42C0 /* Citys */,
+				FC86EE511CF6E97400BD42C0 /* hot.txt */,
+				FC86EE521CF6E97400BD42C0 /* province.txt */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FC86ECEE1CF6E97300BD42C0 /* Citys */ = {
+			isa = PBXGroup;
+			children = (
+				FC86ECEF1CF6E97300BD42C0 /* 七台河.txt */,
+				FC86ECF01CF6E97300BD42C0 /* 三亚.txt */,
+				FC86ECF11CF6E97300BD42C0 /* 三明.txt */,
+				FC86ECF21CF6E97300BD42C0 /* 三门峡.txt */,
+				FC86ECF31CF6E97300BD42C0 /* 上海.txt */,
+				FC86ECF41CF6E97300BD42C0 /* 上饶.txt */,
+				FC86ECF51CF6E97300BD42C0 /* 东莞.txt */,
+				FC86ECF61CF6E97300BD42C0 /* 东营.txt */,
+				FC86ECF71CF6E97300BD42C0 /* 中卫.txt */,
+				FC86ECF81CF6E97300BD42C0 /* 中山.txt */,
+				FC86ECF91CF6E97300BD42C0 /* 临夏.txt */,
+				FC86ECFA1CF6E97300BD42C0 /* 临汾.txt */,
+				FC86ECFB1CF6E97300BD42C0 /* 临沂.txt */,
+				FC86ECFC1CF6E97300BD42C0 /* 临沧.txt */,
+				FC86ECFD1CF6E97300BD42C0 /* 临河.txt */,
+				FC86ECFE1CF6E97300BD42C0 /* 丹东.txt */,
+				FC86ECFF1CF6E97300BD42C0 /* 丽水.txt */,
+				FC86ED001CF6E97300BD42C0 /* 丽江.txt */,
+				FC86ED011CF6E97300BD42C0 /* 乌兰查布.txt */,
+				FC86ED021CF6E97300BD42C0 /* 乌兰浩特.txt */,
+				FC86ED031CF6E97300BD42C0 /* 乌海.txt */,
+				FC86ED041CF6E97300BD42C0 /* 乌鲁木齐.txt */,
+				FC86ED051CF6E97300BD42C0 /* 乐山.txt */,
+				FC86ED061CF6E97300BD42C0 /* 九江.txt */,
+				FC86ED071CF6E97300BD42C0 /* 云浮.txt */,
+				FC86ED081CF6E97300BD42C0 /* 仙桃.txt */,
+				FC86ED091CF6E97300BD42C0 /* 伊春.txt */,
+				FC86ED0A1CF6E97300BD42C0 /* 伊犁.txt */,
+				FC86ED0B1CF6E97300BD42C0 /* 佛山.txt */,
+				FC86ED0C1CF6E97300BD42C0 /* 佳木斯.txt */,
+				FC86ED0D1CF6E97300BD42C0 /* 保定.txt */,
+				FC86ED0E1CF6E97300BD42C0 /* 保山.txt */,
+				FC86ED0F1CF6E97300BD42C0 /* 信阳.txt */,
+				FC86ED101CF6E97300BD42C0 /* 克州.txt */,
+				FC86ED111CF6E97300BD42C0 /* 克拉玛依.txt */,
+				FC86ED121CF6E97300BD42C0 /* 六安.txt */,
+				FC86ED131CF6E97300BD42C0 /* 六盘水.txt */,
+				FC86ED141CF6E97300BD42C0 /* 兰州.txt */,
+				FC86ED151CF6E97300BD42C0 /* 共和.txt */,
+				FC86ED161CF6E97300BD42C0 /* 兴义.txt */,
+				FC86ED171CF6E97300BD42C0 /* 兴安盟.txt */,
+				FC86ED181CF6E97300BD42C0 /* 内江.txt */,
+				FC86ED191CF6E97300BD42C0 /* 凉山.txt */,
+				FC86ED1A1CF6E97300BD42C0 /* 凯里.txt */,
+				FC86ED1B1CF6E97300BD42C0 /* 包头.txt */,
+				FC86ED1C1CF6E97300BD42C0 /* 北京.txt */,
+				FC86ED1D1CF6E97300BD42C0 /* 北海.txt */,
+				FC86ED1E1CF6E97300BD42C0 /* 十堰.txt */,
+				FC86ED1F1CF6E97300BD42C0 /* 南京.txt */,
+				FC86ED201CF6E97300BD42C0 /* 南充.txt */,
+				FC86ED211CF6E97300BD42C0 /* 南宁.txt */,
+				FC86ED221CF6E97300BD42C0 /* 南平.txt */,
+				FC86ED231CF6E97300BD42C0 /* 南昌.txt */,
+				FC86ED241CF6E97300BD42C0 /* 南通.txt */,
+				FC86ED251CF6E97300BD42C0 /* 南阳.txt */,
+				FC86ED261CF6E97300BD42C0 /* 博乐.txt */,
+				FC86ED271CF6E97300BD42C0 /* 厦门.txt */,
+				FC86ED281CF6E97300BD42C0 /* 双鸭山.txt */,
+				FC86ED291CF6E97300BD42C0 /* 台州.txt */,
+				FC86ED2A1CF6E97300BD42C0 /* 合肥.txt */,
+				FC86ED2B1CF6E97300BD42C0 /* 吉安.txt */,
+				FC86ED2C1CF6E97300BD42C0 /* 吉林.txt */,
+				FC86ED2D1CF6E97300BD42C0 /* 吉首.txt */,
+				FC86ED2E1CF6E97300BD42C0 /* 吐鲁番.txt */,
+				FC86ED2F1CF6E97300BD42C0 /* 吕梁.txt */,
+				FC86ED301CF6E97300BD42C0 /* 吴忠.txt */,
+				FC86ED311CF6E97300BD42C0 /* 周口.txt */,
+				FC86ED321CF6E97300BD42C0 /* 呼伦贝尔.txt */,
+				FC86ED331CF6E97300BD42C0 /* 呼和浩特.txt */,
+				FC86ED341CF6E97300BD42C0 /* 和田.txt */,
+				FC86ED351CF6E97300BD42C0 /* 咸宁.txt */,
+				FC86ED361CF6E97300BD42C0 /* 咸阳.txt */,
+				FC86ED371CF6E97300BD42C0 /* 哈密.txt */,
+				FC86ED381CF6E97300BD42C0 /* 哈尔滨.txt */,
+				FC86ED391CF6E97300BD42C0 /* 唐山.txt */,
+				FC86ED3A1CF6E97300BD42C0 /* 商丘.txt */,
+				FC86ED3B1CF6E97300BD42C0 /* 商洛.txt */,
+				FC86ED3C1CF6E97300BD42C0 /* 喀什.txt */,
+				FC86ED3D1CF6E97300BD42C0 /* 嘉兴.txt */,
+				FC86ED3E1CF6E97300BD42C0 /* 嘉峪关.txt */,
+				FC86ED3F1CF6E97300BD42C0 /* 四平.txt */,
+				FC86ED401CF6E97300BD42C0 /* 固原.txt */,
+				FC86ED411CF6E97300BD42C0 /* 塔城.txt */,
+				FC86ED421CF6E97300BD42C0 /* 大兴安岭.txt */,
+				FC86ED431CF6E97300BD42C0 /* 大同.txt */,
+				FC86ED441CF6E97300BD42C0 /* 大庆.txt */,
+				FC86ED451CF6E97300BD42C0 /* 大理.txt */,
+				FC86ED461CF6E97300BD42C0 /* 大连.txt */,
+				FC86ED471CF6E97300BD42C0 /* 天水.txt */,
+				FC86ED481CF6E97300BD42C0 /* 天津.txt */,
+				FC86ED491CF6E97300BD42C0 /* 太原.txt */,
+				FC86ED4A1CF6E97300BD42C0 /* 奎屯.txt */,
+				FC86ED4B1CF6E97300BD42C0 /* 威海.txt */,
+				FC86ED4C1CF6E97300BD42C0 /* 娄底.txt */,
+				FC86ED4D1CF6E97300BD42C0 /* 孝感.txt */,
+				FC86ED4E1CF6E97300BD42C0 /* 宁德.txt */,
+				FC86ED4F1CF6E97300BD42C0 /* 宁波.txt */,
+				FC86ED501CF6E97300BD42C0 /* 安庆.txt */,
+				FC86ED511CF6E97300BD42C0 /* 安康.txt */,
+				FC86ED521CF6E97300BD42C0 /* 安阳.txt */,
+				FC86ED531CF6E97300BD42C0 /* 安顺.txt */,
+				FC86ED541CF6E97300BD42C0 /* 定西.txt */,
+				FC86ED551CF6E97300BD42C0 /* 宜宾.txt */,
+				FC86ED561CF6E97300BD42C0 /* 宜昌 2.txt */,
+				FC86ED571CF6E97300BD42C0 /* 宜昌.txt */,
+				FC86ED581CF6E97300BD42C0 /* 宝鸡.txt */,
+				FC86ED591CF6E97300BD42C0 /* 宣城.txt */,
+				FC86ED5A1CF6E97300BD42C0 /* 宿州.txt */,
+				FC86ED5B1CF6E97300BD42C0 /* 宿迁.txt */,
+				FC86ED5C1CF6E97300BD42C0 /* 山南.txt */,
+				FC86ED5D1CF6E97300BD42C0 /* 岳阳.txt */,
+				FC86ED5E1CF6E97300BD42C0 /* 崇左.txt */,
+				FC86ED5F1CF6E97300BD42C0 /* 巢湖.txt */,
+				FC86ED601CF6E97300BD42C0 /* 巴中.txt */,
+				FC86ED611CF6E97300BD42C0 /* 巴彦浩特.txt */,
+				FC86ED621CF6E97300BD42C0 /* 巴彦淖尔.txt */,
+				FC86ED631CF6E97300BD42C0 /* 常州.txt */,
+				FC86ED641CF6E97300BD42C0 /* 常德.txt */,
+				FC86ED651CF6E97300BD42C0 /* 平凉.txt */,
+				FC86ED661CF6E97300BD42C0 /* 平顶山.txt */,
+				FC86ED671CF6E97300BD42C0 /* 广元.txt */,
+				FC86ED681CF6E97300BD42C0 /* 广安.txt */,
+				FC86ED691CF6E97300BD42C0 /* 广州.txt */,
+				FC86ED6A1CF6E97300BD42C0 /* 庆阳.txt */,
+				FC86ED6B1CF6E97300BD42C0 /* 库尔勒.txt */,
+				FC86ED6C1CF6E97300BD42C0 /* 廊坊.txt */,
+				FC86ED6D1CF6E97300BD42C0 /* 延吉.txt */,
+				FC86ED6E1CF6E97300BD42C0 /* 延安.txt */,
+				FC86ED6F1CF6E97300BD42C0 /* 开封.txt */,
+				FC86ED701CF6E97300BD42C0 /* 张家口.txt */,
+				FC86ED711CF6E97300BD42C0 /* 张家界.txt */,
+				FC86ED721CF6E97300BD42C0 /* 张掖.txt */,
+				FC86ED731CF6E97300BD42C0 /* 徐州.txt */,
+				FC86ED741CF6E97300BD42C0 /* 德令哈.txt */,
+				FC86ED751CF6E97300BD42C0 /* 德宏.txt */,
+				FC86ED761CF6E97300BD42C0 /* 德州.txt */,
+				FC86ED771CF6E97300BD42C0 /* 德阳.txt */,
+				FC86ED781CF6E97300BD42C0 /* 忻州.txt */,
+				FC86ED791CF6E97300BD42C0 /* 怀化.txt */,
+				FC86ED7A1CF6E97300BD42C0 /* 怒江.txt */,
+				FC86ED7B1CF6E97300BD42C0 /* 思茅.txt */,
+				FC86ED7C1CF6E97300BD42C0 /* 恩施.txt */,
+				FC86ED7D1CF6E97300BD42C0 /* 惠州.txt */,
+				FC86ED7E1CF6E97300BD42C0 /* 成都.txt */,
+				FC86ED7F1CF6E97300BD42C0 /* 扬州.txt */,
+				FC86ED801CF6E97300BD42C0 /* 承德.txt */,
+				FC86ED811CF6E97300BD42C0 /* 抚州.txt */,
+				FC86ED821CF6E97300BD42C0 /* 抚顺.txt */,
+				FC86ED831CF6E97300BD42C0 /* 拉萨.txt */,
+				FC86ED841CF6E97300BD42C0 /* 揭阳.txt */,
+				FC86ED851CF6E97300BD42C0 /* 攀枝花.txt */,
+				FC86ED861CF6E97300BD42C0 /* 文山.txt */,
+				FC86ED871CF6E97300BD42C0 /* 新乡.txt */,
+				FC86ED881CF6E97300BD42C0 /* 新余.txt */,
+				FC86ED891CF6E97300BD42C0 /* 无锡.txt */,
+				FC86ED8A1CF6E97300BD42C0 /* 日喀则.txt */,
+				FC86ED8B1CF6E97300BD42C0 /* 日照.txt */,
+				FC86ED8C1CF6E97300BD42C0 /* 昆明.txt */,
+				FC86ED8D1CF6E97300BD42C0 /* 昌吉.txt */,
+				FC86ED8E1CF6E97300BD42C0 /* 昌都.txt */,
+				FC86ED8F1CF6E97300BD42C0 /* 昭通.txt */,
+				FC86ED901CF6E97300BD42C0 /* 晋中.txt */,
+				FC86ED911CF6E97300BD42C0 /* 晋城.txt */,
+				FC86ED921CF6E97300BD42C0 /* 景德镇.txt */,
+				FC86ED931CF6E97300BD42C0 /* 曲靖.txt */,
+				FC86ED941CF6E97300BD42C0 /* 朔州.txt */,
+				FC86ED951CF6E97300BD42C0 /* 朝阳.txt */,
+				FC86ED961CF6E97300BD42C0 /* 本溪.txt */,
+				FC86ED971CF6E97300BD42C0 /* 来宾.txt */,
+				FC86ED981CF6E97300BD42C0 /* 杭州.txt */,
+				FC86ED991CF6E97300BD42C0 /* 松原.txt */,
+				FC86ED9A1CF6E97300BD42C0 /* 林芝.txt */,
+				FC86ED9B1CF6E97300BD42C0 /* 果洛.txt */,
+				FC86ED9C1CF6E97300BD42C0 /* 枣庄.txt */,
+				FC86ED9D1CF6E97300BD42C0 /* 柳州.txt */,
+				FC86ED9E1CF6E97300BD42C0 /* 株洲.txt */,
+				FC86ED9F1CF6E97300BD42C0 /* 格尔木.txt */,
+				FC86EDA01CF6E97300BD42C0 /* 桂林.txt */,
+				FC86EDA11CF6E97300BD42C0 /* 梅州.txt */,
+				FC86EDA21CF6E97300BD42C0 /* 梅河口.txt */,
+				FC86EDA31CF6E97300BD42C0 /* 梧州.txt */,
+				FC86EDA41CF6E97300BD42C0 /* 楚雄.txt */,
+				FC86EDA51CF6E97300BD42C0 /* 榆林.txt */,
+				FC86EDA61CF6E97300BD42C0 /* 武威.txt */,
+				FC86EDA71CF6E97300BD42C0 /* 武汉.txt */,
+				FC86EDA81CF6E97300BD42C0 /* 毕节.txt */,
+				FC86EDA91CF6E97300BD42C0 /* 毫州.txt */,
+				FC86EDAA1CF6E97300BD42C0 /* 永州.txt */,
+				FC86EDAB1CF6E97300BD42C0 /* 汉中.txt */,
+				FC86EDAC1CF6E97300BD42C0 /* 汕头.txt */,
+				FC86EDAD1CF6E97300BD42C0 /* 汕尾.txt */,
+				FC86EDAE1CF6E97300BD42C0 /* 江汉.txt */,
+				FC86EDAF1CF6E97300BD42C0 /* 江门.txt */,
+				FC86EDB01CF6E97300BD42C0 /* 池州.txt */,
+				FC86EDB11CF6E97300BD42C0 /* 沈阳.txt */,
+				FC86EDB21CF6E97300BD42C0 /* 沧州.txt */,
+				FC86EDB31CF6E97300BD42C0 /* 河池.txt */,
+				FC86EDB41CF6E97300BD42C0 /* 河源.txt */,
+				FC86EDB51CF6E97300BD42C0 /* 泉州.txt */,
+				FC86EDB61CF6E97300BD42C0 /* 泰安.txt */,
+				FC86EDB71CF6E97300BD42C0 /* 泰州.txt */,
+				FC86EDB81CF6E97300BD42C0 /* 泸州.txt */,
+				FC86EDB91CF6E97300BD42C0 /* 洛阳.txt */,
+				FC86EDBA1CF6E97300BD42C0 /* 济南.txt */,
+				FC86EDBB1CF6E97300BD42C0 /* 济宁.txt */,
+				FC86EDBC1CF6E97300BD42C0 /* 海东.txt */,
+				FC86EDBD1CF6E97300BD42C0 /* 海北州.txt */,
+				FC86EDBE1CF6E97300BD42C0 /* 海南州.txt */,
+				FC86EDBF1CF6E97300BD42C0 /* 海口.txt */,
+				FC86EDC01CF6E97300BD42C0 /* 海拉尔.txt */,
+				FC86EDC11CF6E97300BD42C0 /* 海晏.txt */,
+				FC86EDC21CF6E97300BD42C0 /* 海西州.txt */,
+				FC86EDC31CF6E97300BD42C0 /* 淄博.txt */,
+				FC86EDC41CF6E97300BD42C0 /* 淮北.txt */,
+				FC86EDC51CF6E97300BD42C0 /* 淮南.txt */,
+				FC86EDC61CF6E97300BD42C0 /* 淮安.txt */,
+				FC86EDC71CF6E97300BD42C0 /* 深圳.txt */,
+				FC86EDC81CF6E97300BD42C0 /* 清远.txt */,
+				FC86EDC91CF6E97300BD42C0 /* 温州.txt */,
+				FC86EDCA1CF6E97300BD42C0 /* 渭南.txt */,
+				FC86EDCB1CF6E97300BD42C0 /* 湖州.txt */,
+				FC86EDCC1CF6E97300BD42C0 /* 湘潭.txt */,
+				FC86EDCD1CF6E97300BD42C0 /* 湛江.txt */,
+				FC86EDCE1CF6E97300BD42C0 /* 滁州.txt */,
+				FC86EDCF1CF6E97300BD42C0 /* 滨州.txt */,
+				FC86EDD01CF6E97300BD42C0 /* 漯河.txt */,
+				FC86EDD11CF6E97300BD42C0 /* 漳州.txt */,
+				FC86EDD21CF6E97300BD42C0 /* 潍坊.txt */,
+				FC86EDD31CF6E97300BD42C0 /* 潢川.txt */,
+				FC86EDD41CF6E97300BD42C0 /* 潮州.txt */,
+				FC86EDD51CF6E97300BD42C0 /* 濮阳.txt */,
+				FC86EDD61CF6E97300BD42C0 /* 烟台.txt */,
+				FC86EDD71CF6E97300BD42C0 /* 焦作.txt */,
+				FC86EDD81CF6E97300BD42C0 /* 牡丹江.txt */,
+				FC86EDD91CF6E97300BD42C0 /* 玉林.txt */,
+				FC86EDDA1CF6E97300BD42C0 /* 玉树.txt */,
+				FC86EDDB1CF6E97300BD42C0 /* 玉溪.txt */,
+				FC86EDDC1CF6E97300BD42C0 /* 珠海.txt */,
+				FC86EDDD1CF6E97300BD42C0 /* 珲春.txt */,
+				FC86EDDE1CF6E97300BD42C0 /* 甘南.txt */,
+				FC86EDDF1CF6E97300BD42C0 /* 甘孜州.txt */,
+				FC86EDE01CF6E97300BD42C0 /* 白城.txt */,
+				FC86EDE11CF6E97300BD42C0 /* 白山.txt */,
+				FC86EDE21CF6E97300BD42C0 /* 白银.txt */,
+				FC86EDE31CF6E97300BD42C0 /* 百色.txt */,
+				FC86EDE41CF6E97300BD42C0 /* 益阳.txt */,
+				FC86EDE51CF6E97300BD42C0 /* 盐城.txt */,
+				FC86EDE61CF6E97300BD42C0 /* 盘锦.txt */,
+				FC86EDE71CF6E97300BD42C0 /* 眉山.txt */,
+				FC86EDE81CF6E97300BD42C0 /* 石嘴山.txt */,
+				FC86EDE91CF6E97300BD42C0 /* 石家庄.txt */,
+				FC86EDEA1CF6E97300BD42C0 /* 石河子.txt */,
+				FC86EDEB1CF6E97300BD42C0 /* 福州.txt */,
+				FC86EDEC1CF6E97300BD42C0 /* 秦皇岛.txt */,
+				FC86EDED1CF6E97300BD42C0 /* 红河.txt */,
+				FC86EDEE1CF6E97300BD42C0 /* 绍兴.txt */,
+				FC86EDEF1CF6E97300BD42C0 /* 绥化.txt */,
+				FC86EDF01CF6E97300BD42C0 /* 绵阳.txt */,
+				FC86EDF11CF6E97300BD42C0 /* 聊城.txt */,
+				FC86EDF21CF6E97300BD42C0 /* 肇庆.txt */,
+				FC86EDF31CF6E97300BD42C0 /* 自宫.txt */,
+				FC86EDF41CF6E97300BD42C0 /* 舟山.txt */,
+				FC86EDF51CF6E97300BD42C0 /* 芜湖.txt */,
+				FC86EDF61CF6E97300BD42C0 /* 苏州.txt */,
+				FC86EDF71CF6E97300BD42C0 /* 茂名.txt */,
+				FC86EDF81CF6E97300BD42C0 /* 荆州.txt */,
+				FC86EDF91CF6E97300BD42C0 /* 荆门.txt */,
+				FC86EDFA1CF6E97300BD42C0 /* 莆田.txt */,
+				FC86EDFB1CF6E97300BD42C0 /* 莱芜.txt */,
+				FC86EDFC1CF6E97300BD42C0 /* 菏泽.txt */,
+				FC86EDFD1CF6E97300BD42C0 /* 萍乡.txt */,
+				FC86EDFE1CF6E97300BD42C0 /* 营口.txt */,
+				FC86EDFF1CF6E97300BD42C0 /* 葫芦岛.txt */,
+				FC86EE001CF6E97300BD42C0 /* 蚌埠.txt */,
+				FC86EE011CF6E97300BD42C0 /* 衡州.txt */,
+				FC86EE021CF6E97300BD42C0 /* 衡水.txt */,
+				FC86EE031CF6E97300BD42C0 /* 衡阳.txt */,
+				FC86EE041CF6E97300BD42C0 /* 襄樊.txt */,
+				FC86EE051CF6E97300BD42C0 /* 西双版纳.txt */,
+				FC86EE061CF6E97300BD42C0 /* 西宁.txt */,
+				FC86EE071CF6E97300BD42C0 /* 西安.txt */,
+				FC86EE081CF6E97300BD42C0 /* 西昌.txt */,
+				FC86EE091CF6E97300BD42C0 /* 许昌.txt */,
+				FC86EE0A1CF6E97300BD42C0 /* 贵港.txt */,
+				FC86EE0B1CF6E97300BD42C0 /* 贵阳.txt */,
+				FC86EE0C1CF6E97300BD42C0 /* 贺州.txt */,
+				FC86EE0D1CF6E97300BD42C0 /* 资阳.txt */,
+				FC86EE0E1CF6E97300BD42C0 /* 赣州.txt */,
+				FC86EE0F1CF6E97300BD42C0 /* 赤峰.txt */,
+				FC86EE101CF6E97300BD42C0 /* 辽源.txt */,
+				FC86EE111CF6E97300BD42C0 /* 辽阳.txt */,
+				FC86EE121CF6E97300BD42C0 /* 达州.txt */,
+				FC86EE131CF6E97300BD42C0 /* 运城.txt */,
+				FC86EE141CF6E97300BD42C0 /* 连云港.txt */,
+				FC86EE151CF6E97300BD42C0 /* 迪庆.txt */,
+				FC86EE161CF6E97300BD42C0 /* 通化.txt */,
+				FC86EE171CF6E97300BD42C0 /* 通辽.txt */,
+				FC86EE181CF6E97300BD42C0 /* 遂宁.txt */,
+				FC86EE191CF6E97300BD42C0 /* 遵义.txt */,
+				FC86EE1A1CF6E97400BD42C0 /* 邢台.txt */,
+				FC86EE1B1CF6E97400BD42C0 /* 那曲.txt */,
+				FC86EE1C1CF6E97400BD42C0 /* 邯郸.txt */,
+				FC86EE1D1CF6E97400BD42C0 /* 邵阳.txt */,
+				FC86EE1E1CF6E97400BD42C0 /* 郑州.txt */,
+				FC86EE1F1CF6E97400BD42C0 /* 郴州.txt */,
+				FC86EE201CF6E97400BD42C0 /* 都匀.txt */,
+				FC86EE211CF6E97400BD42C0 /* 鄂尔多斯.txt */,
+				FC86EE221CF6E97400BD42C0 /* 鄂州.txt */,
+				FC86EE231CF6E97400BD42C0 /* 酒泉嘉峪关.txt */,
+				FC86EE241CF6E97400BD42C0 /* 重庆.txt */,
+				FC86EE251CF6E97400BD42C0 /* 金华.txt */,
+				FC86EE261CF6E97400BD42C0 /* 金昌武威.txt */,
+				FC86EE271CF6E97400BD42C0 /* 钦州.txt */,
+				FC86EE281CF6E97400BD42C0 /* 铁岭.txt */,
+				FC86EE291CF6E97400BD42C0 /* 铜仁.txt */,
+				FC86EE2A1CF6E97400BD42C0 /* 铜川.txt */,
+				FC86EE2B1CF6E97400BD42C0 /* 铜陵.txt */,
+				FC86EE2C1CF6E97400BD42C0 /* 银川.txt */,
+				FC86EE2D1CF6E97400BD42C0 /* 锡林浩特.txt */,
+				FC86EE2E1CF6E97400BD42C0 /* 锦州.txt */,
+				FC86EE2F1CF6E97400BD42C0 /* 镇江.txt */,
+				FC86EE301CF6E97400BD42C0 /* 长春.txt */,
+				FC86EE311CF6E97400BD42C0 /* 长沙.txt */,
+				FC86EE321CF6E97400BD42C0 /* 长治.txt */,
+				FC86EE331CF6E97400BD42C0 /* 阜新.txt */,
+				FC86EE341CF6E97400BD42C0 /* 阜阳.txt */,
+				FC86EE351CF6E97400BD42C0 /* 防城港.txt */,
+				FC86EE361CF6E97400BD42C0 /* 阳江.txt */,
+				FC86EE371CF6E97400BD42C0 /* 阳泉.txt */,
+				FC86EE381CF6E97400BD42C0 /* 阿克苏.txt */,
+				FC86EE391CF6E97400BD42C0 /* 阿勒泰.txt */,
+				FC86EE3A1CF6E97400BD42C0 /* 阿坝州.txt */,
+				FC86EE3B1CF6E97400BD42C0 /* 阿盟.txt */,
+				FC86EE3C1CF6E97400BD42C0 /* 阿里.txt */,
+				FC86EE3D1CF6E97400BD42C0 /* 陇南.txt */,
+				FC86EE3E1CF6E97400BD42C0 /* 随州.txt */,
+				FC86EE3F1CF6E97400BD42C0 /* 雅安.txt */,
+				FC86EE401CF6E97400BD42C0 /* 集宁.txt */,
+				FC86EE411CF6E97400BD42C0 /* 青岛.txt */,
+				FC86EE421CF6E97400BD42C0 /* 鞍山.txt */,
+				FC86EE431CF6E97400BD42C0 /* 韶关.txt */,
+				FC86EE441CF6E97400BD42C0 /* 马鞍山.txt */,
+				FC86EE451CF6E97400BD42C0 /* 驻马店.txt */,
+				FC86EE461CF6E97400BD42C0 /* 鸡西.txt */,
+				FC86EE471CF6E97400BD42C0 /* 鹤壁.txt */,
+				FC86EE481CF6E97400BD42C0 /* 鹤岗.txt */,
+				FC86EE491CF6E97400BD42C0 /* 鹰潭.txt */,
+				FC86EE4A1CF6E97400BD42C0 /* 黄南.txt */,
+				FC86EE4B1CF6E97400BD42C0 /* 黄山.txt */,
+				FC86EE4C1CF6E97400BD42C0 /* 黄岗.txt */,
+				FC86EE4D1CF6E97400BD42C0 /* 黄石.txt */,
+				FC86EE4E1CF6E97400BD42C0 /* 黑河.txt */,
+				FC86EE4F1CF6E97400BD42C0 /* 齐齐哈尔.txt */,
+				FC86EE501CF6E97400BD42C0 /* 龙岩.txt */,
+			);
+			path = Citys;
+			sourceTree = "<group>";
+		};
+		FC86EFB71CF6E98500BD42C0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FC86EFB81CF6E98500BD42C0 /* head@2x.png */,
+				FC86EFB91CF6E98500BD42C0 /* home_add_contact_icon@2x.png */,
+				FC86EFBA1CF6E98500BD42C0 /* home_clear_contact_icon@2x.png */,
+				FC86EFBB1CF6E98500BD42C0 /* home_clear_history_icon@2x.png */,
+				FC86EFBC1CF6E98500BD42C0 /* home_title_logo@2x.png */,
+				FC86EFBD1CF6E98500BD42C0 /* home_update_contact_icon@2x.png */,
+				FC86EFBE1CF6E98500BD42C0 /* import_data_icon@2x.png */,
+				FC86EFBF1CF6E98500BD42C0 /* setting_activate_button@2x.png */,
+				FC86EFC01CF6E98500BD42C0 /* setting_title_logo@2x.png */,
+				FC86EFC11CF6E98500BD42C0 /* splash_logo@2x.png */,
+				FC86EFC21CF6E98500BD42C0 /* splash_text@2x.png */,
+				FC86EFC31CF6E98500BD42C0 /* store_city_icon@2x.png */,
+				FC86EFC41CF6E98500BD42C0 /* store_gen_icon@2x.png */,
+				FC86EFC51CF6E98500BD42C0 /* store_title_logo@2x.png */,
+				FC86EFC61CF6E98500BD42C0 /* tab_bottom_bg@2x.png */,
+				FC86EFC71CF6E98500BD42C0 /* tab_item_home_selected@2x.png */,
+				FC86EFC81CF6E98500BD42C0 /* tab_item_home_unselected@2x.png */,
+				FC86EFC91CF6E98500BD42C0 /* tab_item_selected_bg@2x.png */,
+				FC86EFCA1CF6E98500BD42C0 /* tab_item_setting_selected@2x.png */,
+				FC86EFCB1CF6E98500BD42C0 /* tab_item_setting_unselected@2x.png */,
+				FC86EFCC1CF6E98500BD42C0 /* tab_item_store_selected@2x.png */,
+				FC86EFCD1CF6E98500BD42C0 /* tab_item_store_unselected@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FCB094841CF6F732009A4615 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				FCB094851CF73CC3009A4615 /* KTSContactsManager.h */,
+				FCB094861CF73CC3009A4615 /* KTSContactsManager.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		FCBD0BA21CF1F8B9006E40E2 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				FC86F00A1CF6EA1B00BD42C0 /* GTMBase64.h */,
+				FC86F00B1CF6EA1B00BD42C0 /* GTMBase64.m */,
+				FC86F0071CF6EA0A00BD42C0 /* DES3Util.h */,
+				FC86F0081CF6EA0A00BD42C0 /* DES3Util.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		FCFFB90C1CC88E2F001C14FE /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FC86ECE41CF6E95900BD42C0 /* RDVTabBar.h */,
+				FC86ECE51CF6E95900BD42C0 /* RDVTabBar.m */,
+				FC86ECE61CF6E95900BD42C0 /* RDVTabBarController.h */,
+				FC86ECE71CF6E95900BD42C0 /* RDVTabBarController.m */,
+				FC86ECE81CF6E95900BD42C0 /* RDVTabBarItem.h */,
+				FC86ECE91CF6E95900BD42C0 /* RDVTabBarItem.m */,
+			);
+			path = RDVTabBarController;
+			sourceTree = "<group>";
+		};
+		FCFFB91A1CC8B6CD001C14FE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FCB0947D1CF6EDCE009A4615 /* BaseNavigationController.m */,
+				FCB0947E1CF6EDCE009A4615 /* BaseNavigationController.h */,
+				FCB094711CF6ED53009A4615 /* BaseViewController.m */,
+				FCB094721CF6ED53009A4615 /* BaseViewController.h */,
+				FCB0946E1CF6ED43009A4615 /* RootTabViewController.m */,
+				FCB0946F1CF6ED43009A4615 /* RootTabViewController.h */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FCFFB9241CC8BFAE001C14FE /* RRFPSBar */ = {
+			isa = PBXGroup;
+			children = (
+				FC86ECE11CF6E91F00BD42C0 /* RRFPSBar.h */,
+				FC86ECE21CF6E91F00BD42C0 /* RRFPSBar.m */,
+			);
+			path = RRFPSBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC68313C1CBCEE6400162502 /* app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC6831571CBCEE6400162502 /* Build configuration list for PBXNativeTarget "app" */;
+			buildPhases = (
+				F31BE1C86FC873E2618C6C5C /* Check Pods Manifest.lock */,
+				FC6831391CBCEE6400162502 /* Sources */,
+				FC68313A1CBCEE6400162502 /* Frameworks */,
+				FC68313B1CBCEE6400162502 /* Resources */,
+				7462788DD126EA48A44BACED /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = app;
+			productName = app;
+			productReference = FC68313D1CBCEE6400162502 /* app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC6831351CBCEE6400162502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = jiafenzhushou;
+				TargetAttributes = {
+					FC68313C1CBCEE6400162502 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6A44TZQ46G;
+					};
+				};
+			};
+			buildConfigurationList = FC6831381CBCEE6400162502 /* Build configuration list for PBXProject "app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC6831341CBCEE6400162502;
+			productRefGroup = FC68313E1CBCEE6400162502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC68313C1CBCEE6400162502 /* app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC68313B1CBCEE6400162502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC86EF3D1CF6E97400BD42C0 /* 玉林.txt in Resources */,
+				FC86EF101CF6E97400BD42C0 /* 汕头.txt in Resources */,
+				FC86EF8E1CF6E97400BD42C0 /* 铜川.txt in Resources */,
+				FC86EFAE1CF6E97400BD42C0 /* 黄南.txt in Resources */,
+				FC86EEF21CF6E97400BD42C0 /* 昌都.txt in Resources */,
+				FC86EEE31CF6E97400BD42C0 /* 扬州.txt in Resources */,
+				FC86EEE21CF6E97400BD42C0 /* 成都.txt in Resources */,
+				FC86EF961CF6E97400BD42C0 /* 长治.txt in Resources */,
+				FC86EF051CF6E97400BD42C0 /* 梅州.txt in Resources */,
+				FC86EF671CF6E97400BD42C0 /* 衡阳.txt in Resources */,
+				FC86EED81CF6E97400BD42C0 /* 德令哈.txt in Resources */,
+				FC86EED71CF6E97400BD42C0 /* 徐州.txt in Resources */,
+				FC86EEBB1CF6E97400BD42C0 /* 宜昌.txt in Resources */,
+				FC86EF7D1CF6E97400BD42C0 /* 遵义.txt in Resources */,
+				FC86EEEB1CF6E97400BD42C0 /* 新乡.txt in Resources */,
+				FC86EEAE1CF6E97400BD42C0 /* 奎屯.txt in Resources */,
+				FC86EF691CF6E97400BD42C0 /* 西双版纳.txt in Resources */,
+				FC86EF411CF6E97400BD42C0 /* 珲春.txt in Resources */,
+				FC86EE8E1CF6E97400BD42C0 /* 合肥.txt in Resources */,
+				FC86EEDE1CF6E97400BD42C0 /* 怒江.txt in Resources */,
+				FC86EEB01CF6E97400BD42C0 /* 娄底.txt in Resources */,
+				FC86EFD61CF6E98500BD42C0 /* setting_title_logo@2x.png in Resources */,
+				FC86EFA61CF6E97400BD42C0 /* 鞍山.txt in Resources */,
+				FC86EE7A1CF6E97400BD42C0 /* 兴义.txt in Resources */,
+				FC86EEBD1CF6E97400BD42C0 /* 宣城.txt in Resources */,
+				FC86EFA41CF6E97400BD42C0 /* 集宁.txt in Resources */,
+				FC86EF5F1CF6E97400BD42C0 /* 莱芜.txt in Resources */,
+				FC86EE921CF6E97400BD42C0 /* 吐鲁番.txt in Resources */,
+				FC86EEB61CF6E97400BD42C0 /* 安阳.txt in Resources */,
+				FC86EE621CF6E97400BD42C0 /* 丹东.txt in Resources */,
+				FC86EFD31CF6E98500BD42C0 /* home_update_contact_icon@2x.png in Resources */,
+				FC86EE601CF6E97400BD42C0 /* 临沧.txt in Resources */,
+				FC86EF9C1CF6E97400BD42C0 /* 阿克苏.txt in Resources */,
+				FC86EEFB1CF6E97400BD42C0 /* 来宾.txt in Resources */,
+				FC86EF481CF6E97400BD42C0 /* 益阳.txt in Resources */,
+				FC86EEC11CF6E97400BD42C0 /* 岳阳.txt in Resources */,
+				FC86EF8F1CF6E97400BD42C0 /* 铜陵.txt in Resources */,
+				FC86EF631CF6E97400BD42C0 /* 葫芦岛.txt in Resources */,
+				FC86EEF61CF6E97400BD42C0 /* 景德镇.txt in Resources */,
+				FC86EF311CF6E97400BD42C0 /* 湛江.txt in Resources */,
+				FC86EF2C1CF6E97400BD42C0 /* 清远.txt in Resources */,
+				FC86EE5C1CF6E97400BD42C0 /* 中山.txt in Resources */,
+				FC86EF341CF6E97400BD42C0 /* 漯河.txt in Resources */,
+				FC86EFCE1CF6E98500BD42C0 /* head@2x.png in Resources */,
+				FC86EF4D1CF6E97400BD42C0 /* 石家庄.txt in Resources */,
+				FC86EEDF1CF6E97400BD42C0 /* 思茅.txt in Resources */,
+				FC86EE841CF6E97400BD42C0 /* 南充.txt in Resources */,
+				FC86EEB81CF6E97400BD42C0 /* 定西.txt in Resources */,
+				FC86EEFA1CF6E97400BD42C0 /* 本溪.txt in Resources */,
+				FC86EE561CF6E97400BD42C0 /* 三门峡.txt in Resources */,
+				FC86EF861CF6E97400BD42C0 /* 鄂州.txt in Resources */,
+				FC86EFE11CF6E98500BD42C0 /* tab_item_setting_unselected@2x.png in Resources */,
+				FC86EE6B1CF6E97400BD42C0 /* 云浮.txt in Resources */,
+				FC86EF8C1CF6E97400BD42C0 /* 铁岭.txt in Resources */,
+				FC86EE691CF6E97400BD42C0 /* 乐山.txt in Resources */,
+				FC86EEEC1CF6E97400BD42C0 /* 新余.txt in Resources */,
+				FC86EE8F1CF6E97400BD42C0 /* 吉安.txt in Resources */,
+				FC86EF031CF6E97400BD42C0 /* 格尔木.txt in Resources */,
+				FC86EE5D1CF6E97400BD42C0 /* 临夏.txt in Resources */,
+				FC86EE991CF6E97400BD42C0 /* 咸宁.txt in Resources */,
+				FC86EF2B1CF6E97400BD42C0 /* 深圳.txt in Resources */,
+				FC86EF3B1CF6E97400BD42C0 /* 焦作.txt in Resources */,
+				FC86EF3E1CF6E97400BD42C0 /* 玉树.txt in Resources */,
+				FC86EFD41CF6E98500BD42C0 /* import_data_icon@2x.png in Resources */,
+				FC86EFD21CF6E98500BD42C0 /* home_title_logo@2x.png in Resources */,
+				FC86EF251CF6E97400BD42C0 /* 海晏.txt in Resources */,
+				FC86EE531CF6E97400BD42C0 /* 七台河.txt in Resources */,
+				FC86EF271CF6E97400BD42C0 /* 淄博.txt in Resources */,
+				FC86EF531CF6E97400BD42C0 /* 绥化.txt in Resources */,
+				FC86EEF81CF6E97400BD42C0 /* 朔州.txt in Resources */,
+				FC86EFDD1CF6E98500BD42C0 /* tab_item_home_selected@2x.png in Resources */,
+				FC86EF601CF6E97400BD42C0 /* 菏泽.txt in Resources */,
+				FC86EE8D1CF6E97400BD42C0 /* 台州.txt in Resources */,
+				FC86EF6F1CF6E97400BD42C0 /* 贵阳.txt in Resources */,
+				FC86EF521CF6E97400BD42C0 /* 绍兴.txt in Resources */,
+				FC86EF761CF6E97400BD42C0 /* 达州.txt in Resources */,
+				FC86EF9D1CF6E97400BD42C0 /* 阿勒泰.txt in Resources */,
+				FC86EE651CF6E97400BD42C0 /* 乌兰查布.txt in Resources */,
+				FC86EF851CF6E97400BD42C0 /* 鄂尔多斯.txt in Resources */,
+				FC86EF351CF6E97400BD42C0 /* 漳州.txt in Resources */,
+				FC86EEA81CF6E97400BD42C0 /* 大庆.txt in Resources */,
+				FC86EF541CF6E97400BD42C0 /* 绵阳.txt in Resources */,
+				FC86EF5A1CF6E97400BD42C0 /* 苏州.txt in Resources */,
+				FC86EFA01CF6E97400BD42C0 /* 阿里.txt in Resources */,
+				FC86EF781CF6E97400BD42C0 /* 连云港.txt in Resources */,
+				FC86EEDD1CF6E97400BD42C0 /* 怀化.txt in Resources */,
+				FC86EF3F1CF6E97400BD42C0 /* 玉溪.txt in Resources */,
+				FC86EFB41CF6E97400BD42C0 /* 龙岩.txt in Resources */,
+				FC86EEA61CF6E97400BD42C0 /* 大兴安岭.txt in Resources */,
+				FC86EFB01CF6E97400BD42C0 /* 黄岗.txt in Resources */,
+				FC86EFD91CF6E98500BD42C0 /* store_city_icon@2x.png in Resources */,
+				FC86EFE21CF6E98500BD42C0 /* tab_item_store_selected@2x.png in Resources */,
+				FC86EEFE1CF6E97400BD42C0 /* 林芝.txt in Resources */,
+				FC86EEE11CF6E97400BD42C0 /* 惠州.txt in Resources */,
+				FC86EF751CF6E97400BD42C0 /* 辽阳.txt in Resources */,
+				FC86EE9A1CF6E97400BD42C0 /* 咸阳.txt in Resources */,
+				FC86EF211CF6E97400BD42C0 /* 海北州.txt in Resources */,
+				FC86EE9F1CF6E97400BD42C0 /* 商洛.txt in Resources */,
+				FC86EE7E1CF6E97400BD42C0 /* 凯里.txt in Resources */,
+				FC86EEBA1CF6E97400BD42C0 /* 宜昌 2.txt in Resources */,
+				FC86EEF01CF6E97400BD42C0 /* 昆明.txt in Resources */,
+				FC86EF941CF6E97400BD42C0 /* 长春.txt in Resources */,
+				FC86EF8A1CF6E97400BD42C0 /* 金昌武威.txt in Resources */,
+				FC86EEE71CF6E97400BD42C0 /* 拉萨.txt in Resources */,
+				FC86EF7F1CF6E97400BD42C0 /* 那曲.txt in Resources */,
+				FC86EF6C1CF6E97400BD42C0 /* 西昌.txt in Resources */,
+				FC86EEBE1CF6E97400BD42C0 /* 宿州.txt in Resources */,
+				FC86EEC01CF6E97400BD42C0 /* 山南.txt in Resources */,
+				FC86EFD51CF6E98500BD42C0 /* setting_activate_button@2x.png in Resources */,
+				FC86EEB31CF6E97400BD42C0 /* 宁波.txt in Resources */,
+				FC86EF191CF6E97400BD42C0 /* 泉州.txt in Resources */,
+				FC86EEAB1CF6E97400BD42C0 /* 天水.txt in Resources */,
+				FC86EEC81CF6E97400BD42C0 /* 常德.txt in Resources */,
+				FC86EEC21CF6E97400BD42C0 /* 崇左.txt in Resources */,
+				FC86EEC61CF6E97400BD42C0 /* 巴彦淖尔.txt in Resources */,
+				FC86EF4B1CF6E97400BD42C0 /* 眉山.txt in Resources */,
+				FC86EEA01CF6E97400BD42C0 /* 喀什.txt in Resources */,
+				FC86EF2E1CF6E97400BD42C0 /* 渭南.txt in Resources */,
+				FC86EE5E1CF6E97400BD42C0 /* 临汾.txt in Resources */,
+				FC86EEE51CF6E97400BD42C0 /* 抚州.txt in Resources */,
+				FC86EF091CF6E97400BD42C0 /* 榆林.txt in Resources */,
+				FC86EF041CF6E97400BD42C0 /* 桂林.txt in Resources */,
+				FC86EFA91CF6E97400BD42C0 /* 驻马店.txt in Resources */,
+				FC86EE551CF6E97400BD42C0 /* 三明.txt in Resources */,
+				FC86EE791CF6E97400BD42C0 /* 共和.txt in Resources */,
+				FC86EE981CF6E97400BD42C0 /* 和田.txt in Resources */,
+				FC86EFA51CF6E97400BD42C0 /* 青岛.txt in Resources */,
+				FC86EF721CF6E97400BD42C0 /* 赣州.txt in Resources */,
+				FC86EF551CF6E97400BD42C0 /* 聊城.txt in Resources */,
+				FC86EFB61CF6E97400BD42C0 /* province.txt in Resources */,
+				FC86EE751CF6E97400BD42C0 /* 克拉玛依.txt in Resources */,
+				FC86EEF41CF6E97400BD42C0 /* 晋中.txt in Resources */,
+				FC86EE6F1CF6E97400BD42C0 /* 佛山.txt in Resources */,
+				FC86EEE41CF6E97400BD42C0 /* 承德.txt in Resources */,
+				FC86EE701CF6E97400BD42C0 /* 佳木斯.txt in Resources */,
+				FC86EF3A1CF6E97400BD42C0 /* 烟台.txt in Resources */,
+				FC86EF181CF6E97400BD42C0 /* 河源.txt in Resources */,
+				FC86EED41CF6E97400BD42C0 /* 张家口.txt in Resources */,
+				FC86EF421CF6E97400BD42C0 /* 甘南.txt in Resources */,
+				FC86EF1A1CF6E97400BD42C0 /* 泰安.txt in Resources */,
+				FC86EF9A1CF6E97400BD42C0 /* 阳江.txt in Resources */,
+				FC86EFDE1CF6E98500BD42C0 /* tab_item_home_unselected@2x.png in Resources */,
+				FC86EE5A1CF6E97400BD42C0 /* 东营.txt in Resources */,
+				FC86EF6D1CF6E97400BD42C0 /* 许昌.txt in Resources */,
+				FC86EEB11CF6E97400BD42C0 /* 孝感.txt in Resources */,
+				FC86EF4C1CF6E97400BD42C0 /* 石嘴山.txt in Resources */,
+				FC86EF911CF6E97400BD42C0 /* 锡林浩特.txt in Resources */,
+				FC86EE771CF6E97400BD42C0 /* 六盘水.txt in Resources */,
+				FC86EE681CF6E97400BD42C0 /* 乌鲁木齐.txt in Resources */,
+				FC86EEF31CF6E97400BD42C0 /* 昭通.txt in Resources */,
+				FC86EF651CF6E97400BD42C0 /* 衡州.txt in Resources */,
+				FC86EF321CF6E97400BD42C0 /* 滁州.txt in Resources */,
+				FC86EF9F1CF6E97400BD42C0 /* 阿盟.txt in Resources */,
+				FC86EF1B1CF6E97400BD42C0 /* 泰州.txt in Resources */,
+				FC86EF2A1CF6E97400BD42C0 /* 淮安.txt in Resources */,
+				FC86EE891CF6E97400BD42C0 /* 南阳.txt in Resources */,
+				FC86EF9B1CF6E97400BD42C0 /* 阳泉.txt in Resources */,
+				FC86EF581CF6E97400BD42C0 /* 舟山.txt in Resources */,
+				FC86EE581CF6E97400BD42C0 /* 上饶.txt in Resources */,
+				FC86EF171CF6E97400BD42C0 /* 河池.txt in Resources */,
+				FC86EEFD1CF6E97400BD42C0 /* 松原.txt in Resources */,
+				FC86EFAB1CF6E97400BD42C0 /* 鹤壁.txt in Resources */,
+				FC86EED11CF6E97400BD42C0 /* 延吉.txt in Resources */,
+				FC86EEB51CF6E97400BD42C0 /* 安康.txt in Resources */,
+				FC86EEC41CF6E97400BD42C0 /* 巴中.txt in Resources */,
+				FC86EECD1CF6E97400BD42C0 /* 广州.txt in Resources */,
+				FC86EF301CF6E97400BD42C0 /* 湘潭.txt in Resources */,
+				FC86EF4A1CF6E97400BD42C0 /* 盘锦.txt in Resources */,
+				FC86EEEF1CF6E97400BD42C0 /* 日照.txt in Resources */,
+				FC86EE591CF6E97400BD42C0 /* 东莞.txt in Resources */,
+				FC86EFD71CF6E98500BD42C0 /* splash_logo@2x.png in Resources */,
+				FC86EE711CF6E97400BD42C0 /* 保定.txt in Resources */,
+				FC86EF371CF6E97400BD42C0 /* 潢川.txt in Resources */,
+				FC86EEC91CF6E97400BD42C0 /* 平凉.txt in Resources */,
+				FCB094831CF6EECF009A4615 /* Info.plist in Resources */,
+				FC86EF881CF6E97400BD42C0 /* 重庆.txt in Resources */,
+				FC86EFB11CF6E97400BD42C0 /* 黄石.txt in Resources */,
+				FC86EF291CF6E97400BD42C0 /* 淮南.txt in Resources */,
+				FC86EFD01CF6E98500BD42C0 /* home_clear_contact_icon@2x.png in Resources */,
+				FC86EF1C1CF6E97400BD42C0 /* 泸州.txt in Resources */,
+				FC86EF6B1CF6E97400BD42C0 /* 西安.txt in Resources */,
+				FC86EF921CF6E97400BD42C0 /* 锦州.txt in Resources */,
+				FC86EE811CF6E97400BD42C0 /* 北海.txt in Resources */,
+				FC86EF561CF6E97400BD42C0 /* 肇庆.txt in Resources */,
+				FC86EE8C1CF6E97400BD42C0 /* 双鸭山.txt in Resources */,
+				FC86EFAD1CF6E97400BD42C0 /* 鹰潭.txt in Resources */,
+				FC86EF771CF6E97400BD42C0 /* 运城.txt in Resources */,
+				FC86EF6A1CF6E97400BD42C0 /* 西宁.txt in Resources */,
+				FC86EEA91CF6E97400BD42C0 /* 大理.txt in Resources */,
+				FC86EF441CF6E97400BD42C0 /* 白城.txt in Resources */,
+				FC86EE911CF6E97400BD42C0 /* 吉首.txt in Resources */,
+				FC86EFDF1CF6E98500BD42C0 /* tab_item_selected_bg@2x.png in Resources */,
+				FC86EEF51CF6E97400BD42C0 /* 晋城.txt in Resources */,
+				FC86EF5B1CF6E97400BD42C0 /* 茂名.txt in Resources */,
+				FC86EF731CF6E97400BD42C0 /* 赤峰.txt in Resources */,
+				FC86EF071CF6E97400BD42C0 /* 梧州.txt in Resources */,
+				FC86EE671CF6E97400BD42C0 /* 乌海.txt in Resources */,
+				FC86EF1E1CF6E97400BD42C0 /* 济南.txt in Resources */,
+				FC86EF971CF6E97400BD42C0 /* 阜新.txt in Resources */,
+				FC86EEEA1CF6E97400BD42C0 /* 文山.txt in Resources */,
+				FC86EE851CF6E97400BD42C0 /* 南宁.txt in Resources */,
+				FC86EEAD1CF6E97400BD42C0 /* 太原.txt in Resources */,
+				FC86EFA21CF6E97400BD42C0 /* 随州.txt in Resources */,
+				FC86EF901CF6E97400BD42C0 /* 银川.txt in Resources */,
+				FC86EEA71CF6E97400BD42C0 /* 大同.txt in Resources */,
+				FC86EE821CF6E97400BD42C0 /* 十堰.txt in Resources */,
+				FC86EFA81CF6E97400BD42C0 /* 马鞍山.txt in Resources */,
+				FC86EE931CF6E97400BD42C0 /* 吕梁.txt in Resources */,
+				FC86EEDC1CF6E97400BD42C0 /* 忻州.txt in Resources */,
+				FC86EFDC1CF6E98500BD42C0 /* tab_bottom_bg@2x.png in Resources */,
+				FC86EF0B1CF6E97400BD42C0 /* 武汉.txt in Resources */,
+				FC86EE741CF6E97400BD42C0 /* 克州.txt in Resources */,
+				FC86EEAF1CF6E97400BD42C0 /* 威海.txt in Resources */,
+				FC86EF061CF6E97400BD42C0 /* 梅河口.txt in Resources */,
+				FC86EE941CF6E97400BD42C0 /* 吴忠.txt in Resources */,
+				FC86EE5F1CF6E97400BD42C0 /* 临沂.txt in Resources */,
+				FC86EF991CF6E97400BD42C0 /* 防城港.txt in Resources */,
+				FC86EF241CF6E97400BD42C0 /* 海拉尔.txt in Resources */,
+				FC86EF231CF6E97400BD42C0 /* 海口.txt in Resources */,
+				FC86EF951CF6E97400BD42C0 /* 长沙.txt in Resources */,
+				FC86EE6C1CF6E97400BD42C0 /* 仙桃.txt in Resources */,
+				FC86EED91CF6E97400BD42C0 /* 德宏.txt in Resources */,
+				FC86EF3C1CF6E97400BD42C0 /* 牡丹江.txt in Resources */,
+				FC86EF871CF6E97400BD42C0 /* 酒泉嘉峪关.txt in Resources */,
+				FC86EEB41CF6E97400BD42C0 /* 安庆.txt in Resources */,
+				FC86EEED1CF6E97400BD42C0 /* 无锡.txt in Resources */,
+				FC86EE9B1CF6E97400BD42C0 /* 哈密.txt in Resources */,
+				FC86EF111CF6E97400BD42C0 /* 汕尾.txt in Resources */,
+				FC86EEA41CF6E97400BD42C0 /* 固原.txt in Resources */,
+				FC86EF7B1CF6E97400BD42C0 /* 通辽.txt in Resources */,
+				FC86EFDA1CF6E98500BD42C0 /* store_gen_icon@2x.png in Resources */,
+				FC86EED31CF6E97400BD42C0 /* 开封.txt in Resources */,
+				FC86EE9C1CF6E97400BD42C0 /* 哈尔滨.txt in Resources */,
+				FC86EF681CF6E97400BD42C0 /* 襄樊.txt in Resources */,
+				FC86EFE01CF6E98500BD42C0 /* tab_item_setting_selected@2x.png in Resources */,
+				FC86EE971CF6E97400BD42C0 /* 呼和浩特.txt in Resources */,
+				FC86EEDB1CF6E97400BD42C0 /* 德阳.txt in Resources */,
+				FC86EF011CF6E97400BD42C0 /* 柳州.txt in Resources */,
+				FC86EE541CF6E97400BD42C0 /* 三亚.txt in Resources */,
+				FC86EEA11CF6E97400BD42C0 /* 嘉兴.txt in Resources */,
+				FC86EF711CF6E97400BD42C0 /* 资阳.txt in Resources */,
+				FC86EED01CF6E97400BD42C0 /* 廊坊.txt in Resources */,
+				FC86EF331CF6E97400BD42C0 /* 滨州.txt in Resources */,
+				FC86EF021CF6E97400BD42C0 /* 株洲.txt in Resources */,
+				FC86EE9D1CF6E97400BD42C0 /* 唐山.txt in Resources */,
+				FC86EEE91CF6E97400BD42C0 /* 攀枝花.txt in Resources */,
+				FC86EF161CF6E97400BD42C0 /* 沧州.txt in Resources */,
+				FC86EF1D1CF6E97400BD42C0 /* 洛阳.txt in Resources */,
+				FC86EF281CF6E97400BD42C0 /* 淮北.txt in Resources */,
+				FC86EF401CF6E97400BD42C0 /* 珠海.txt in Resources */,
+				FC86EEFC1CF6E97400BD42C0 /* 杭州.txt in Resources */,
+				FC86EFDB1CF6E98500BD42C0 /* store_title_logo@2x.png in Resources */,
+				FC86EF621CF6E97400BD42C0 /* 营口.txt in Resources */,
+				FC86EFE31CF6E98500BD42C0 /* tab_item_store_unselected@2x.png in Resources */,
+				FC86EF801CF6E97400BD42C0 /* 邯郸.txt in Resources */,
+				FC86EE7B1CF6E97400BD42C0 /* 兴安盟.txt in Resources */,
+				FC86EF5C1CF6E97400BD42C0 /* 荆州.txt in Resources */,
+				FC86EE961CF6E97400BD42C0 /* 呼伦贝尔.txt in Resources */,
+				FC86EE731CF6E97400BD42C0 /* 信阳.txt in Resources */,
+				FC86EEF71CF6E97400BD42C0 /* 曲靖.txt in Resources */,
+				FC86EF0A1CF6E97400BD42C0 /* 武威.txt in Resources */,
+				FC86EFCF1CF6E98500BD42C0 /* home_add_contact_icon@2x.png in Resources */,
+				FC86EF121CF6E97400BD42C0 /* 江汉.txt in Resources */,
+				FC86EFD81CF6E98500BD42C0 /* splash_text@2x.png in Resources */,
+				FC86EF591CF6E97400BD42C0 /* 芜湖.txt in Resources */,
+				FC86EEFF1CF6E97400BD42C0 /* 果洛.txt in Resources */,
+				FC86EEAA1CF6E97400BD42C0 /* 大连.txt in Resources */,
+				FC86EF741CF6E97400BD42C0 /* 辽源.txt in Resources */,
+				FC86EF931CF6E97400BD42C0 /* 镇江.txt in Resources */,
+				FC86EF221CF6E97400BD42C0 /* 海南州.txt in Resources */,
+				FC86EE7C1CF6E97400BD42C0 /* 内江.txt in Resources */,
+				FC86EE641CF6E97400BD42C0 /* 丽江.txt in Resources */,
+				FC86EE631CF6E97400BD42C0 /* 丽水.txt in Resources */,
+				FC86EEA21CF6E97400BD42C0 /* 嘉峪关.txt in Resources */,
+				FC86EE6E1CF6E97400BD42C0 /* 伊犁.txt in Resources */,
+				FC86EE861CF6E97400BD42C0 /* 南平.txt in Resources */,
+				FC86EFB31CF6E97400BD42C0 /* 齐齐哈尔.txt in Resources */,
+				FC86EED51CF6E97400BD42C0 /* 张家界.txt in Resources */,
+				FC86EE6D1CF6E97400BD42C0 /* 伊春.txt in Resources */,
+				FC86EF4F1CF6E97400BD42C0 /* 福州.txt in Resources */,
+				FC86EF8D1CF6E97400BD42C0 /* 铜仁.txt in Resources */,
+				FC86EE661CF6E97400BD42C0 /* 乌兰浩特.txt in Resources */,
+				FC86EE8A1CF6E97400BD42C0 /* 博乐.txt in Resources */,
+				FC86EF471CF6E97400BD42C0 /* 百色.txt in Resources */,
+				FC86EF361CF6E97400BD42C0 /* 潍坊.txt in Resources */,
+				FC86EEBF1CF6E97400BD42C0 /* 宿迁.txt in Resources */,
+				FC86EFF91CF6E9A200BD42C0 /* YMCitySelect.bundle in Resources */,
+				FC86EF2F1CF6E97400BD42C0 /* 湖州.txt in Resources */,
+				FC86EE7F1CF6E97400BD42C0 /* 包头.txt in Resources */,
+				FC86EF381CF6E97400BD42C0 /* 潮州.txt in Resources */,
+				FC86EE5B1CF6E97400BD42C0 /* 中卫.txt in Resources */,
+				FC86EF611CF6E97400BD42C0 /* 萍乡.txt in Resources */,
+				FC86EEDA1CF6E97400BD42C0 /* 德州.txt in Resources */,
+				FC86EFB51CF6E97400BD42C0 /* hot.txt in Resources */,
+				FC86EFB21CF6E97400BD42C0 /* 黑河.txt in Resources */,
+				FCD626FA1CCA08900016F388 /* Launch.xib in Resources */,
+				FC86EF6E1CF6E97400BD42C0 /* 贵港.txt in Resources */,
+				FC86EFD11CF6E98500BD42C0 /* home_clear_history_icon@2x.png in Resources */,
+				FC86EFA31CF6E97400BD42C0 /* 雅安.txt in Resources */,
+				FC86EFAF1CF6E97400BD42C0 /* 黄山.txt in Resources */,
+				FC86EF7A1CF6E97400BD42C0 /* 通化.txt in Resources */,
+				FC86EF461CF6E97400BD42C0 /* 白银.txt in Resources */,
+				FC86EF081CF6E97400BD42C0 /* 楚雄.txt in Resources */,
+				FC86EF201CF6E97400BD42C0 /* 海东.txt in Resources */,
+				FC86EF9E1CF6E97400BD42C0 /* 阿坝州.txt in Resources */,
+				FC86EF5D1CF6E97400BD42C0 /* 荆门.txt in Resources */,
+				FC86EF0C1CF6E97400BD42C0 /* 毕节.txt in Resources */,
+				FC86EF821CF6E97400BD42C0 /* 郑州.txt in Resources */,
+				FC86EF7C1CF6E97400BD42C0 /* 遂宁.txt in Resources */,
+				FC86EF4E1CF6E97400BD42C0 /* 石河子.txt in Resources */,
+				FC86EF7E1CF6E97400BD42C0 /* 邢台.txt in Resources */,
+				FC86EED61CF6E97400BD42C0 /* 张掖.txt in Resources */,
+				FC86EFA11CF6E97400BD42C0 /* 陇南.txt in Resources */,
+				FC86EE781CF6E97400BD42C0 /* 兰州.txt in Resources */,
+				FC86EF0F1CF6E97400BD42C0 /* 汉中.txt in Resources */,
+				FC86EF511CF6E97400BD42C0 /* 红河.txt in Resources */,
+				FC86EF791CF6E97400BD42C0 /* 迪庆.txt in Resources */,
+				FC86EFAA1CF6E97400BD42C0 /* 鸡西.txt in Resources */,
+				FC86EF501CF6E97400BD42C0 /* 秦皇岛.txt in Resources */,
+				FC86EF831CF6E97400BD42C0 /* 郴州.txt in Resources */,
+				FC86EEF11CF6E97400BD42C0 /* 昌吉.txt in Resources */,
+				FC86EF151CF6E97400BD42C0 /* 沈阳.txt in Resources */,
+				FC86EF841CF6E97400BD42C0 /* 都匀.txt in Resources */,
+				FC86EF0E1CF6E97400BD42C0 /* 永州.txt in Resources */,
+				FC86EEE01CF6E97400BD42C0 /* 恩施.txt in Resources */,
+				FC86EE871CF6E97400BD42C0 /* 南昌.txt in Resources */,
+				FC86EEC51CF6E97400BD42C0 /* 巴彦浩特.txt in Resources */,
+				FC86EEC71CF6E97400BD42C0 /* 常州.txt in Resources */,
+				FC86EF811CF6E97400BD42C0 /* 邵阳.txt in Resources */,
+				FC86EF491CF6E97400BD42C0 /* 盐城.txt in Resources */,
+				FC86EF661CF6E97400BD42C0 /* 衡水.txt in Resources */,
+				FC86EF001CF6E97400BD42C0 /* 枣庄.txt in Resources */,
+				FC86EF2D1CF6E97400BD42C0 /* 温州.txt in Resources */,
+				FC86EE881CF6E97400BD42C0 /* 南通.txt in Resources */,
+				FC86EE7D1CF6E97400BD42C0 /* 凉山.txt in Resources */,
+				FC86EEB21CF6E97400BD42C0 /* 宁德.txt in Resources */,
+				FC86EE831CF6E97400BD42C0 /* 南京.txt in Resources */,
+				FC86EF701CF6E97400BD42C0 /* 贺州.txt in Resources */,
+				FC86EE801CF6E97400BD42C0 /* 北京.txt in Resources */,
+				FC86EFA71CF6E97400BD42C0 /* 韶关.txt in Resources */,
+				FC86EEB91CF6E97400BD42C0 /* 宜宾.txt in Resources */,
+				FC86EF141CF6E97400BD42C0 /* 池州.txt in Resources */,
+				FC86EE571CF6E97400BD42C0 /* 上海.txt in Resources */,
+				FC86EEF91CF6E97400BD42C0 /* 朝阳.txt in Resources */,
+				FC86EEAC1CF6E97400BD42C0 /* 天津.txt in Resources */,
+				FC86EEE61CF6E97400BD42C0 /* 抚顺.txt in Resources */,
+				FC86EE901CF6E97400BD42C0 /* 吉林.txt in Resources */,
+				FC86EE611CF6E97400BD42C0 /* 临河.txt in Resources */,
+				FC86EF1F1CF6E97400BD42C0 /* 济宁.txt in Resources */,
+				FC86EED21CF6E97400BD42C0 /* 延安.txt in Resources */,
+				FC86EEE81CF6E97400BD42C0 /* 揭阳.txt in Resources */,
+				FC86EE721CF6E97400BD42C0 /* 保山.txt in Resources */,
+				FC86EF891CF6E97400BD42C0 /* 金华.txt in Resources */,
+				FC86EECF1CF6E97400BD42C0 /* 库尔勒.txt in Resources */,
+				FC86EF261CF6E97400BD42C0 /* 海西州.txt in Resources */,
+				FC86EFAC1CF6E97400BD42C0 /* 鹤岗.txt in Resources */,
+				FC86EF641CF6E97400BD42C0 /* 蚌埠.txt in Resources */,
+				FC86EF8B1CF6E97400BD42C0 /* 钦州.txt in Resources */,
+				FC86EE9E1CF6E97400BD42C0 /* 商丘.txt in Resources */,
+				FC86EEEE1CF6E97400BD42C0 /* 日喀则.txt in Resources */,
+				FC86EE6A1CF6E97400BD42C0 /* 九江.txt in Resources */,
+				FC86EEBC1CF6E97400BD42C0 /* 宝鸡.txt in Resources */,
+				FC86EF431CF6E97400BD42C0 /* 甘孜州.txt in Resources */,
+				FC86EF131CF6E97400BD42C0 /* 江门.txt in Resources */,
+				FC86EEA31CF6E97400BD42C0 /* 四平.txt in Resources */,
+				FC86EECE1CF6E97400BD42C0 /* 庆阳.txt in Resources */,
+				FC86EECC1CF6E97400BD42C0 /* 广安.txt in Resources */,
+				FC86EECA1CF6E97400BD42C0 /* 平顶山.txt in Resources */,
+				FC86EF571CF6E97400BD42C0 /* 自宫.txt in Resources */,
+				FC86EF391CF6E97400BD42C0 /* 濮阳.txt in Resources */,
+				FC86EF981CF6E97400BD42C0 /* 阜阳.txt in Resources */,
+				FC86EEC31CF6E97400BD42C0 /* 巢湖.txt in Resources */,
+				FC86EF451CF6E97400BD42C0 /* 白山.txt in Resources */,
+				FC86EE951CF6E97400BD42C0 /* 周口.txt in Resources */,
+				FC86EE8B1CF6E97400BD42C0 /* 厦门.txt in Resources */,
+				FC86EEB71CF6E97400BD42C0 /* 安顺.txt in Resources */,
+				FC86EE761CF6E97400BD42C0 /* 六安.txt in Resources */,
+				FC86EECB1CF6E97400BD42C0 /* 广元.txt in Resources */,
+				FC86EF0D1CF6E97400BD42C0 /* 毫州.txt in Resources */,
+				FC86EEA51CF6E97400BD42C0 /* 塔城.txt in Resources */,
+				FC86EF5E1CF6E97400BD42C0 /* 莆田.txt in Resources */,
+				FC6831501CBCEE6400162502 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7462788DD126EA48A44BACED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F31BE1C86FC873E2618C6C5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC6831391CBCEE6400162502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC86EFF81CF6E9A200BD42C0 /* YMCitySearch.m in Sources */,
+				FC86F0091CF6EA0A00BD42C0 /* DES3Util.m in Sources */,
+				FC86F0241CF6EAD800BD42C0 /* UIColor+expanded.m in Sources */,
+				FC86F01E1CF6EAAE00BD42C0 /* UIButton+Bootstrap.m in Sources */,
+				FC86F02D1CF6EBF600BD42C0 /* UITapImageView.m in Sources */,
+				FC86F0021CF6E9CA00BD42C0 /* SettingCell.m in Sources */,
+				FC86ECEB1CF6E95900BD42C0 /* RDVTabBarController.m in Sources */,
+				FC86F0271CF6EAE800BD42C0 /* UIViewController+Swizzle.m in Sources */,
+				FCB0947A1CF6ED73009A4615 /* StoreViewController.m in Sources */,
+				FC86F00C1CF6EA1B00BD42C0 /* GTMBase64.m in Sources */,
+				FC6831451CBCEE6400162502 /* AppDelegate.m in Sources */,
+				FC86F02F1CF6EC4C00BD42C0 /* main.m in Sources */,
+				FCB094701CF6ED43009A4615 /* RootTabViewController.m in Sources */,
+				FCB094731CF6ED53009A4615 /* BaseViewController.m in Sources */,
+				FC86EFF71CF6E9A200BD42C0 /* YMCityModel.m in Sources */,
+				FCB0947B1CF6ED73009A4615 /* SettingViewController.m in Sources */,
+				FC86F0211CF6EAC700BD42C0 /* UIImage+Common.m in Sources */,
+				FCB0947C1CF6ED73009A4615 /* HomeViewController.m in Sources */,
+				FC86F01B1CF6EA8B00BD42C0 /* UIView+Frame.m in Sources */,
+				FC86EFFD1CF6E9A200BD42C0 /* YMTableViewCell.m in Sources */,
+				FC86ECEA1CF6E95900BD42C0 /* RDVTabBar.m in Sources */,
+				FC86EFFC1CF6E9A200BD42C0 /* YMSearchBar.m in Sources */,
+				FC86F0031CF6E9CA00BD42C0 /* VCityCell.m in Sources */,
+				FCB094871CF73CC3009A4615 /* KTSContactsManager.m in Sources */,
+				FC86EFF51CF6E9A200BD42C0 /* UIView+ym_extension.m in Sources */,
+				FC86EFF61CF6E9A200BD42C0 /* YMCityGroupsModel.m in Sources */,
+				FC86F01A1CF6EA8B00BD42C0 /* UIView+Common.m in Sources */,
+				FC86F02A1CF6EB9F00BD42C0 /* UITableView+Common.m in Sources */,
+				FC86EFFA1CF6E9A200BD42C0 /* YMCitySelect.m in Sources */,
+				FCB0947F1CF6EDCE009A4615 /* BaseNavigationController.m in Sources */,
+				FC86ECE31CF6E91F00BD42C0 /* RRFPSBar.m in Sources */,
+				FC86F0061CF6E9E100BD42C0 /* EaseStartView.m in Sources */,
+				FC86EFFB1CF6E9A200BD42C0 /* YMCollectionViewCell.m in Sources */,
+				FC86ECEC1CF6E95900BD42C0 /* RDVTabBarItem.m in Sources */,
+				FC86F00F1CF6EA3400BD42C0 /* ObjcRuntime.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC6831551CBCEE6400162502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC6831561CBCEE6400162502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC6831581CBCEE6400162502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8FB52CC66A0898F2B1E82A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = app/PrefixHeader.pch;
+				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiafenzhushou.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FC6831591CBCEE6400162502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0128E64A64474D095F85D6E5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = app/PrefixHeader.pch;
+				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiafenzhushou.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC6831381CBCEE6400162502 /* Build configuration list for PBXProject "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC6831551CBCEE6400162502 /* Debug */,
+				FC6831561CBCEE6400162502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC6831571CBCEE6400162502 /* Build configuration list for PBXNativeTarget "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC6831581CBCEE6400162502 /* Debug */,
+				FC6831591CBCEE6400162502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC6831351CBCEE6400162502 /* Project object */;
+}
